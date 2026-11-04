@@ -1,6 +1,6 @@
 # Computation-aware streaming speech translation
 
-Cascaded English-to-German speech translation on a Raspberry Pi 5 and a ThinkPad laptop, using Whisper and Marian MT. Project for the course TinyML at Stockholm University/DSV Fall 2026. Compares translation quality, latency and processing throughput across two ASR model sizes and 4- or 8-second audio chunks.
+Cascaded English-to-German speech translation on a Raspberry Pi 5 and a ThinkPad laptop, using Whisper and Marian MT. Compares translation quality, latency and processing throughput across two ASR model sizes and 4- or 8-second audio chunks.
 
 The main experiment covers six recordings and 96 runs. Supplementary work includes Whistle ASR, LocalAgreement and exploratory translation quality control (Jev reviewer -> Sonnet 5.5 evaluator + manual inspection).
 
