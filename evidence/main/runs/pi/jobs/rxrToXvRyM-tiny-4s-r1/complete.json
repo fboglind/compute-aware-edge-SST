@@ -1,0 +1,29 @@
+{
+  "plan_id": "b2d6c9375f990670239ebdb609b2b7eb0db93bfb39340070b1beacb9304ef071",
+  "job": {
+    "id": "rxrToXvRyM-tiny-4s-r1",
+    "talk": "rxrToXvRyM",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "repetition": 1,
+    "device": "pi",
+    "order": 1
+  },
+  "attempt": "attempt-001",
+  "session_id": "20261018T172525-d261c8",
+  "verified_utc": "2026-10-18T17:32:40.758331+00:00",
+  "recovered": false,
+  "output_sha256": {
+    "attempt.json": "f3f45d50938224ffeffaa2b5c34fe127fe3f3154365e4627d8b19efd56ea4984",
+    "chunks.jsonl": "7ef61fb485b4b704102addfaa07f4d5a10148e79dab93114a766a964718570ee",
+    "console.log": "49abcf6330b5449c199ed1405aa92eb6764f3d89a5a156b830cab18b7a939c37",
+    "exit.json": "508af26b25c383ec18601ef4568bdedc35a673dccbc8df29513585fd35a023be",
+    "hypothesis.jsonl": "7c5eeac344a2f2ff7fa25c4e5edc15d70a84035ef8f34257ae80d250a97d7d79",
+    "metadata.json": "b3b0f314b7994b243b8675d1a591ba41fca54eac194b6a45e9fc0f45315e126b",
+    "resources.jsonl": "bb8c7aead6e5961ece67dc07d852355d674c27335e49b6e2a53e7ffdf561924b",
+    "summary.json": "fce6c310e8afe3441ca69545bbab5b3fcaa2b08aca7512f7a760d3575e44c705",
+    "transcript.en.txt": "a830da85a2dde9c1f2cf34bdf6e3f8fe66608b4f30bb6da7a0d44f0646738ef0",
+    "translation.de.txt": "0db008fcdd2b7b5fcbc704288d678e92b9ccc6b5bab2ba7279ac646be1b57047",
+    "words.jsonl": "ac423a7814e59411b928ccd714e70e5cfcb10c06304d8da910f1bf45577e0ab8"
+  }
+}

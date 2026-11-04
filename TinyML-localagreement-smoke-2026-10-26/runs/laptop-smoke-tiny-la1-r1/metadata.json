@@ -1,0 +1,137 @@
+{
+  "created_utc": "2026-10-26T20:28:14.785603+00:00",
+  "args": {
+    "audio": "../data/data/smoke.wav",
+    "asr": "tiny.en",
+    "min_chunk_s": 1.0,
+    "buffer_trim_s": 15,
+    "threads": 4,
+    "models_dir": "/home/fredrik/Documents/TinyML-project/tinyml-pilot/models",
+    "max_audio_s": null,
+    "out": "runs/laptop-smoke-tiny-la1-r1"
+  },
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "audio_sha256": "7c11580d4cc52ae57e367501fab81f9b5bb04ce30aef12011da9653a3397fcaf",
+  "audio_duration_s": 23.6146875,
+  "audio_total_duration_s": 23.6146875,
+  "source_offset_s": 0,
+  "script_sha256": {
+    "TinyML-localagreement-smoke-2026-10-26/run_localagreement.py": "57c3a8c94efff9e01c2c241582113298f365c58a9f98627ff173bba563a91df7",
+    "TinyML-localagreement-smoke-2026-10-26/local_agreement.py": "25546aeca49c20d85cd54c07ea405ffd05527c7e4127e2bb64c2c62904be93ba",
+    "TinyML-main-experiment-2026-10-18/runner/run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+    "TinyML-main-experiment-2026-10-18/runner/stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+  },
+  "models": {
+    "asr": {
+      "repo": "Systran/faster-whisper-tiny.en",
+      "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+      "kind": "preconverted ASR; runtime INT8",
+      "created_utc": "2026-10-11T12:59:42.196374+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "14b1b421a90349bc551b881461426b561a874049cb9e4c4864f2ca384f6a7cc5",
+        "model.bin": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+        "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    },
+    "mt": {
+      "repo": "Helsinki-NLP/opus-mt-en-de",
+      "revision": "6183067f769a302e3861815543b9f312c71b0ca4",
+      "kind": "Marian converted to INT8",
+      "created_utc": "2026-10-11T13:00:25.462377+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "8f6496adfc930cbfecbe8281112197705c488fab47d34b4829b06d7f478909af",
+        "model.bin": "3cad348e65aa400a0fce83b2b89a876030092e108ebc5a824ac1def6c76957b2",
+        "shared_vocabulary.json": "fa4c8d666c582ad39892a2ae5d4ded1b0ddde4b49dc784a7fcbd73940f9fa13e",
+        "tokenizer/source.spm": "678f2a1177d8389f67b66299762dcc4fc567e89b07e212ba91b0c56daecf47ce",
+        "tokenizer/special_tokens_map.json": "5e4d1f5e759d74cb1c2fe1d165cfc62b5237aa904de759380cd6f43042eec723",
+        "tokenizer/target.spm": "bbd1f495eea99c8e21ae086d9146e0fa7b096c3dfdd9ba07ab8b631889df5c9b",
+        "tokenizer/tokenizer_config.json": "bcd3dd19e2b329e9da975e90c682eab3b4aa99275d8f64008c2c8e085c6b388a",
+        "tokenizer/vocab.json": "d5acea957b265a78554999144459c5e391e0df525864edc8287bc090290baa44"
+      }
+    }
+  },
+  "packages": {
+    "safetensors": "0.8.0",
+    "regex": "2026.9.29",
+    "fsspec": "2026.9.0",
+    "av": "19.0.1",
+    "PyYAML": "6.0.3",
+    "transformers": "4.57.6",
+    "certifi": "2026.10.18",
+    "joblib": "1.6.0",
+    "sentencepiece": "0.2.2",
+    "faster-whisper": "1.2.1",
+    "requests": "2.34.2",
+    "filelock": "4.2.2",
+    "huggingface_hub": "0.36.2",
+    "cloudpickle": "3.1.2",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "hf-xet": "1.7.0",
+    "urllib3": "2.8.0",
+    "sacremoses": "0.1.1",
+    "charset-normalizer": "3.5.2",
+    "typing_extensions": "4.16.0",
+    "onnxruntime": "1.31.0",
+    "protobuf": "7.36.2",
+    "ctranslate2": "4.8.2",
+    "click": "8.5.0",
+    "flatbuffers": "25.12.19",
+    "idna": "3.20",
+    "numpy": "2.5.4",
+    "packaging": "26.3",
+    "pip": "24.0",
+    "tokenizers": "0.22.2"
+  },
+  "decoding": {
+    "asr_beam": 1,
+    "mt_beam": 4,
+    "temperature": 0,
+    "vad": false,
+    "condition_on_previous_text": false,
+    "word_timestamps": true,
+    "without_timestamps": false,
+    "prompt_max_words": 200,
+    "asr_language": "en",
+    "asr_task": "transcribe",
+    "mt_max_output_tokens": 256,
+    "mt_max_input_tokens": 512
+  },
+  "policy": "LocalAgreement-2 on English words; each new confirmed span translated once",
+  "translation_policy": "independent Marian translation per ASR commit; no German agreement or revision",
+  "buffer_trimming": "confirmed Whisper segment, retain final segment; threshold is not a hard cap",
+  "scheduler": "adaptive real-time: consume all arrived audio after minimum new-audio wait",
+  "eof_policy": "flush latest unconfirmed ASR tail once, translate separately, label eof_unconfirmed",
+  "timestamp_unit": "seconds in updates/words; milliseconds in hypothesis.jsonl",
+  "cu_note": "delays is consumed audio on this CA-adaptive trajectory, not a separate CU simulation",
+  "emission": "all German words in each translation emitted atomically after MT",
+  "warmup": "timestamped ASR on synthetic silence, then one English MT sentence; excluded from replay",
+  "throttled_before": null,
+  "power_supply_online": {
+    "/sys/class/power_supply/ucsi-source-psy-USBC000:002/online": "0",
+    "/sys/class/power_supply/ucsi-source-psy-USBC000:001/online": "1",
+    "/sys/class/power_supply/AC/online": "1"
+  },
+  "model_load_s": 2.7089829900069162,
+  "effective_compute_type": {
+    "asr": "int8_float32",
+    "mt": "int8_float32"
+  },
+  "warmup_s": 0.34955899498891085,
+  "mt_warmup_output": "Dies ist ein Test der englischen bis deutschen Übersetzung."
+}

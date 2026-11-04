@@ -1,0 +1,635 @@
+{
+  "complete_grid": true,
+  "comet_complete": true,
+  "experiment": "Whistle supplementary cascade; separate from main results",
+  "aggregation": "Within a pass: corpus chrF2, pooled WER counts, audio-weighted RTF, unweighted eligible-segment LongYAAL, and segment-mean COMET. Between passes: mean and observed min/max; no confidence intervals or independence claim.",
+  "independent_content_units": 6,
+  "passes": [
+    {
+      "device": "pi",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 46.8702098005687,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 33.41869398207427,
+      "rtf_processing": 0.4180854975039649,
+      "asr_rtf": 0.021079770871096,
+      "mt_rtf": 0.3969878382052374,
+      "mean_first_output_s": 5.819803860499936,
+      "mean_final_tail_s": 0.9961588549998813,
+      "max_final_tail_s": 1.6963726010000073,
+      "queue_wait_max_s": 1.6961427130000857,
+      "sampled_peak_replay_rss_mib": 259.4375,
+      "process_peak_rss_mib_including_load_warmup": 258.671875,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.5576281593482297,
+      "longyaal_cu_s": 2.2031767070268446,
+      "latency_eligible_segments_cu": 263,
+      "words_at_or_after_wav_end_cu": 13,
+      "longyaal_ca_s": 3.915959285935747,
+      "latency_eligible_segments_ca": 258,
+      "words_at_or_after_wav_end_ca": 42
+    },
+    {
+      "device": "pi",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 46.8702098005687,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 33.41869398207427,
+      "rtf_processing": 0.4192452844049884,
+      "asr_rtf": 0.02065133764095677,
+      "mt_rtf": 0.39857595464204804,
+      "mean_first_output_s": 5.91637372000029,
+      "mean_final_tail_s": 1.014663390832747,
+      "max_final_tail_s": 1.7251614539997604,
+      "queue_wait_max_s": 1.3590137050011322,
+      "sampled_peak_replay_rss_mib": 259.546875,
+      "process_peak_rss_mib_including_load_warmup": 258.34375,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.5576281593482297,
+      "longyaal_cu_s": 2.2031767070268446,
+      "latency_eligible_segments_cu": 263,
+      "words_at_or_after_wav_end_cu": 13,
+      "longyaal_ca_s": 3.9122030891731683,
+      "latency_eligible_segments_ca": 258,
+      "words_at_or_after_wav_end_ca": 42
+    },
+    {
+      "device": "pi",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 50.1285673854366,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 26.84592402902262,
+      "rtf_processing": 0.40362609439342123,
+      "asr_rtf": 0.020357663706102654,
+      "mt_rtf": 0.38325514924361165,
+      "mean_first_output_s": 11.452121079166773,
+      "mean_final_tail_s": 1.5821172383335238,
+      "max_final_tail_s": 3.6555619629999683,
+      "queue_wait_max_s": 3.655340335000915,
+      "sampled_peak_replay_rss_mib": 267.078125,
+      "process_peak_rss_mib_including_load_warmup": 265.640625,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.6072110664799697,
+      "longyaal_cu_s": 4.196434406658223,
+      "latency_eligible_segments_cu": 258,
+      "words_at_or_after_wav_end_cu": 27,
+      "longyaal_ca_s": 7.461230627545444,
+      "latency_eligible_segments_ca": 255,
+      "words_at_or_after_wav_end_ca": 67
+    },
+    {
+      "device": "pi",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 50.1285673854366,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 26.84592402902262,
+      "rtf_processing": 0.39917808219443957,
+      "asr_rtf": 0.02010411139515403,
+      "mt_rtf": 0.37906080138922493,
+      "mean_first_output_s": 11.270274710999729,
+      "mean_final_tail_s": 1.6130236849996702,
+      "max_final_tail_s": 3.6300140619988497,
+      "queue_wait_max_s": 3.6267679359990552,
+      "sampled_peak_replay_rss_mib": 267.03125,
+      "process_peak_rss_mib_including_load_warmup": 266.046875,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.6072110664799697,
+      "longyaal_cu_s": 4.196434406658223,
+      "latency_eligible_segments_cu": 258,
+      "words_at_or_after_wav_end_cu": 27,
+      "longyaal_ca_s": 7.423994196998012,
+      "latency_eligible_segments_ca": 255,
+      "words_at_or_after_wav_end_ca": 67
+    },
+    {
+      "device": "laptop",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 46.90095553905195,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 33.482714468629965,
+      "rtf_processing": 0.05554473535903961,
+      "asr_rtf": 0.03639933989961765,
+      "mt_rtf": 0.01911023455188331,
+      "mean_first_output_s": 4.2724730836732006,
+      "mean_final_tail_s": 0.10640505133738998,
+      "max_final_tail_s": 0.14596699698267912,
+      "queue_wait_max_s": 0.0875387140405337,
+      "sampled_peak_replay_rss_mib": 262.71875,
+      "process_peak_rss_mib_including_load_warmup": 261.984375,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.5584931928188281,
+      "longyaal_cu_s": 2.1755585416947962,
+      "latency_eligible_segments_cu": 263,
+      "words_at_or_after_wav_end_cu": 13,
+      "longyaal_ca_s": 2.4010371821482863,
+      "latency_eligible_segments_ca": 262,
+      "words_at_or_after_wav_end_ca": 22
+    },
+    {
+      "device": "laptop",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 46.90095553905195,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 33.482714468629965,
+      "rtf_processing": 0.05573531448927654,
+      "asr_rtf": 0.036618474541842874,
+      "mt_rtf": 0.01908049600521657,
+      "mean_first_output_s": 4.251344488836669,
+      "mean_final_tail_s": 0.1341417898361783,
+      "max_final_tail_s": 0.25705860503484246,
+      "queue_wait_max_s": 0.08929945503780345,
+      "sampled_peak_replay_rss_mib": 262.73046875,
+      "process_peak_rss_mib_including_load_warmup": 262.0078125,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.5584931928188281,
+      "longyaal_cu_s": 2.1755585416947962,
+      "latency_eligible_segments_cu": 263,
+      "words_at_or_after_wav_end_cu": 13,
+      "longyaal_ca_s": 2.4010913492283423,
+      "latency_eligible_segments_ca": 262,
+      "words_at_or_after_wav_end_ca": 22
+    },
+    {
+      "device": "laptop",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 50.03521603557181,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 26.760563380281692,
+      "rtf_processing": 0.16941209742136334,
+      "asr_rtf": 0.1492412372732232,
+      "mt_rtf": 0.020145232060894133,
+      "mean_first_output_s": 9.287653537496226,
+      "mean_final_tail_s": 0.36217619500005566,
+      "max_final_tail_s": 1.0151028840192566,
+      "queue_wait_max_s": 1.0062483959919746,
+      "sampled_peak_replay_rss_mib": 267.62109375,
+      "process_peak_rss_mib_including_load_warmup": 266.75,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.6064233023645287,
+      "longyaal_cu_s": 4.179032264566728,
+      "latency_eligible_segments_cu": 258,
+      "words_at_or_after_wav_end_cu": 28,
+      "longyaal_ca_s": 5.525203602352539,
+      "latency_eligible_segments_ca": 255,
+      "words_at_or_after_wav_end_ca": 70
+    },
+    {
+      "device": "laptop",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "complete_talk_set": true,
+      "talks": 6,
+      "segments": 266,
+      "audio_duration_s": 2018.0365625,
+      "chrf2": 50.03521603557181,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "wer_pct": 26.760563380281692,
+      "rtf_processing": 0.1364564268234949,
+      "asr_rtf": 0.11806146024412953,
+      "mt_rtf": 0.018371060673045832,
+      "mean_first_output_s": 9.166750009491807,
+      "mean_final_tail_s": 0.329223730164415,
+      "max_final_tail_s": 1.0468102100277292,
+      "queue_wait_max_s": 1.037474966011473,
+      "sampled_peak_replay_rss_mib": 265.92578125,
+      "process_peak_rss_mib_including_load_warmup": 265.34765625,
+      "empty_asr_chunks": 1,
+      "mt_limit_chunks": 0,
+      "resource_sampling_errors": 0,
+      "comet": 0.6064233023645287,
+      "longyaal_cu_s": 4.179032264566728,
+      "latency_eligible_segments_cu": 258,
+      "words_at_or_after_wav_end_cu": 28,
+      "longyaal_ca_s": 5.28482571194063,
+      "latency_eligible_segments_ca": 256,
+      "words_at_or_after_wav_end_ca": 53
+    }
+  ],
+  "configurations": [
+    {
+      "device": "pi",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "complete_repetitions": 2,
+      "metrics": {
+        "chrf2": {
+          "mean": 46.8702098005687,
+          "min": 46.8702098005687,
+          "max": 46.8702098005687,
+          "n": 2
+        },
+        "comet": {
+          "mean": 0.5576281593482297,
+          "min": 0.5576281593482297,
+          "max": 0.5576281593482297,
+          "n": 2
+        },
+        "wer_pct": {
+          "mean": 33.41869398207427,
+          "min": 33.41869398207427,
+          "max": 33.41869398207427,
+          "n": 2
+        },
+        "rtf_processing": {
+          "mean": 0.41866539095447663,
+          "min": 0.4180854975039649,
+          "max": 0.4192452844049884,
+          "n": 2
+        },
+        "asr_rtf": {
+          "mean": 0.020865554256026382,
+          "min": 0.02065133764095677,
+          "max": 0.021079770871096,
+          "n": 2
+        },
+        "mt_rtf": {
+          "mean": 0.3977818964236427,
+          "min": 0.3969878382052374,
+          "max": 0.39857595464204804,
+          "n": 2
+        },
+        "longyaal_cu_s": {
+          "mean": 2.2031767070268446,
+          "min": 2.2031767070268446,
+          "max": 2.2031767070268446,
+          "n": 2
+        },
+        "longyaal_ca_s": {
+          "mean": 3.9140811875544577,
+          "min": 3.9122030891731683,
+          "max": 3.915959285935747,
+          "n": 2
+        },
+        "mean_first_output_s": {
+          "mean": 5.868088790250113,
+          "min": 5.819803860499936,
+          "max": 5.91637372000029,
+          "n": 2
+        },
+        "mean_final_tail_s": {
+          "mean": 1.005411122916314,
+          "min": 0.9961588549998813,
+          "max": 1.014663390832747,
+          "n": 2
+        },
+        "max_final_tail_s": {
+          "mean": 1.7107670274998839,
+          "min": 1.6963726010000073,
+          "max": 1.7251614539997604,
+          "n": 2
+        },
+        "queue_wait_max_s": {
+          "mean": 1.527578209000609,
+          "min": 1.3590137050011322,
+          "max": 1.6961427130000857,
+          "n": 2
+        },
+        "sampled_peak_replay_rss_mib": {
+          "mean": 259.4921875,
+          "min": 259.4375,
+          "max": 259.546875,
+          "n": 2
+        },
+        "process_peak_rss_mib_including_load_warmup": {
+          "mean": 258.5078125,
+          "min": 258.34375,
+          "max": 258.671875,
+          "n": 2
+        }
+      }
+    },
+    {
+      "device": "pi",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "complete_repetitions": 2,
+      "metrics": {
+        "chrf2": {
+          "mean": 50.1285673854366,
+          "min": 50.1285673854366,
+          "max": 50.1285673854366,
+          "n": 2
+        },
+        "comet": {
+          "mean": 0.6072110664799697,
+          "min": 0.6072110664799697,
+          "max": 0.6072110664799697,
+          "n": 2
+        },
+        "wer_pct": {
+          "mean": 26.84592402902262,
+          "min": 26.84592402902262,
+          "max": 26.84592402902262,
+          "n": 2
+        },
+        "rtf_processing": {
+          "mean": 0.4014020882939304,
+          "min": 0.39917808219443957,
+          "max": 0.40362609439342123,
+          "n": 2
+        },
+        "asr_rtf": {
+          "mean": 0.02023088755062834,
+          "min": 0.02010411139515403,
+          "max": 0.020357663706102654,
+          "n": 2
+        },
+        "mt_rtf": {
+          "mean": 0.38115797531641826,
+          "min": 0.37906080138922493,
+          "max": 0.38325514924361165,
+          "n": 2
+        },
+        "longyaal_cu_s": {
+          "mean": 4.196434406658223,
+          "min": 4.196434406658223,
+          "max": 4.196434406658223,
+          "n": 2
+        },
+        "longyaal_ca_s": {
+          "mean": 7.442612412271728,
+          "min": 7.423994196998012,
+          "max": 7.461230627545444,
+          "n": 2
+        },
+        "mean_first_output_s": {
+          "mean": 11.36119789508325,
+          "min": 11.270274710999729,
+          "max": 11.452121079166773,
+          "n": 2
+        },
+        "mean_final_tail_s": {
+          "mean": 1.597570461666597,
+          "min": 1.5821172383335238,
+          "max": 1.6130236849996702,
+          "n": 2
+        },
+        "max_final_tail_s": {
+          "mean": 3.642788012499409,
+          "min": 3.6300140619988497,
+          "max": 3.6555619629999683,
+          "n": 2
+        },
+        "queue_wait_max_s": {
+          "mean": 3.641054135499985,
+          "min": 3.6267679359990552,
+          "max": 3.655340335000915,
+          "n": 2
+        },
+        "sampled_peak_replay_rss_mib": {
+          "mean": 267.0546875,
+          "min": 267.03125,
+          "max": 267.078125,
+          "n": 2
+        },
+        "process_peak_rss_mib_including_load_warmup": {
+          "mean": 265.84375,
+          "min": 265.640625,
+          "max": 266.046875,
+          "n": 2
+        }
+      }
+    },
+    {
+      "device": "laptop",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "complete_repetitions": 2,
+      "metrics": {
+        "chrf2": {
+          "mean": 46.90095553905195,
+          "min": 46.90095553905195,
+          "max": 46.90095553905195,
+          "n": 2
+        },
+        "comet": {
+          "mean": 0.5584931928188281,
+          "min": 0.5584931928188281,
+          "max": 0.5584931928188281,
+          "n": 2
+        },
+        "wer_pct": {
+          "mean": 33.482714468629965,
+          "min": 33.482714468629965,
+          "max": 33.482714468629965,
+          "n": 2
+        },
+        "rtf_processing": {
+          "mean": 0.05564002492415807,
+          "min": 0.05554473535903961,
+          "max": 0.05573531448927654,
+          "n": 2
+        },
+        "asr_rtf": {
+          "mean": 0.03650890722073026,
+          "min": 0.03639933989961765,
+          "max": 0.036618474541842874,
+          "n": 2
+        },
+        "mt_rtf": {
+          "mean": 0.01909536527854994,
+          "min": 0.01908049600521657,
+          "max": 0.01911023455188331,
+          "n": 2
+        },
+        "longyaal_cu_s": {
+          "mean": 2.1755585416947962,
+          "min": 2.1755585416947962,
+          "max": 2.1755585416947962,
+          "n": 2
+        },
+        "longyaal_ca_s": {
+          "mean": 2.4010642656883143,
+          "min": 2.4010371821482863,
+          "max": 2.4010913492283423,
+          "n": 2
+        },
+        "mean_first_output_s": {
+          "mean": 4.261908786254935,
+          "min": 4.251344488836669,
+          "max": 4.2724730836732006,
+          "n": 2
+        },
+        "mean_final_tail_s": {
+          "mean": 0.12027342058678414,
+          "min": 0.10640505133738998,
+          "max": 0.1341417898361783,
+          "n": 2
+        },
+        "max_final_tail_s": {
+          "mean": 0.2015128010087608,
+          "min": 0.14596699698267912,
+          "max": 0.25705860503484246,
+          "n": 2
+        },
+        "queue_wait_max_s": {
+          "mean": 0.08841908453916858,
+          "min": 0.0875387140405337,
+          "max": 0.08929945503780345,
+          "n": 2
+        },
+        "sampled_peak_replay_rss_mib": {
+          "mean": 262.724609375,
+          "min": 262.71875,
+          "max": 262.73046875,
+          "n": 2
+        },
+        "process_peak_rss_mib_including_load_warmup": {
+          "mean": 261.99609375,
+          "min": 261.984375,
+          "max": 262.0078125,
+          "n": 2
+        }
+      }
+    },
+    {
+      "device": "laptop",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "complete_repetitions": 2,
+      "metrics": {
+        "chrf2": {
+          "mean": 50.03521603557181,
+          "min": 50.03521603557181,
+          "max": 50.03521603557181,
+          "n": 2
+        },
+        "comet": {
+          "mean": 0.6064233023645287,
+          "min": 0.6064233023645287,
+          "max": 0.6064233023645287,
+          "n": 2
+        },
+        "wer_pct": {
+          "mean": 26.760563380281692,
+          "min": 26.760563380281692,
+          "max": 26.760563380281692,
+          "n": 2
+        },
+        "rtf_processing": {
+          "mean": 0.1529342621224291,
+          "min": 0.1364564268234949,
+          "max": 0.16941209742136334,
+          "n": 2
+        },
+        "asr_rtf": {
+          "mean": 0.13365134875867635,
+          "min": 0.11806146024412953,
+          "max": 0.1492412372732232,
+          "n": 2
+        },
+        "mt_rtf": {
+          "mean": 0.019258146366969982,
+          "min": 0.018371060673045832,
+          "max": 0.020145232060894133,
+          "n": 2
+        },
+        "longyaal_cu_s": {
+          "mean": 4.179032264566728,
+          "min": 4.179032264566728,
+          "max": 4.179032264566728,
+          "n": 2
+        },
+        "longyaal_ca_s": {
+          "mean": 5.405014657146584,
+          "min": 5.28482571194063,
+          "max": 5.525203602352539,
+          "n": 2
+        },
+        "mean_first_output_s": {
+          "mean": 9.227201773494016,
+          "min": 9.166750009491807,
+          "max": 9.287653537496226,
+          "n": 2
+        },
+        "mean_final_tail_s": {
+          "mean": 0.34569996258223534,
+          "min": 0.329223730164415,
+          "max": 0.36217619500005566,
+          "n": 2
+        },
+        "max_final_tail_s": {
+          "mean": 1.030956547023493,
+          "min": 1.0151028840192566,
+          "max": 1.0468102100277292,
+          "n": 2
+        },
+        "queue_wait_max_s": {
+          "mean": 1.0218616810017238,
+          "min": 1.0062483959919746,
+          "max": 1.037474966011473,
+          "n": 2
+        },
+        "sampled_peak_replay_rss_mib": {
+          "mean": 266.7734375,
+          "min": 265.92578125,
+          "max": 267.62109375,
+          "n": 2
+        },
+        "process_peak_rss_mib_including_load_warmup": {
+          "mean": 266.048828125,
+          "min": 265.34765625,
+          "max": 266.75,
+          "n": 2
+        }
+      }
+    }
+  ]
+}

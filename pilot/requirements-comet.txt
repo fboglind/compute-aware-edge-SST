@@ -1,0 +1,9 @@
+unbabel-comet==2.2.7
+torch==2.8.0+cpu
+transformers==4.57.6
+huggingface-hub==0.36.2
+pytorch-lightning==2.6.6
+torchmetrics==0.10.3
+numpy==1.26.4
+sentencepiece==0.2.2
+sacrebleu==2.6.0

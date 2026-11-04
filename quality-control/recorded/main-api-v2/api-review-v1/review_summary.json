@@ -1,0 +1,211 @@
+{
+  "version": "blinded-mt-review-v1-2026-10-25",
+  "interpretation": "Selected-case model agreement, not accuracy, recall or population error rates",
+  "selection_counts": {
+    "high": 16,
+    "borderline": 8,
+    "unflagged": 6,
+    "diagnostic": 6
+  },
+  "by_group_and_category": [
+    {
+      "group": "high",
+      "category": "meaningful_omission",
+      "selected": 16,
+      "both_flag": 0,
+      "both_unflagged": 14,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 2
+    },
+    {
+      "group": "high",
+      "category": "meaning_change_or_negation",
+      "selected": 16,
+      "both_flag": 3,
+      "both_unflagged": 6,
+      "jev_only": 2,
+      "reviewer_only": 0,
+      "uncertain": 3,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 2
+    },
+    {
+      "group": "high",
+      "category": "entity_or_quantity_error",
+      "selected": 16,
+      "both_flag": 11,
+      "both_unflagged": 0,
+      "jev_only": 3,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 2
+    },
+    {
+      "group": "high",
+      "category": "unsupported_addition",
+      "selected": 16,
+      "both_flag": 0,
+      "both_unflagged": 13,
+      "jev_only": 1,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 2
+    },
+    {
+      "group": "borderline",
+      "category": "meaningful_omission",
+      "selected": 8,
+      "both_flag": 0,
+      "both_unflagged": 5,
+      "jev_only": 0,
+      "reviewer_only": 3,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "borderline",
+      "category": "meaning_change_or_negation",
+      "selected": 8,
+      "both_flag": 3,
+      "both_unflagged": 3,
+      "jev_only": 1,
+      "reviewer_only": 1,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "borderline",
+      "category": "entity_or_quantity_error",
+      "selected": 8,
+      "both_flag": 4,
+      "both_unflagged": 1,
+      "jev_only": 3,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "borderline",
+      "category": "unsupported_addition",
+      "selected": 8,
+      "both_flag": 0,
+      "both_unflagged": 8,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "unflagged",
+      "category": "meaningful_omission",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 6,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "unflagged",
+      "category": "meaning_change_or_negation",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 4,
+      "jev_only": 0,
+      "reviewer_only": 2,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "unflagged",
+      "category": "entity_or_quantity_error",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 6,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "unflagged",
+      "category": "unsupported_addition",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 6,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 0
+    },
+    {
+      "group": "diagnostic",
+      "category": "meaningful_omission",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 5,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 1
+    },
+    {
+      "group": "diagnostic",
+      "category": "meaning_change_or_negation",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 4,
+      "jev_only": 0,
+      "reviewer_only": 1,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 1
+    },
+    {
+      "group": "diagnostic",
+      "category": "entity_or_quantity_error",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 2,
+      "jev_only": 2,
+      "reviewer_only": 0,
+      "uncertain": 1,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 1
+    },
+    {
+      "group": "diagnostic",
+      "category": "unsupported_addition",
+      "selected": 6,
+      "both_flag": 0,
+      "both_unflagged": 5,
+      "jev_only": 0,
+      "reviewer_only": 0,
+      "uncertain": 0,
+      "not_reviewed": 0,
+      "failed_or_interrupted": 1
+    }
+  ],
+  "cost": {
+    "accounted_usd": 0.663747,
+    "reported_usd": 0.590973,
+    "attempts_without_reported_cost": 1
+  },
+  "successful_windows": 33,
+  "selected_windows": 36
+}

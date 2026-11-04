@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-10-11T17:44:24.380367+00:00",
+  "scope": "One reserved MCIF pilot talk; one run per configuration",
+  "dataset_revision": "e24065b919758263cfe5d157057278affe76ea7b",
+  "talk_id": "JhbtCwcsWY",
+  "reference_sha256": {
+    "en": "d2830b2c76362af719c43ed9d23ebc7d505ab40cfd87ed824d6533aed1904713",
+    "de": "b807af170b3f8f02777181bba1930ea73f9e64a47bbd6c3ee847b6e329254100"
+  },
+  "scorer_sha256": "280742b97718794cc91893b3e1a8a17cdd088800323e6b404ea522a53ad469fc",
+  "packages": {
+    "sacrebleu": "2.6.0",
+    "jiwer": "4.0.0",
+    "rapidfuzz": "3.14.6"
+  },
+  "wer_normalization": "Whole talk; collapse whitespace, lowercase, delete Unicode punctuation, split on spaces. No number verbalization or model-specific normalization.",
+  "chrf_unit": "One whole-talk hypothesis/reference pair per run; collapse whitespace, preserve case; character order 6, word order 0, beta 2.",
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+  "limitation": "Pilot diagnostics only. No reference resegmentation, COMET or LongYAAL. Timestamp checks are consistency checks, not validation of the complete latency evaluator.",
+  "runs": [
+    {
+      "run": "pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1",
+      "asr_model": "tiny.en",
+      "chunk_s": 4,
+      "wer_pct": 23.978201634877383,
+      "wer_substitutions": 92,
+      "wer_deletions": 29,
+      "wer_insertions": 55,
+      "wer_reference_words": 734,
+      "whole_talk_chrf2": 63.35558486308106,
+      "rtf_processing": 0.2939764753386847,
+      "mean_lag_after_chunk_end_s": 1.1679400648992935,
+      "queue_wait_max_s": 7.790199924784247e-05,
+      "final_tail_s": 0.8727568299988206,
+      "first_output_s": 5.14851011599967,
+      "sampled_peak_replay_rss_mib": 416.890625,
+      "timestamp_export_checks": "passed; chunk, word and hypothesis clocks agree",
+      "input_sha256": {
+        "transcript.en.txt": "d8547dbaa9f70e1abcfb0c000844bb35cb6325dcbedb169aa5ca4c3999147317",
+        "translation.de.txt": "8119d67cec1c9abb7059e24669c128f7b7a726f3345a650dfcdf8737c2b3886a",
+        "metadata.json": "2d6145a17ed5882842c4ae9012a1b6b4ac446e88efd4da80489d2604fe118bfa",
+        "summary.json": "8f3930af4a2279e9eb62b2d05d7a13a5c528d00c107e7fa6cedf907403fc883c",
+        "chunks.jsonl": "b57c4e8854c26fd0c2305f60ec484ba0a2a312003612d3ad6c0e1b52171557be",
+        "words.jsonl": "cc3a56d5a576f7a9d0ce9cc1dc216d8f7fddd81d1b9b7647d959f6a40d75f258",
+        "hypothesis.jsonl": "3468c5a8d880363ebe922b1022cc7a579077716d02d1415d345ccac6def2e2a0"
+      }
+    },
+    {
+      "run": "pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1",
+      "asr_model": "tiny.en",
+      "chunk_s": 8,
+      "wer_pct": 18.11989100817439,
+      "wer_substitutions": 82,
+      "wer_deletions": 9,
+      "wer_insertions": 42,
+      "wer_reference_words": 734,
+      "whole_talk_chrf2": 66.80649343506785,
+      "rtf_processing": 0.2078895633988739,
+      "mean_lag_after_chunk_end_s": 1.651826134088305,
+      "queue_wait_max_s": 9.553899872116745e-05,
+      "final_tail_s": 1.3050452399990036,
+      "first_output_s": 9.730174954998802,
+      "sampled_peak_replay_rss_mib": 416.6875,
+      "timestamp_export_checks": "passed; chunk, word and hypothesis clocks agree",
+      "input_sha256": {
+        "transcript.en.txt": "dd2d0a886c38cad8c1bedaff2a2e63680b1f2ef12dd91ec256748d61e2480350",
+        "translation.de.txt": "022e3b3aef8d18ad49a8139f15ba41a45a1b4d1f3dc207298f4076226b0ceabf",
+        "metadata.json": "7f0a6d7e5ef64d15e59d15d8ac3e981287d7a74f089cc0c59c8f2ef79a64e12b",
+        "summary.json": "2ad26cbceec1c8208c01ad632036c6c0fcefc52fb747cfe7b822161cbf2da2c3",
+        "chunks.jsonl": "be12293109c737a639894cef28b5276f8b71f1187403170939c0bff63d37703e",
+        "words.jsonl": "8d73f778d0db21347ff85c7326189a8e9156f45044903e2f6b250b8aa1160774",
+        "hypothesis.jsonl": "54df020fe6139991bf6508e5d2326a24e30f53312dbaf559eb7943f5bbe25c8f"
+      }
+    },
+    {
+      "run": "pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1",
+      "asr_model": "base.en",
+      "chunk_s": 4,
+      "wer_pct": 20.708446866485016,
+      "wer_substitutions": 85,
+      "wer_deletions": 15,
+      "wer_insertions": 52,
+      "wer_reference_words": 734,
+      "whole_talk_chrf2": 63.8874173613106,
+      "rtf_processing": 0.49328837572208295,
+      "mean_lag_after_chunk_end_s": 1.9659335241781428,
+      "queue_wait_max_s": 0.5573871639995787,
+      "final_tail_s": 2.106255270001043,
+      "first_output_s": 5.773284246000912,
+      "sampled_peak_replay_rss_mib": 496.703125,
+      "timestamp_export_checks": "passed; chunk, word and hypothesis clocks agree",
+      "input_sha256": {
+        "transcript.en.txt": "cfad69731dbab6dc80bf070a1baf9350d5d59d8c6f684e5a2fa22429a85d4531",
+        "translation.de.txt": "454469a97eb50036e6a7fa9ce4b69711ff8a68193883f5191d7dceef6260c8dc",
+        "metadata.json": "10708144aa0ee39dc6a07988adcf90f9762b3f712434ae1c2a611ae680dba37e",
+        "summary.json": "69fe4e7032cd75bea342550cce0fcb294152eacda12d490f8b53bfaed1e69d85",
+        "chunks.jsonl": "3c662be544718875a22e13e67b7977ed08aa8badef6604dc8586a536f8668dde",
+        "words.jsonl": "e4ebb9592d0b29ab007540821e6dcd4427b28d2ff33c385048185c6caf883a4b",
+        "hypothesis.jsonl": "e36bf1f4ba497d2ffb57bd55fda411e8acaf93b71433490d6625f17e3d16cdd4"
+      }
+    },
+    {
+      "run": "pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1",
+      "asr_model": "base.en",
+      "chunk_s": 8,
+      "wer_pct": 14.713896457765669,
+      "wer_substitutions": 61,
+      "wer_deletions": 15,
+      "wer_insertions": 32,
+      "wer_reference_words": 734,
+      "whole_talk_chrf2": 66.83571961865293,
+      "rtf_processing": 0.31627862096883413,
+      "mean_lag_after_chunk_end_s": 2.513015038444723,
+      "queue_wait_max_s": 8.067499948083423e-05,
+      "final_tail_s": 2.1630407210001295,
+      "first_output_s": 10.46177369399993,
+      "sampled_peak_replay_rss_mib": 497.078125,
+      "timestamp_export_checks": "passed; chunk, word and hypothesis clocks agree",
+      "input_sha256": {
+        "transcript.en.txt": "dcc8d867c0c587baace7b300623b6a4760123402c58846f8812ca32b23831ef5",
+        "translation.de.txt": "6d3f256b9a3973784fefca0fe3bc29e880d3a4ba2084ac08eb6312a2cb0a7605",
+        "metadata.json": "64122130efda42d125316d3c9bb865a8117e62c1e6cf48a1e353f8d3408f9d08",
+        "summary.json": "164c730a0de922fa99459a0011e38c4534967aad3647fa1001ac37f22e3fd622",
+        "chunks.jsonl": "2566265e0494b396b5897979f2987163c5f4173a4733bfabeb6f6a6aaf7250af",
+        "words.jsonl": "cd230d8b7ea00b5d5cb7a99916b190e8e602ed5356948af355a43b8bc1995453",
+        "hypothesis.jsonl": "7badde00a9cae69a90856091035f16836e3bb0e25a7d1ac8c33b2052771e28be"
+      }
+    }
+  ]
+}

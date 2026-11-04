@@ -1,0 +1,12 @@
+| Device | ASR / chunk | First (s) | Tail max (s) | Queue max (s) | RSS (MiB) |
+| --- | --- | --- | --- | --- | --- |
+| pi | tiny.en / 4s | 5.37 | 1.98 | 8.85 | 461.9 |
+| pi | tiny.en / 8s | 9.92 | 2.63 | 1.97 | 419.5 |
+| pi | base.en / 4s | 6.16 | 3.40 | 1.95 | 506.1 |
+| pi | base.en / 8s | 10.89 | 4.30 | 6.31 | 532.2 |
+| laptop | tiny.en / 4s | 4.40 | 0.51 | 0.26 | 446.7 |
+| laptop | tiny.en / 8s | 8.49 | 0.64 | 0.39 | 417.7 |
+| laptop | base.en / 4s | 4.69 | 1.09 | 0.61 | 480.5 |
+| laptop | base.en / 8s | 8.80 | 1.22 | 0.75 | 526.6 |
+
+First is the mean first-output time from recording onset. Tail and queue values are maxima across all 12 runs per configuration, including shorter final chunks. RSS is the maximum sampled replay process RSS; resources were sampled every five seconds plus start/end, so brief memory peaks may be missed. Loading and warm-up are outside replay timing.

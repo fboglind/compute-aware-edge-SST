@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "provenance": "Exact model manifests from the four completed Raspberry Pi pilot runs, 11 October 2026.",
+  "models": {
+    "asr-tiny.en": {
+      "repo": "Systran/faster-whisper-tiny.en",
+      "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+      "kind": "preconverted ASR; runtime INT8",
+      "created_utc": "2026-10-11T12:59:42.196374+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "14b1b421a90349bc551b881461426b561a874049cb9e4c4864f2ca384f6a7cc5",
+        "model.bin": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+        "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    },
+    "asr-base.en": {
+      "repo": "Systran/faster-whisper-base.en",
+      "revision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+      "kind": "preconverted ASR; runtime INT8",
+      "created_utc": "2026-10-11T15:21:12.876746+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb",
+        "model.bin": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+        "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    },
+    "mt-en-de-int8": {
+      "repo": "Helsinki-NLP/opus-mt-en-de",
+      "revision": "6183067f769a302e3861815543b9f312c71b0ca4",
+      "kind": "Marian converted to INT8",
+      "created_utc": "2026-10-11T13:00:25.462377+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "8f6496adfc930cbfecbe8281112197705c488fab47d34b4829b06d7f478909af",
+        "model.bin": "3cad348e65aa400a0fce83b2b89a876030092e108ebc5a824ac1def6c76957b2",
+        "shared_vocabulary.json": "fa4c8d666c582ad39892a2ae5d4ded1b0ddde4b49dc784a7fcbd73940f9fa13e",
+        "tokenizer/source.spm": "678f2a1177d8389f67b66299762dcc4fc567e89b07e212ba91b0c56daecf47ce",
+        "tokenizer/special_tokens_map.json": "5e4d1f5e759d74cb1c2fe1d165cfc62b5237aa904de759380cd6f43042eec723",
+        "tokenizer/target.spm": "bbd1f495eea99c8e21ae086d9146e0fa7b096c3dfdd9ba07ab8b631889df5c9b",
+        "tokenizer/tokenizer_config.json": "bcd3dd19e2b329e9da975e90c682eab3b4aa99275d8f64008c2c8e085c6b388a",
+        "tokenizer/vocab.json": "d5acea957b265a78554999144459c5e391e0df525864edc8287bc090290baa44"
+      }
+    }
+  },
+  "runner_sha256": {
+    "run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+    "stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+  },
+  "reference_input_sha256": {
+    "audio-segments.yaml": "d50212b4bac17e42deffb832b766497f3a88fbaed261ccafd8fffa71a899e3a0",
+    "en.txt": "5cb82b2f0336eece77b3122da6c9540d33caaf779ec825603d18d49a09dc6570",
+    "de.txt": "f4a4047634762a0be3321716110a4c9c8875f622ce8001be9f43fe764952b8e6"
+  },
+  "pilot": {
+    "role": "research pilot; exclude this entire talk from main evaluation",
+    "dataset": "FBK-MT/MCIF",
+    "dataset_revision": "e24065b919758263cfe5d157057278affe76ea7b",
+    "dataset_card": "https://huggingface.co/datasets/FBK-MT/MCIF",
+    "dataset_testset_name": "MCIF1.2",
+    "track": "long",
+    "talk_id": "JhbtCwcsWY",
+    "talk_topic": "DEPLAIN: German text simplification corpus",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "MCIF dataset by FBK-MT and the MCIF authors; original talk retained unchanged.",
+    "retrieved_utc": "2026-10-11",
+    "audio_file": "JhbtCwcsWY.wav",
+    "audio_duration_s": 357.540875,
+    "audio_frames": 5720654,
+    "audio_format": {
+      "channels": 1,
+      "sample_rate_hz": 16000,
+      "sample_width_bytes": 2,
+      "encoding": "signed 16-bit PCM"
+    },
+    "source_interval_s": [
+      0.0,
+      357.540875
+    ],
+    "audio_processing": "None: complete original WAV copied byte-for-byte; no trimming, resampling, joining, or silence removal.",
+    "reference_processing": "Selected English ASR and German TRANS XML records by exact audio_path; extracted reference text, stripped outer whitespace, and added a final newline. No text corrections or translations generated.",
+    "references": {
+      "en": {
+        "file": "reference.en.txt",
+        "sample_id": "292",
+        "iid": "ASR_15",
+        "task": "ASR",
+        "matched_by": "audio_path",
+        "words_whitespace": 734,
+        "sentences_timed": false
+      },
+      "de": {
+        "file": "reference.de.txt",
+        "sample_id": "3",
+        "iid": "TRANS_15",
+        "task": "TRANS",
+        "matched_by": "audio_path",
+        "words_whitespace": 668,
+        "sentences_timed": false
+      }
+    },
+    "upstream_files": [
+      {
+        "repo_path": "MCIF_DATA/LONG_AUDIOS/JhbtCwcsWY.wav",
+        "url": "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/e24065b919758263cfe5d157057278affe76ea7b/MCIF_DATA/LONG_AUDIOS/JhbtCwcsWY.wav",
+        "bytes": 11441514,
+        "sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9"
+      },
+      {
+        "repo_path": "MCIF.long.en.ref.xml.gz",
+        "url": "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/e24065b919758263cfe5d157057278affe76ea7b/MCIF.long.en.ref.xml.gz",
+        "bytes": 89618,
+        "sha256": "15bcc57e9ec3d223cbaa89b998480e723f24d525529b578bdf81c648bf4e45aa"
+      },
+      {
+        "repo_path": "MCIF.long.de.ref.xml.gz",
+        "url": "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/e24065b919758263cfe5d157057278affe76ea7b/MCIF.long.de.ref.xml.gz",
+        "bytes": 143250,
+        "sha256": "b99b2774d3a2bf59204670e9a3ead79e853ee8043000c43878c6bfd79fcd7040"
+      }
+    ],
+    "reference_timing_available": false,
+    "limitations": [
+      "No sentence timing YAML is included. The public long reference XML contains no sentence timestamps.",
+      "This package alone is insufficient for validated LongYAAL or reference-resegmented quality evaluation. Obtain and validate official matching timing files before main evaluation.",
+      "Do not treat the dataset split name test as your own experimental split; this talk is reserved for pilot tuning."
+    ],
+    "prepared_files": {
+      "JhbtCwcsWY.wav": {
+        "bytes": 11441514,
+        "sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9"
+      },
+      "reference.de.txt": {
+        "bytes": 5042,
+        "sha256": "b807af170b3f8f02777181bba1930ea73f9e64a47bbd6c3ee847b6e329254100"
+      },
+      "reference.en.txt": {
+        "bytes": 4429,
+        "sha256": "d2830b2c76362af719c43ed9d23ebc7d505ab40cfd87ed824d6533aed1904713"
+      }
+    }
+  }
+}

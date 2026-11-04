@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "device": "laptop",
+  "manifest_id": "79a67c7f1c0089f27af2f768cbaf4a87372cf47ba29a6db823e4f45ef65d1a8a",
+  "source_sha256": {
+    "common.py": "05e110a665ab993b4bfd5fc7059847e497506fffe9e97142a65a190d9170ab99",
+    "evaluate_main.py": "175c5c2ad2eb49de1c2e06d423e64a3e78431b1c8c5de78ad10d2a17545517b1",
+    "expected-models.json": "ad07cd522e77715690e57c251e854cb7b99bb6f020dff1da152e794bf730f244",
+    "experiment.py": "5afbc8c58ea275ee89ab8344f50071b0a5c8693f5f6d726793f39438183060ec",
+    "pilot_audit.py": "280742b97718794cc91893b3e1a8a17cdd088800323e6b404ea522a53ad469fc",
+    "prepare_comet.py": "6f5281bc7cae66f337c7e5c0d79a4ba964b1cfc7d0c16b04102daad4d20e48b6",
+    "requirements-comet.txt": "c5be5e53b4d129966bc62ecd333b8fefb0bbf92b70197fb49d810b4919ddb0fb",
+    "requirements-evaluation.txt": "7e1019e986d4e4d8fa85866dcfb871f712933ed8d7c842bf75da841f102fcc48",
+    "requirements-inference.txt": "4623e1f6fc6c59cb3c90fda9c6d9e28049b6db385e3b62ead8568f82f1467156",
+    "runner/run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+    "runner/stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c",
+    "runner/test_timing.py": "b0d19e116db9e751c8275ae799defc7117ecd042f811b9d144794762010501ba",
+    "score_comet_main.py": "8736005a52c90d331bf0a5a13195c8487a7320c6df00d2f9fe8b7e0a51d32b6c",
+    "selection.json": "4d803d21975eae5bbbdf8eb795b3710772991e56bff988e6dfc78a42c1e91ee8",
+    "summarize_main.py": "7f5e9c2b835d34f9662cbdabfbd945de648b09a499dc3ab7fbeb226d7c813170",
+    "test_main.py": "c547a3c95f40625c7783fc573fe0913396b82c81456a721a392a7840d56864c6"
+  },
+  "jobs": [
+    {
+      "id": "rxrToXvRyM-base-4s-r1",
+      "talk": "rxrToXvRyM",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 1
+    },
+    {
+      "id": "EqmWoxNDIr-base-4s-r1",
+      "talk": "EqmWoxNDIr",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 2
+    },
+    {
+      "id": "UOlPKyCVgg-base-4s-r1",
+      "talk": "UOlPKyCVgg",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 3
+    },
+    {
+      "id": "krJSAnVcGR-base-4s-r1",
+      "talk": "krJSAnVcGR",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 4
+    },
+    {
+      "id": "ERmKpJPPDc-base-4s-r1",
+      "talk": "ERmKpJPPDc",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 5
+    },
+    {
+      "id": "xhjBHGVOyQ-base-4s-r1",
+      "talk": "xhjBHGVOyQ",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 6
+    },
+    {
+      "id": "rxrToXvRyM-base-8s-r1",
+      "talk": "rxrToXvRyM",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 7
+    },
+    {
+      "id": "EqmWoxNDIr-base-8s-r1",
+      "talk": "EqmWoxNDIr",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 8
+    },
+    {
+      "id": "UOlPKyCVgg-base-8s-r1",
+      "talk": "UOlPKyCVgg",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 9
+    },
+    {
+      "id": "krJSAnVcGR-base-8s-r1",
+      "talk": "krJSAnVcGR",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 10
+    },
+    {
+      "id": "ERmKpJPPDc-base-8s-r1",
+      "talk": "ERmKpJPPDc",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 11
+    },
+    {
+      "id": "xhjBHGVOyQ-base-8s-r1",
+      "talk": "xhjBHGVOyQ",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 12
+    },
+    {
+      "id": "rxrToXvRyM-tiny-4s-r1",
+      "talk": "rxrToXvRyM",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 13
+    },
+    {
+      "id": "EqmWoxNDIr-tiny-4s-r1",
+      "talk": "EqmWoxNDIr",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 14
+    },
+    {
+      "id": "UOlPKyCVgg-tiny-4s-r1",
+      "talk": "UOlPKyCVgg",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 15
+    },
+    {
+      "id": "krJSAnVcGR-tiny-4s-r1",
+      "talk": "krJSAnVcGR",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 16
+    },
+    {
+      "id": "ERmKpJPPDc-tiny-4s-r1",
+      "talk": "ERmKpJPPDc",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 17
+    },
+    {
+      "id": "xhjBHGVOyQ-tiny-4s-r1",
+      "talk": "xhjBHGVOyQ",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 18
+    },
+    {
+      "id": "rxrToXvRyM-tiny-8s-r1",
+      "talk": "rxrToXvRyM",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 19
+    },
+    {
+      "id": "EqmWoxNDIr-tiny-8s-r1",
+      "talk": "EqmWoxNDIr",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 20
+    },
+    {
+      "id": "UOlPKyCVgg-tiny-8s-r1",
+      "talk": "UOlPKyCVgg",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 21
+    },
+    {
+      "id": "krJSAnVcGR-tiny-8s-r1",
+      "talk": "krJSAnVcGR",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 22
+    },
+    {
+      "id": "ERmKpJPPDc-tiny-8s-r1",
+      "talk": "ERmKpJPPDc",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 23
+    },
+    {
+      "id": "xhjBHGVOyQ-tiny-8s-r1",
+      "talk": "xhjBHGVOyQ",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "laptop",
+      "order": 24
+    },
+    {
+      "id": "xhjBHGVOyQ-tiny-8s-r2",
+      "talk": "xhjBHGVOyQ",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 25
+    },
+    {
+      "id": "ERmKpJPPDc-tiny-8s-r2",
+      "talk": "ERmKpJPPDc",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 26
+    },
+    {
+      "id": "krJSAnVcGR-tiny-8s-r2",
+      "talk": "krJSAnVcGR",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 27
+    },
+    {
+      "id": "UOlPKyCVgg-tiny-8s-r2",
+      "talk": "UOlPKyCVgg",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 28
+    },
+    {
+      "id": "EqmWoxNDIr-tiny-8s-r2",
+      "talk": "EqmWoxNDIr",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 29
+    },
+    {
+      "id": "rxrToXvRyM-tiny-8s-r2",
+      "talk": "rxrToXvRyM",
+      "asr": "tiny.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 30
+    },
+    {
+      "id": "xhjBHGVOyQ-tiny-4s-r2",
+      "talk": "xhjBHGVOyQ",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 31
+    },
+    {
+      "id": "ERmKpJPPDc-tiny-4s-r2",
+      "talk": "ERmKpJPPDc",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 32
+    },
+    {
+      "id": "krJSAnVcGR-tiny-4s-r2",
+      "talk": "krJSAnVcGR",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 33
+    },
+    {
+      "id": "UOlPKyCVgg-tiny-4s-r2",
+      "talk": "UOlPKyCVgg",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 34
+    },
+    {
+      "id": "EqmWoxNDIr-tiny-4s-r2",
+      "talk": "EqmWoxNDIr",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 35
+    },
+    {
+      "id": "rxrToXvRyM-tiny-4s-r2",
+      "talk": "rxrToXvRyM",
+      "asr": "tiny.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 36
+    },
+    {
+      "id": "xhjBHGVOyQ-base-8s-r2",
+      "talk": "xhjBHGVOyQ",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 37
+    },
+    {
+      "id": "ERmKpJPPDc-base-8s-r2",
+      "talk": "ERmKpJPPDc",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 38
+    },
+    {
+      "id": "krJSAnVcGR-base-8s-r2",
+      "talk": "krJSAnVcGR",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 39
+    },
+    {
+      "id": "UOlPKyCVgg-base-8s-r2",
+      "talk": "UOlPKyCVgg",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 40
+    },
+    {
+      "id": "EqmWoxNDIr-base-8s-r2",
+      "talk": "EqmWoxNDIr",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 41
+    },
+    {
+      "id": "rxrToXvRyM-base-8s-r2",
+      "talk": "rxrToXvRyM",
+      "asr": "base.en",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 42
+    },
+    {
+      "id": "xhjBHGVOyQ-base-4s-r2",
+      "talk": "xhjBHGVOyQ",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 43
+    },
+    {
+      "id": "ERmKpJPPDc-base-4s-r2",
+      "talk": "ERmKpJPPDc",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 44
+    },
+    {
+      "id": "krJSAnVcGR-base-4s-r2",
+      "talk": "krJSAnVcGR",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 45
+    },
+    {
+      "id": "UOlPKyCVgg-base-4s-r2",
+      "talk": "UOlPKyCVgg",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 46
+    },
+    {
+      "id": "EqmWoxNDIr-base-4s-r2",
+      "talk": "EqmWoxNDIr",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 47
+    },
+    {
+      "id": "rxrToXvRyM-base-4s-r2",
+      "talk": "rxrToXvRyM",
+      "asr": "base.en",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "laptop",
+      "order": 48
+    }
+  ],
+  "settings": {
+    "threads": 4,
+    "asr_beam": 1,
+    "mt_beam": 4,
+    "effective_compute_type": "int8_float32"
+  },
+  "plan_id": "ea77cfa2ee00a2886d6717a1985df4de0609ea113178ea4d42a50098b72e5c81"
+}

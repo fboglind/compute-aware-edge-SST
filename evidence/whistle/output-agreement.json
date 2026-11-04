@@ -1,0 +1,602 @@
+[
+  {
+    "talk": "ERmKpJPPDc",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/ERmKpJPPDc-whistle-4s-r1",
+        "b": "pi/ERmKpJPPDc-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-4s-r1",
+        "b": "laptop/ERmKpJPPDc-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-4s-r1",
+        "b": "laptop/ERmKpJPPDc-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-4s-r2",
+        "b": "laptop/ERmKpJPPDc-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-4s-r2",
+        "b": "laptop/ERmKpJPPDc-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/ERmKpJPPDc-whistle-4s-r1",
+        "b": "laptop/ERmKpJPPDc-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "ERmKpJPPDc",
+    "asr": "whistle",
+    "chunk_s": 8,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/ERmKpJPPDc-whistle-8s-r1",
+        "b": "pi/ERmKpJPPDc-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-8s-r1",
+        "b": "laptop/ERmKpJPPDc-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-8s-r1",
+        "b": "laptop/ERmKpJPPDc-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-8s-r2",
+        "b": "laptop/ERmKpJPPDc-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/ERmKpJPPDc-whistle-8s-r2",
+        "b": "laptop/ERmKpJPPDc-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/ERmKpJPPDc-whistle-8s-r1",
+        "b": "laptop/ERmKpJPPDc-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "EqmWoxNDIr",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/EqmWoxNDIr-whistle-4s-r1",
+        "b": "pi/EqmWoxNDIr-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-4s-r1",
+        "b": "laptop/EqmWoxNDIr-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-4s-r1",
+        "b": "laptop/EqmWoxNDIr-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-4s-r2",
+        "b": "laptop/EqmWoxNDIr-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-4s-r2",
+        "b": "laptop/EqmWoxNDIr-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/EqmWoxNDIr-whistle-4s-r1",
+        "b": "laptop/EqmWoxNDIr-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "EqmWoxNDIr",
+    "asr": "whistle",
+    "chunk_s": 8,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/EqmWoxNDIr-whistle-8s-r1",
+        "b": "pi/EqmWoxNDIr-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-8s-r1",
+        "b": "laptop/EqmWoxNDIr-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-8s-r1",
+        "b": "laptop/EqmWoxNDIr-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-8s-r2",
+        "b": "laptop/EqmWoxNDIr-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/EqmWoxNDIr-whistle-8s-r2",
+        "b": "laptop/EqmWoxNDIr-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/EqmWoxNDIr-whistle-8s-r1",
+        "b": "laptop/EqmWoxNDIr-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "UOlPKyCVgg",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/UOlPKyCVgg-whistle-4s-r1",
+        "b": "pi/UOlPKyCVgg-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-4s-r1",
+        "b": "laptop/UOlPKyCVgg-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-4s-r1",
+        "b": "laptop/UOlPKyCVgg-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-4s-r2",
+        "b": "laptop/UOlPKyCVgg-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-4s-r2",
+        "b": "laptop/UOlPKyCVgg-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/UOlPKyCVgg-whistle-4s-r1",
+        "b": "laptop/UOlPKyCVgg-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "UOlPKyCVgg",
+    "asr": "whistle",
+    "chunk_s": 8,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/UOlPKyCVgg-whistle-8s-r1",
+        "b": "pi/UOlPKyCVgg-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-8s-r1",
+        "b": "laptop/UOlPKyCVgg-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-8s-r1",
+        "b": "laptop/UOlPKyCVgg-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-8s-r2",
+        "b": "laptop/UOlPKyCVgg-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/UOlPKyCVgg-whistle-8s-r2",
+        "b": "laptop/UOlPKyCVgg-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/UOlPKyCVgg-whistle-8s-r1",
+        "b": "laptop/UOlPKyCVgg-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "krJSAnVcGR",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/krJSAnVcGR-whistle-4s-r1",
+        "b": "pi/krJSAnVcGR-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-4s-r1",
+        "b": "laptop/krJSAnVcGR-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-4s-r1",
+        "b": "laptop/krJSAnVcGR-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-4s-r2",
+        "b": "laptop/krJSAnVcGR-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-4s-r2",
+        "b": "laptop/krJSAnVcGR-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/krJSAnVcGR-whistle-4s-r1",
+        "b": "laptop/krJSAnVcGR-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "krJSAnVcGR",
+    "asr": "whistle",
+    "chunk_s": 8,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/krJSAnVcGR-whistle-8s-r1",
+        "b": "pi/krJSAnVcGR-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-8s-r1",
+        "b": "laptop/krJSAnVcGR-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-8s-r1",
+        "b": "laptop/krJSAnVcGR-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-8s-r2",
+        "b": "laptop/krJSAnVcGR-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/krJSAnVcGR-whistle-8s-r2",
+        "b": "laptop/krJSAnVcGR-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/krJSAnVcGR-whistle-8s-r1",
+        "b": "laptop/krJSAnVcGR-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "rxrToXvRyM",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/rxrToXvRyM-whistle-4s-r1",
+        "b": "pi/rxrToXvRyM-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-4s-r1",
+        "b": "laptop/rxrToXvRyM-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-4s-r1",
+        "b": "laptop/rxrToXvRyM-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-4s-r2",
+        "b": "laptop/rxrToXvRyM-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-4s-r2",
+        "b": "laptop/rxrToXvRyM-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/rxrToXvRyM-whistle-4s-r1",
+        "b": "laptop/rxrToXvRyM-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "rxrToXvRyM",
+    "asr": "whistle",
+    "chunk_s": 8,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/rxrToXvRyM-whistle-8s-r1",
+        "b": "pi/rxrToXvRyM-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-8s-r1",
+        "b": "laptop/rxrToXvRyM-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-8s-r1",
+        "b": "laptop/rxrToXvRyM-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-8s-r2",
+        "b": "laptop/rxrToXvRyM-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/rxrToXvRyM-whistle-8s-r2",
+        "b": "laptop/rxrToXvRyM-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/rxrToXvRyM-whistle-8s-r1",
+        "b": "laptop/rxrToXvRyM-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "xhjBHGVOyQ",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-4s-r1",
+        "b": "pi/xhjBHGVOyQ-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-4s-r1",
+        "b": "laptop/xhjBHGVOyQ-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-4s-r1",
+        "b": "laptop/xhjBHGVOyQ-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-4s-r2",
+        "b": "laptop/xhjBHGVOyQ-whistle-4s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-4s-r2",
+        "b": "laptop/xhjBHGVOyQ-whistle-4s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/xhjBHGVOyQ-whistle-4s-r1",
+        "b": "laptop/xhjBHGVOyQ-whistle-4s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  },
+  {
+    "talk": "xhjBHGVOyQ",
+    "asr": "whistle",
+    "chunk_s": 8,
+    "runs_present": 4,
+    "comparisons": [
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-8s-r1",
+        "b": "pi/xhjBHGVOyQ-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-8s-r1",
+        "b": "laptop/xhjBHGVOyQ-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-8s-r1",
+        "b": "laptop/xhjBHGVOyQ-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-8s-r2",
+        "b": "laptop/xhjBHGVOyQ-whistle-8s-r1",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "pi/xhjBHGVOyQ-whistle-8s-r2",
+        "b": "laptop/xhjBHGVOyQ-whistle-8s-r2",
+        "same_asr": false,
+        "same_translation": false,
+        "same_cu_schedule": false
+      },
+      {
+        "a": "laptop/xhjBHGVOyQ-whistle-8s-r1",
+        "b": "laptop/xhjBHGVOyQ-whistle-8s-r2",
+        "same_asr": true,
+        "same_translation": true,
+        "same_cu_schedule": true
+      }
+    ]
+  }
+]

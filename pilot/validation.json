@@ -1,0 +1,98 @@
+{
+  "mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1": {
+    "segments": 39,
+    "output_words_preserved": 708,
+    "empty_predictions": 0,
+    "timestamp_roundtrip": "passed",
+    "source_length_ms": 357540.875,
+    "upstream_cutoff_ms": 357298.0,
+    "cu": {
+      "longyaal_ms": 2136.4171010679192,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 2136.4171010679192
+    },
+    "ca": {
+      "longyaal_ms": 3333.573046901228,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 3333.573046901228
+    }
+  },
+  "mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1": {
+    "segments": 39,
+    "output_words_preserved": 709,
+    "empty_predictions": 0,
+    "timestamp_roundtrip": "passed",
+    "source_length_ms": 357540.875,
+    "upstream_cutoff_ms": 357298.0,
+    "cu": {
+      "longyaal_ms": 3969.4444669936474,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 3969.4444669936474
+    },
+    "ca": {
+      "longyaal_ms": 5662.253162020579,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 5662.253162020579
+    }
+  },
+  "mcif-JhbtCwcsWY-base-4s-mtbeam4-r1": {
+    "segments": 39,
+    "output_words_preserved": 705,
+    "empty_predictions": 0,
+    "timestamp_roundtrip": "passed",
+    "source_length_ms": 357540.875,
+    "upstream_cutoff_ms": 357298.0,
+    "cu": {
+      "longyaal_ms": 1995.2470660029264,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 1995.2470660029264
+    },
+    "ca": {
+      "longyaal_ms": 3962.153463289444,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 3962.153463289444
+    }
+  },
+  "mcif-JhbtCwcsWY-base-8s-mtbeam4-r1": {
+    "segments": 39,
+    "output_words_preserved": 692,
+    "empty_predictions": 0,
+    "timestamp_roundtrip": "passed",
+    "source_length_ms": 357540.875,
+    "upstream_cutoff_ms": 357298.0,
+    "cu": {
+      "longyaal_ms": 3977.836075373938,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 3977.836075373938
+    },
+    "ca": {
+      "longyaal_ms": 6544.699584121739,
+      "contributing_segments": 38,
+      "excluded_segment_indices": [
+        38
+      ],
+      "full_wav_cutoff_longyaal_ms": 6544.699584121739
+    }
+  }
+}

@@ -1,0 +1,32 @@
+"Hi, I am Yanis Labrak and I will present you our works on ""DrBERT: A Robust Pre-trained Model in French for Biomedical and Clinical Domains.""
+In this presentation, we first talk about language modeling in healthcare.
+Then we will present the main contribution of our article.
+We introduce the first biomedical model in French named DrBERT, which is based on RoBERTa and trained on NACHOS, which is a data set of medical crawled data from the web.
+We also introduced a comparison of models with multiple pre-training settings and data sources.
+Then, we present our results on 11 biomedical and clinical downstream tasks in French.
+And finally, we conclude about the experiments and give you more details about how to access those models.
+Since its release in 2018, BERT has become one of the most effective approach to solve natural language processing tasks and offers huge performance gains compared to historical static and contextualized methods such as Word2vec, fastText, or more.
+Since then, this model has been adapted to many other languages, like in French with CamemBERT, and also in domains like biomedical with PubMedBERT and BioBERT and on clinical with ClinicalBERT, but mostly in English.
+Specialized models for other languages are scarce and are often based on continual pre-training due to the lack of in-domain data.
+However, French didn't have any open source model for biomedical until now.
+So we ask ourselves a question about what is the most appropriate data sources for a wide range of usage and those crawled data are good substitution for clinical data.
+To answer this question, we compare DrBERT with our ChuBERT model, which is based on anonymized data obtained from the Nantes University Hospital data warehouse.
+Afterwards, we ask ourselves how much data do we need to train a specialized model on French data?
+Is it 4 gigabytes, 8 gigabytes, or more?
+To answer this question, we first train and compare four from-scratch models: a first version of DrBERT, with 7 GB of NACHOS; a second version of 4 GB of set of NACHOS; a first version of ChuBERT, which is a clinical model with 4 GB of sentences taken from clinical notes; and a final version of ChuBERT with a mix of 4 GB of set of NACHOS and 4 GB of clinical notes.
+In addition to this comparison, we introduced three models trained on continual pre-training to analyze the impact of pre-training strategy.
+One based on the weight of CamemBERT and trained on a 4 GB set of NACHOS.
+Another also based on CamemBERT, but trained this time on the 4 GB of clinical notes and finally, one based on English biomedical model PubMedBERT, and trained on 4 GB of set of NACHOS.
+In total, we have seven models.
+To evaluate our seven models, we gather data for public and private downstream tasks such as named entity recognition, classification, part-of-speech tagging, and question answering.
+These models are compared to six baseline models which are CamemBERT OSCAR 138 GB, CamemBERT OSCAR 4 GB, CamemBERT CCNET 4 GB, PubMedBERT, BioBERT, and ClinicalBERT.
+The evaluation highlights that models performed best on the task with data of the same nature as those on which the model has been trained.
+However, we can observe that data from heterogeneous sources appear to be more versatile.
+We also observe that using more data translated to better performance.
+Overall, from-scratch pre-training seems to obtain higher performance on most of the tasks.
+However, our experiment on control pre-training using the weight and tokenization of CamemBERT trained on the four GB subset of NACHOS showed comparable results to those obtained with DrBERT 4 GB from-scratch.
+Which is not the case for the model based on CamemBERT weights and tokenizer, which suffer from stability issues.
+Finally, as a conclusion our proper system offered better performance on nine of the 11 downstream tasks and surpassed globally the result of the generic model, here CamemBERT.
+We are also observing that more specialized data is better, but it doesn't scale well.
+All the pre-trained model obtained from NACHOS are freely available on Hugging Face, and under the MIT license, and all the training scripts are on our GitHub repository.
+So thank you for this presentation, and we are looking forward to exchange at the poster session in Toronto."

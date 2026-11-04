@@ -1,0 +1,24 @@
+{
+  "experiment": "Whistle supplementary cascade",
+  "closed_on": "2026-10-26",
+  "status": "completed",
+  "retained_successful_jobs": 48,
+  "laptop": 24,
+  "pi": 24,
+  "excluded_successful_jobs": [],
+  "reruns_required_for_this_closure": false,
+  "evaluation_scope": "Automated evaluation only; no Jev, API reviewer, or manual translation QC.",
+  "main_experiment_modified": false,
+  "deviations": [
+    {
+      "job": "laptop/rxrToXvRyM-whistle-8s-r1",
+      "finding": "AC/online was 0 at job start.",
+      "disposition": "Retain in the primary supplementary summaries; document power-condition deviation.",
+      "causal_status": "May contribute to slow first recording; not established as the cause."
+    }
+  ],
+  "unresolved_observations": [
+    "High Pi MT processing time relative to main experiment.",
+    "Higher laptop Whistle ASR RTF for 8-second than 4-second chunks."
+  ]
+}

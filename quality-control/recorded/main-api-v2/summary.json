@@ -1,0 +1,3196 @@
+{
+  "created_utc": "2026-10-23T16:07:04.582895+00:00",
+  "scope": "Six-talk main experiment; one text-identical repetition retained per device/configuration; MT fidelity relative to ASR",
+  "label_source": "API model judgments; no expert German validation",
+  "time_paired": true,
+  "selection": {
+    "method": {
+      "method": "lowest SHA256 of canonical seed/passage_id; same passages for all configs",
+      "passages_per_talk": 2,
+      "seed": 20261022
+    },
+    "inventory": 696,
+    "review_subset": 96,
+    "judging": "Default judge processes first three selected windows; --limit and --full explicitly change this."
+  },
+  "counts": {
+    "windows": 696,
+    "review_selected": 96,
+    "successful": 102,
+    "failed": 0,
+    "not_judged": 594,
+    "skipped_budget": 0,
+    "statuses": {
+      "not_judged": 594,
+      "ok": 102
+    },
+    "processed_rate": {
+      "numerator": 102,
+      "denominator": 696,
+      "value": 0.14655172413793102
+    },
+    "success_rate": {
+      "numerator": 102,
+      "denominator": 696,
+      "value": 0.14655172413793102
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 696,
+      "value": 0.0
+    },
+    "not_judged_rate": {
+      "numerator": 594,
+      "denominator": 696,
+      "value": 0.853448275862069
+    },
+    "skipped_budget_rate": {
+      "numerator": 0,
+      "denominator": 696,
+      "value": 0.0
+    },
+    "thresholds": {
+      "0.5": {
+        "candidate_review_rate": {
+          "numerator": 85,
+          "denominator": 102,
+          "value": 0.8333333333333334
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 18,
+            "denominator": 102,
+            "value": 0.17647058823529413
+          },
+          "entity_or_quantity_error": {
+            "numerator": 83,
+            "denominator": 102,
+            "value": 0.8137254901960784
+          },
+          "unsupported_addition": {
+            "numerator": 1,
+            "denominator": 102,
+            "value": 0.00980392156862745
+          }
+        }
+      },
+      "0.7": {
+        "candidate_review_rate": {
+          "numerator": 53,
+          "denominator": 102,
+          "value": 0.5196078431372549
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 1,
+            "denominator": 102,
+            "value": 0.00980392156862745
+          },
+          "entity_or_quantity_error": {
+            "numerator": 53,
+            "denominator": 102,
+            "value": 0.5196078431372549
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          }
+        }
+      },
+      "0.9": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 102,
+          "value": 0.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 102,
+            "value": 0.0
+          }
+        }
+      }
+    }
+  },
+  "by_configuration": {
+    "laptop/base.en/4s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 75,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 75,
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 75,
+        "denominator": 87,
+        "value": 0.8620689655172413
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 2,
+              "denominator": 12,
+              "value": 0.16666666666666666
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 5,
+            "denominator": 12,
+            "value": 0.4166666666666667
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 5,
+              "denominator": 12,
+              "value": 0.4166666666666667
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "laptop/base.en/8s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 15,
+      "failed": 0,
+      "not_judged": 72,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 15,
+        "not_judged": 72
+      },
+      "processed_rate": {
+        "numerator": 15,
+        "denominator": 87,
+        "value": 0.1724137931034483
+      },
+      "success_rate": {
+        "numerator": 15,
+        "denominator": 87,
+        "value": 0.1724137931034483
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 72,
+        "denominator": 87,
+        "value": 0.8275862068965517
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 12,
+            "denominator": 15,
+            "value": 0.8
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 15,
+              "value": 0.06666666666666667
+            },
+            "entity_or_quantity_error": {
+              "numerator": 12,
+              "denominator": 15,
+              "value": 0.8
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 5,
+            "denominator": 15,
+            "value": 0.3333333333333333
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 5,
+              "denominator": 15,
+              "value": 0.3333333333333333
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 15,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "laptop/tiny.en/4s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 14,
+      "failed": 0,
+      "not_judged": 73,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 73,
+        "ok": 14
+      },
+      "processed_rate": {
+        "numerator": 14,
+        "denominator": 87,
+        "value": 0.16091954022988506
+      },
+      "success_rate": {
+        "numerator": 14,
+        "denominator": 87,
+        "value": 0.16091954022988506
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 73,
+        "denominator": 87,
+        "value": 0.8390804597701149
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 13,
+            "denominator": 14,
+            "value": 0.9285714285714286
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 5,
+              "denominator": 14,
+              "value": 0.35714285714285715
+            },
+            "entity_or_quantity_error": {
+              "numerator": 12,
+              "denominator": 14,
+              "value": 0.8571428571428571
+            },
+            "unsupported_addition": {
+              "numerator": 1,
+              "denominator": 14,
+              "value": 0.07142857142857142
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 8,
+            "denominator": 14,
+            "value": 0.5714285714285714
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 14,
+              "value": 0.07142857142857142
+            },
+            "entity_or_quantity_error": {
+              "numerator": 8,
+              "denominator": 14,
+              "value": 0.5714285714285714
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "laptop/tiny.en/8s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 75,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 75,
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 75,
+        "denominator": 87,
+        "value": 0.8620689655172413
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 2,
+              "denominator": 12,
+              "value": 0.16666666666666666
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 8,
+            "denominator": 12,
+            "value": 0.6666666666666666
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 8,
+              "denominator": 12,
+              "value": 0.6666666666666666
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/base.en/4s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 75,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 75,
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 75,
+        "denominator": 87,
+        "value": 0.8620689655172413
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 2,
+              "denominator": 12,
+              "value": 0.16666666666666666
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/base.en/8s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 75,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 75,
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 75,
+        "denominator": 87,
+        "value": 0.8620689655172413
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/tiny.en/4s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 13,
+      "failed": 0,
+      "not_judged": 74,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 74,
+        "ok": 13
+      },
+      "processed_rate": {
+        "numerator": 13,
+        "denominator": 87,
+        "value": 0.14942528735632185
+      },
+      "success_rate": {
+        "numerator": 13,
+        "denominator": 87,
+        "value": 0.14942528735632185
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 74,
+        "denominator": 87,
+        "value": 0.8505747126436781
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 11,
+            "denominator": 13,
+            "value": 0.8461538461538461
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 5,
+              "denominator": 13,
+              "value": 0.38461538461538464
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 13,
+              "value": 0.7692307692307693
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 8,
+            "denominator": 13,
+            "value": 0.6153846153846154
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 8,
+              "denominator": 13,
+              "value": 0.6153846153846154
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 13,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 13,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/tiny.en/8s": {
+      "windows": 87,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 75,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 75,
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 87,
+        "value": 0.13793103448275862
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 75,
+        "denominator": 87,
+        "value": 0.8620689655172413
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 87,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 9,
+            "denominator": 12,
+            "value": 0.75
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 12,
+              "value": 0.08333333333333333
+            },
+            "entity_or_quantity_error": {
+              "numerator": 9,
+              "denominator": 12,
+              "value": 0.75
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 7,
+            "denominator": 12,
+            "value": 0.5833333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 7,
+              "denominator": 12,
+              "value": 0.5833333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "review_subset": {
+    "windows": 96,
+    "review_selected": 96,
+    "successful": 96,
+    "failed": 0,
+    "not_judged": 0,
+    "skipped_budget": 0,
+    "statuses": {
+      "ok": 96
+    },
+    "processed_rate": {
+      "numerator": 96,
+      "denominator": 96,
+      "value": 1.0
+    },
+    "success_rate": {
+      "numerator": 96,
+      "denominator": 96,
+      "value": 1.0
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 96,
+      "value": 0.0
+    },
+    "not_judged_rate": {
+      "numerator": 0,
+      "denominator": 96,
+      "value": 0.0
+    },
+    "skipped_budget_rate": {
+      "numerator": 0,
+      "denominator": 96,
+      "value": 0.0
+    },
+    "thresholds": {
+      "0.5": {
+        "candidate_review_rate": {
+          "numerator": 81,
+          "denominator": 96,
+          "value": 0.84375
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 18,
+            "denominator": 96,
+            "value": 0.1875
+          },
+          "entity_or_quantity_error": {
+            "numerator": 79,
+            "denominator": 96,
+            "value": 0.8229166666666666
+          },
+          "unsupported_addition": {
+            "numerator": 1,
+            "denominator": 96,
+            "value": 0.010416666666666666
+          }
+        }
+      },
+      "0.7": {
+        "candidate_review_rate": {
+          "numerator": 52,
+          "denominator": 96,
+          "value": 0.5416666666666666
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 1,
+            "denominator": 96,
+            "value": 0.010416666666666666
+          },
+          "entity_or_quantity_error": {
+            "numerator": 52,
+            "denominator": 96,
+            "value": 0.5416666666666666
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          }
+        }
+      },
+      "0.9": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 96,
+          "value": 0.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 96,
+            "value": 0.0
+          }
+        }
+      }
+    }
+  },
+  "sample_by_configuration": {
+    "laptop/base.en/4s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 2,
+              "denominator": 12,
+              "value": 0.16666666666666666
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 5,
+            "denominator": 12,
+            "value": 0.4166666666666667
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 5,
+              "denominator": 12,
+              "value": 0.4166666666666667
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "laptop/base.en/8s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 11,
+            "denominator": 12,
+            "value": 0.9166666666666666
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 12,
+              "value": 0.08333333333333333
+            },
+            "entity_or_quantity_error": {
+              "numerator": 11,
+              "denominator": 12,
+              "value": 0.9166666666666666
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 5,
+            "denominator": 12,
+            "value": 0.4166666666666667
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 5,
+              "denominator": 12,
+              "value": 0.4166666666666667
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "laptop/tiny.en/4s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 11,
+            "denominator": 12,
+            "value": 0.9166666666666666
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 5,
+              "denominator": 12,
+              "value": 0.4166666666666667
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 1,
+              "denominator": 12,
+              "value": 0.08333333333333333
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 8,
+            "denominator": 12,
+            "value": 0.6666666666666666
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 12,
+              "value": 0.08333333333333333
+            },
+            "entity_or_quantity_error": {
+              "numerator": 8,
+              "denominator": 12,
+              "value": 0.6666666666666666
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "laptop/tiny.en/8s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 2,
+              "denominator": 12,
+              "value": 0.16666666666666666
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 8,
+            "denominator": 12,
+            "value": 0.6666666666666666
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 8,
+              "denominator": 12,
+              "value": 0.6666666666666666
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/base.en/4s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 2,
+              "denominator": 12,
+              "value": 0.16666666666666666
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/base.en/8s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/tiny.en/4s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 12,
+            "value": 0.8333333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 5,
+              "denominator": 12,
+              "value": 0.4166666666666667
+            },
+            "entity_or_quantity_error": {
+              "numerator": 9,
+              "denominator": 12,
+              "value": 0.75
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 7,
+            "denominator": 12,
+            "value": 0.5833333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 7,
+              "denominator": 12,
+              "value": 0.5833333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "pi/tiny.en/8s": {
+      "windows": 12,
+      "review_selected": 12,
+      "successful": 12,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 12
+      },
+      "processed_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 9,
+            "denominator": 12,
+            "value": 0.75
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 12,
+              "value": 0.08333333333333333
+            },
+            "entity_or_quantity_error": {
+              "numerator": 9,
+              "denominator": 12,
+              "value": 0.75
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 7,
+            "denominator": 12,
+            "value": 0.5833333333333334
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 7,
+              "denominator": 12,
+              "value": 0.5833333333333334
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 12,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_by_talk": {
+    "ERmKpJPPDc": {
+      "windows": 16,
+      "review_selected": 16,
+      "successful": 16,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 16
+      },
+      "processed_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 14,
+            "denominator": 16,
+            "value": 0.875
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 14,
+              "denominator": 16,
+              "value": 0.875
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 10,
+            "denominator": 16,
+            "value": 0.625
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 10,
+              "denominator": 16,
+              "value": 0.625
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 16,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "EqmWoxNDIr": {
+      "windows": 16,
+      "review_selected": 16,
+      "successful": 16,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 16
+      },
+      "processed_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 16,
+            "denominator": 16,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 5,
+              "denominator": 16,
+              "value": 0.3125
+            },
+            "entity_or_quantity_error": {
+              "numerator": 16,
+              "denominator": 16,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 1,
+              "denominator": 16,
+              "value": 0.0625
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 14,
+            "denominator": 16,
+            "value": 0.875
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 16,
+              "value": 0.0625
+            },
+            "entity_or_quantity_error": {
+              "numerator": 14,
+              "denominator": 16,
+              "value": 0.875
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 16,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "UOlPKyCVgg": {
+      "windows": 16,
+      "review_selected": 16,
+      "successful": 16,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 16
+      },
+      "processed_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 7,
+            "denominator": 16,
+            "value": 0.4375
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 3,
+              "denominator": 16,
+              "value": 0.1875
+            },
+            "entity_or_quantity_error": {
+              "numerator": 7,
+              "denominator": 16,
+              "value": 0.4375
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 4,
+            "denominator": 16,
+            "value": 0.25
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 4,
+              "denominator": 16,
+              "value": 0.25
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 16,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "krJSAnVcGR": {
+      "windows": 16,
+      "review_selected": 16,
+      "successful": 16,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 16
+      },
+      "processed_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 15,
+            "denominator": 16,
+            "value": 0.9375
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 15,
+              "denominator": 16,
+              "value": 0.9375
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 11,
+            "denominator": 16,
+            "value": 0.6875
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 11,
+              "denominator": 16,
+              "value": 0.6875
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 16,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "rxrToXvRyM": {
+      "windows": 16,
+      "review_selected": 16,
+      "successful": 16,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 16
+      },
+      "processed_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 13,
+            "denominator": 16,
+            "value": 0.8125
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 7,
+              "denominator": 16,
+              "value": 0.4375
+            },
+            "entity_or_quantity_error": {
+              "numerator": 11,
+              "denominator": 16,
+              "value": 0.6875
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 5,
+            "denominator": 16,
+            "value": 0.3125
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 5,
+              "denominator": 16,
+              "value": 0.3125
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 16,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "xhjBHGVOyQ": {
+      "windows": 16,
+      "review_selected": 16,
+      "successful": 16,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 16
+      },
+      "processed_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 16,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 16,
+            "denominator": 16,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 3,
+              "denominator": 16,
+              "value": 0.1875
+            },
+            "entity_or_quantity_error": {
+              "numerator": 16,
+              "denominator": 16,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 8,
+            "denominator": 16,
+            "value": 0.5
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 8,
+              "denominator": 16,
+              "value": 0.5
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 16,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "diagnostic_subset": {
+    "windows": 6,
+    "review_selected": 0,
+    "successful": 6,
+    "failed": 0,
+    "not_judged": 0,
+    "skipped_budget": 0,
+    "statuses": {
+      "ok": 6
+    },
+    "processed_rate": {
+      "numerator": 6,
+      "denominator": 6,
+      "value": 1.0
+    },
+    "success_rate": {
+      "numerator": 6,
+      "denominator": 6,
+      "value": 1.0
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 6,
+      "value": 0.0
+    },
+    "not_judged_rate": {
+      "numerator": 0,
+      "denominator": 6,
+      "value": 0.0
+    },
+    "skipped_budget_rate": {
+      "numerator": 0,
+      "denominator": 6,
+      "value": 0.0
+    },
+    "thresholds": {
+      "0.5": {
+        "candidate_review_rate": {
+          "numerator": 4,
+          "denominator": 6,
+          "value": 0.6666666666666666
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 4,
+            "denominator": 6,
+            "value": 0.6666666666666666
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          }
+        }
+      },
+      "0.7": {
+        "candidate_review_rate": {
+          "numerator": 1,
+          "denominator": 6,
+          "value": 0.16666666666666666
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 1,
+            "denominator": 6,
+            "value": 0.16666666666666666
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          }
+        }
+      },
+      "0.9": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0.0
+          }
+        }
+      }
+    }
+  },
+  "deterministic_candidate_windows": 19,
+  "ignored_stale_or_nonlive_records": 0,
+  "provider_usage": {
+    "http_attempts": 102,
+    "fields": {
+      "input_tokens": {
+        "known_sum": 197700,
+        "reported_attempts": 102,
+        "unknown_attempts": 0
+      },
+      "output_tokens": {
+        "known_sum": 8670,
+        "reported_attempts": 102,
+        "unknown_attempts": 0
+      },
+      "cost": {
+        "known_sum": 0.0083034,
+        "reported_attempts": 102,
+        "unknown_attempts": 0
+      }
+    },
+    "providers": {
+      "TypeSafe": 102
+    },
+    "resolved_models": {
+      "typesafe/jev-1.13-20260917": 102
+    },
+    "scope": "All recorded HTTP attempts, including retries, failures and previous prompt versions; cache hits are not billed again."
+  },
+  "llm_annotated_windows": 0,
+  "llm_label_source": "llm, never human ground truth",
+  "limitations": [
+    "Review rates are model suggestions, not measured translation error rates or calibrated probabilities.",
+    "ASR omissions absent from both texts can escape Jev; source is the actual MT input.",
+    "Reference evidence is whole-talk and unaligned; attribution remains uncertain.",
+    "Main windows are paired in source time, not guaranteed semantic alignment. No causal boundary effect is established.",
+    "API failures and unjudged windows are excluded from semantic-rate denominators.",
+    "Human labels and optional imported LLM explanations remain separate from Jev probabilities.",
+    "No significance claims; chrF, COMET and LongYAAL remain unchanged. QC API time is not inference latency."
+  ]
+}

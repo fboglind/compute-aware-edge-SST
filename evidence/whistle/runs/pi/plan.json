@@ -1,0 +1,298 @@
+{
+  "schema": 1,
+  "device": "pi",
+  "manifest_id": "79a67c7f1c0089f27af2f768cbaf4a87372cf47ba29a6db823e4f45ef65d1a8a",
+  "source_sha256": {
+    "common.py": "afcec1e1a9df900fa81f809140314729db70116ba1e564c2f9d16ecf0c805a6c",
+    "evaluate_whistle.py": "49d355c19f10b4a2cdf11e69bd69354a7e6ef55c169e87e9f11906e7388ac320",
+    "expected-models.json": "d3a929b4f691df4276e7e352a5260052663dfb3279872d37fe06b231ce229570",
+    "experiment.py": "8624d2b74c3467726fbbd4ae96a3d93b4d38b9fbaa84487078f3ec5a0a209823",
+    "pilot_audit.py": "46c372027023deea62c69e311c5190f251a1aca3bf986bd7e0afec1b3eb385e6",
+    "prepare_whistle.py": "e3421d595b698010c2987fc11910610d63d64775eeeb8004bf7a926cb03df330",
+    "requirements-comet.txt": "c5be5e53b4d129966bc62ecd333b8fefb0bbf92b70197fb49d810b4919ddb0fb",
+    "requirements-evaluation.txt": "7e1019e986d4e4d8fa85866dcfb871f712933ed8d7c842bf75da841f102fcc48",
+    "requirements-inference.txt": "0f307b6409cd55cf78616ebd9b8836f174939b1146ace7ea586cb1c70163a121",
+    "runner/needle.h": "a27dac4b3239eead91d124b7f7dbce5495c13019903fd817b68c16d39b055a99",
+    "runner/run_whistle.py": "c6ff3a7f58a74bf5b70e7842073c0804d2abf984bfb5658e1ddf97d86cadbc3e",
+    "runner/stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c",
+    "runner/test_timing.py": "b0d19e116db9e751c8275ae799defc7117ecd042f811b9d144794762010501ba",
+    "runner/whistle_backend.py": "bedd8f560c12442e2689e81ea1756601485fa835dcbffde8d4a20eeebad6e186",
+    "score_comet_whistle.py": "24bda914a278080b5d2d2e7f32e33dcf06c7dee09e40ae9636a43b13363e6ecc",
+    "selection.json": "4d803d21975eae5bbbdf8eb795b3710772991e56bff988e6dfc78a42c1e91ee8",
+    "summarize_whistle.py": "153cb83a010073d6a09fea51755b43ddce430440ae0589fbe7a0232d31bc9d09",
+    "test_whistle.py": "755354d3962820dc7af139d56d428dcb7bfc817b3dd1b24eba069915f97b5f37",
+    "timestamp_validation.py": "a504cb3cefe8836bce881c4f6c9caa97e4470f92f2ebf08c46a61a8941765568",
+    "whistle-runtime.json": "34c8860c83fc798b4ede022f4524efbbe72198b504185f97a8519bfac8ed3457"
+  },
+  "jobs": [
+    {
+      "id": "rxrToXvRyM-whistle-4s-r1",
+      "talk": "rxrToXvRyM",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "pi",
+      "order": 1
+    },
+    {
+      "id": "EqmWoxNDIr-whistle-4s-r1",
+      "talk": "EqmWoxNDIr",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "pi",
+      "order": 2
+    },
+    {
+      "id": "UOlPKyCVgg-whistle-4s-r1",
+      "talk": "UOlPKyCVgg",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "pi",
+      "order": 3
+    },
+    {
+      "id": "krJSAnVcGR-whistle-4s-r1",
+      "talk": "krJSAnVcGR",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "pi",
+      "order": 4
+    },
+    {
+      "id": "ERmKpJPPDc-whistle-4s-r1",
+      "talk": "ERmKpJPPDc",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "pi",
+      "order": 5
+    },
+    {
+      "id": "xhjBHGVOyQ-whistle-4s-r1",
+      "talk": "xhjBHGVOyQ",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 1,
+      "device": "pi",
+      "order": 6
+    },
+    {
+      "id": "rxrToXvRyM-whistle-8s-r1",
+      "talk": "rxrToXvRyM",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "pi",
+      "order": 7
+    },
+    {
+      "id": "EqmWoxNDIr-whistle-8s-r1",
+      "talk": "EqmWoxNDIr",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "pi",
+      "order": 8
+    },
+    {
+      "id": "UOlPKyCVgg-whistle-8s-r1",
+      "talk": "UOlPKyCVgg",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "pi",
+      "order": 9
+    },
+    {
+      "id": "krJSAnVcGR-whistle-8s-r1",
+      "talk": "krJSAnVcGR",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "pi",
+      "order": 10
+    },
+    {
+      "id": "ERmKpJPPDc-whistle-8s-r1",
+      "talk": "ERmKpJPPDc",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "pi",
+      "order": 11
+    },
+    {
+      "id": "xhjBHGVOyQ-whistle-8s-r1",
+      "talk": "xhjBHGVOyQ",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 1,
+      "device": "pi",
+      "order": 12
+    },
+    {
+      "id": "xhjBHGVOyQ-whistle-8s-r2",
+      "talk": "xhjBHGVOyQ",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "pi",
+      "order": 13
+    },
+    {
+      "id": "ERmKpJPPDc-whistle-8s-r2",
+      "talk": "ERmKpJPPDc",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "pi",
+      "order": 14
+    },
+    {
+      "id": "krJSAnVcGR-whistle-8s-r2",
+      "talk": "krJSAnVcGR",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "pi",
+      "order": 15
+    },
+    {
+      "id": "UOlPKyCVgg-whistle-8s-r2",
+      "talk": "UOlPKyCVgg",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "pi",
+      "order": 16
+    },
+    {
+      "id": "EqmWoxNDIr-whistle-8s-r2",
+      "talk": "EqmWoxNDIr",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "pi",
+      "order": 17
+    },
+    {
+      "id": "rxrToXvRyM-whistle-8s-r2",
+      "talk": "rxrToXvRyM",
+      "asr": "whistle",
+      "chunk_s": 8,
+      "repetition": 2,
+      "device": "pi",
+      "order": 18
+    },
+    {
+      "id": "xhjBHGVOyQ-whistle-4s-r2",
+      "talk": "xhjBHGVOyQ",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "pi",
+      "order": 19
+    },
+    {
+      "id": "ERmKpJPPDc-whistle-4s-r2",
+      "talk": "ERmKpJPPDc",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "pi",
+      "order": 20
+    },
+    {
+      "id": "krJSAnVcGR-whistle-4s-r2",
+      "talk": "krJSAnVcGR",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "pi",
+      "order": 21
+    },
+    {
+      "id": "UOlPKyCVgg-whistle-4s-r2",
+      "talk": "UOlPKyCVgg",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "pi",
+      "order": 22
+    },
+    {
+      "id": "EqmWoxNDIr-whistle-4s-r2",
+      "talk": "EqmWoxNDIr",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "pi",
+      "order": 23
+    },
+    {
+      "id": "rxrToXvRyM-whistle-4s-r2",
+      "talk": "rxrToXvRyM",
+      "asr": "whistle",
+      "chunk_s": 4,
+      "repetition": 2,
+      "device": "pi",
+      "order": 24
+    }
+  ],
+  "experiment": "Whistle supplementary cascade; separate from main comparison",
+  "whistle_runtime": {
+    "schema": 1,
+    "weights": {
+      "repo_id": "Cactus-Compute/whistle",
+      "revision": "741118687e1f008f06d1351a402a731274789790",
+      "filename": "whistle.cact",
+      "sha256": "b6e02f048568ac5d01a2042556c658061e699acbc0aa2a1439f52f3d461dffeb",
+      "size_bytes": 16919407
+    },
+    "runtime": {
+      "repo_id": "Cactus-Compute/needle3",
+      "revision": "d6c7d6a2e9655505e0f8e23339356dd1705900eb",
+      "release_artifact_version": "3.3.3",
+      "wheel_member": "needle/libneedle3.so",
+      "platforms": {
+        "x86_64": {
+          "filename": "python/cactus_needle-3.3.3-py3-none-manylinux2014_x86_64.whl",
+          "wheel_sha256": "b909897e11cf4da9566df6370f8a63564693fbd6edeaac0b8678b71865d4dc24",
+          "library_sha256": "87476ff70e80334d7c766dbf236b72f42876072df22014c6ec8a9b087b82b260"
+        },
+        "aarch64": {
+          "filename": "python/cactus_needle-3.3.3-py3-none-manylinux2014_aarch64.whl",
+          "wheel_sha256": "cda9aa23eec3cc2cc6fea43ae5ba32b9d39a1487a198d8e2d86c1314dfe04873",
+          "library_sha256": "d65bdedcaee9eac07c4c060285e165e85ffae69bbdfb7e14b586cd16e1864b75"
+        }
+      }
+    },
+    "c_api_header": {
+      "repo_id": "Cactus-Compute/needle3",
+      "revision": "d6c7d6a2e9655505e0f8e23339356dd1705900eb",
+      "filename": "linux-x86_64/needle.h",
+      "sha256": "a27dac4b3239eead91d124b7f7dbce5495c13019903fd817b68c16d39b055a99"
+    },
+    "inference_policy": {
+      "language": "en",
+      "keywords": null,
+      "word_timestamps": false,
+      "mode": "independent needle_transcribe calls; not the built-in streaming API",
+      "beam": "compiled engine default; not exposed by this C API",
+      "threads": "compiled engine default; not exposed by this C API",
+      "depth": "full shipped default; not overridden",
+      "quantization": "shipped Cactus Quants .cact; not CTranslate2 INT8"
+    }
+  },
+  "settings": {
+    "mt_threads": 4,
+    "asr_beam": "engine_default",
+    "mt_beam": 4,
+    "asr_threads": "engine_default_not_exposed",
+    "mt_compute_type": "int8_float32"
+  },
+  "plan_id": "e7fdb2c733fd83dda3ff0f20b60a7c3e81e69ec58ad51fbeb7be1058f48dc6f9"
+}

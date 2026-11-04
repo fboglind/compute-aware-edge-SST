@@ -1,0 +1,624 @@
+{
+  "version": "blinded-mt-review-v1-2026-10-25",
+  "settings": {
+    "model": "anthropic/claude-sonnet-4.5",
+    "provider": "Anthropic",
+    "seed": 20261025,
+    "threshold": 0.5,
+    "high_threshold": 0.7,
+    "band": 0.1,
+    "high_count": 16,
+    "borderline_count": 8,
+    "unflagged_count": 6,
+    "max_tokens": 3072,
+    "input_usd_per_million": 3.0,
+    "output_usd_per_million": 15.0,
+    "price_checked": "2026-10-25"
+  },
+  "main_directory": "/home/fredrik/Documents/tinyml-pilot/tinyml-qc-api-2026-10-22/qc-runs/main-api-v2",
+  "source_sha256": {
+    "manifest.json": "bd394cb60b238eacbea8d59113e5897d8c6802474a3e704ccbda728ed9b3a540",
+    "windows.jsonl": "944efae964a11c77c0143f81a7f2bb55e0ae5fa3fa4debda3be42ceaa52d878b",
+    "jev_decisions.jsonl": "654fd78d29156c1db13af01e8f4f500bda087e967e6fd7213c550ad358b893ae"
+  },
+  "code_sha256": "12292f892481f0bde724e29b9bef8b38fe64972a3da20db68e6d4a2714185d7d",
+  "first_stage_code_sha256": {
+    "__init__.py": "0644948b5f9520804760e4949ae7e54a6f3b1566e8e411c2605581dd7444b72c",
+    "__main__.py": "75415d603ac66ffbf64fcd0641b844877b7c1f7a4bbbaffb20052c595ced07dc",
+    "asr_errors.py": "3145ea47ce24a19a4a54575f17c402c577f3f32d8522b0bd406f323277edefe0",
+    "common.py": "cd27ad7ade8a6c30be15b0cb6cdceb0224c2087c7164f77a3977219d2d0b70e6",
+    "explanations.py": "4b58f17ae616002a45215ff90925e54ee1978da2c0ea98d358444b39bf73764b",
+    "fixtures.py": "d6eb2a1a65c2f18d712a83c6b46a503e046a98a094dbd01dcf2480888b6413b9",
+    "human.py": "b4def31db346706a400c90e9de4588279732efb49884f7f66884dadb78f1cf4d",
+    "inputs.py": "9c3638218d698879f2f522a7e8e91fc99bb867fe557c2160d43b1b43dbef2b32",
+    "jev.py": "a88f23de838089af0e9ad2f6cd4711c4c76f8aa8f2f8e14ff8003b7adc1da7a6",
+    "main_experiment.py": "d66ebd81c89566c70bca93fc384c0f5a6017a9720b94f1d92595183cdfb97faa",
+    "mock_run.py": "11c0437030b7b7126edc2bae71ea7a019f082cddc4704355cd1e2ab46c933ae2",
+    "reports.py": "bcce145692e68928a19506e1c1800c229d73b262ffe01ec0c3b449000ce71386"
+  },
+  "selection": [
+    {
+      "window_id": "EqmWoxNDIr/laptop/EqmWoxNDIr-tiny-4s-r1/w011/264.000000-288.000000",
+      "group": "high",
+      "selection_category": "meaning_change_or_negation",
+      "config": "laptop/tiny.en/4s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 264.0,
+      "end_s": 288.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.82,
+        "meaning_change_or_negation": 0.77,
+        "meaningful_omission": 0.23,
+        "unsupported_addition": 0.63
+      },
+      "jev_request_fingerprint": "0f557d6bc9b527b883e2ca3ce0b3cce1c6eaa55521e018d887686e99a3139bce"
+    },
+    {
+      "window_id": "UOlPKyCVgg/laptop/UOlPKyCVgg-base-4s-r1/w011/264.000000-288.000000",
+      "group": "borderline",
+      "selection_category": "meaningful_omission",
+      "config": "laptop/base.en/4s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 264.0,
+      "end_s": 288.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.51,
+        "meaning_change_or_negation": 0.27,
+        "meaningful_omission": 0.47,
+        "unsupported_addition": 0.23
+      },
+      "jev_request_fingerprint": "d42c5d4dbbf042b66a42e9f0136235f2778957335c365e8aceb95125d6cdd6e0"
+    },
+    {
+      "window_id": "UOlPKyCVgg/laptop/UOlPKyCVgg-tiny-4s-r1/w012/288.000000-299.178688",
+      "group": "unflagged",
+      "selection_category": null,
+      "config": "laptop/tiny.en/4s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 288.0,
+      "end_s": 299.1786875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.34,
+        "meaning_change_or_negation": 0.16,
+        "meaningful_omission": 0.14,
+        "unsupported_addition": 0.1
+      },
+      "jev_request_fingerprint": "daf76ab2c9a2e55c5e2f30a7679404343e82195e5c11ac0e248b53da811b6862"
+    },
+    {
+      "window_id": "ERmKpJPPDc/laptop/ERmKpJPPDc-base-8s-r1/w000/0.000000-24.000000",
+      "group": "diagnostic",
+      "selection_category": null,
+      "config": "laptop/base.en/8s",
+      "talk_id": "ERmKpJPPDc",
+      "start_s": 0.0,
+      "end_s": 24.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.62,
+        "meaning_change_or_negation": 0.24,
+        "meaningful_omission": 0.32,
+        "unsupported_addition": 0.11
+      },
+      "jev_request_fingerprint": "8d03843cbb0c9b114725e6b5a5b8d31f91d846b886e57dd959814b7683f9aec1"
+    },
+    {
+      "window_id": "rxrToXvRyM/pi/rxrToXvRyM-tiny-4s-r1/w000/0.000000-24.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/tiny.en/4s",
+      "talk_id": "rxrToXvRyM",
+      "start_s": 0.0,
+      "end_s": 24.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.86,
+        "meaning_change_or_negation": 0.59,
+        "meaningful_omission": 0.19,
+        "unsupported_addition": 0.44
+      },
+      "jev_request_fingerprint": "5b28f954d289bb6ded34abc44a0362eafe427a64ee6902ef93957fe3cdaca413"
+    },
+    {
+      "window_id": "EqmWoxNDIr/pi/EqmWoxNDIr-tiny-4s-r1/w002/48.000000-72.000000",
+      "group": "borderline",
+      "selection_category": "meaning_change_or_negation",
+      "config": "pi/tiny.en/4s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 48.0,
+      "end_s": 72.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.74,
+        "meaning_change_or_negation": 0.5,
+        "meaningful_omission": 0.23,
+        "unsupported_addition": 0.23
+      },
+      "jev_request_fingerprint": "2f46c3db333907ddb4ccc0a383b2e4adb373055f9bd7d68f18496ed591b1fada"
+    },
+    {
+      "window_id": "UOlPKyCVgg/laptop/UOlPKyCVgg-base-8s-r1/w012/288.000000-299.178688",
+      "group": "unflagged",
+      "selection_category": null,
+      "config": "laptop/base.en/8s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 288.0,
+      "end_s": 299.1786875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.18,
+        "meaning_change_or_negation": 0.09,
+        "meaningful_omission": 0.08,
+        "unsupported_addition": 0.07
+      },
+      "jev_request_fingerprint": "048d96ca9ff6e25e87fa20c9dd318fcfb256445a578b9f0c99e79a42a12ecd65"
+    },
+    {
+      "window_id": "ERmKpJPPDc/laptop/ERmKpJPPDc-tiny-4s-r1/w005/120.000000-144.000000",
+      "group": "diagnostic",
+      "selection_category": null,
+      "config": "laptop/tiny.en/4s",
+      "talk_id": "ERmKpJPPDc",
+      "start_s": 120.0,
+      "end_s": 144.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.67,
+        "meaning_change_or_negation": 0.23,
+        "meaningful_omission": 0.39,
+        "unsupported_addition": 0.17
+      },
+      "jev_request_fingerprint": "e7ccb603c0a6c9a3967e2ff30e471b9c5977eb18588e1dd63d646668952b8034"
+    },
+    {
+      "window_id": "EqmWoxNDIr/pi/EqmWoxNDIr-base-4s-r1/w002/48.000000-72.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/base.en/4s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 48.0,
+      "end_s": 72.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.84,
+        "meaning_change_or_negation": 0.49,
+        "meaningful_omission": 0.23,
+        "unsupported_addition": 0.26
+      },
+      "jev_request_fingerprint": "99f046b06194dff91f5531ee966e3dbf319636ea66f33ea3a22b9fa51de079fa"
+    },
+    {
+      "window_id": "krJSAnVcGR/pi/krJSAnVcGR-base-4s-r1/w007/168.000000-192.000000",
+      "group": "borderline",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/base.en/4s",
+      "talk_id": "krJSAnVcGR",
+      "start_s": 168.0,
+      "end_s": 192.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.5,
+        "meaning_change_or_negation": 0.34,
+        "meaningful_omission": 0.22,
+        "unsupported_addition": 0.19
+      },
+      "jev_request_fingerprint": "34e98334792e62d88be6a6a3d797c05a64b37b7f015f070440357389f0174d4a"
+    },
+    {
+      "window_id": "UOlPKyCVgg/pi/UOlPKyCVgg-tiny-8s-r1/w012/288.000000-299.178688",
+      "group": "unflagged",
+      "selection_category": null,
+      "config": "pi/tiny.en/8s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 288.0,
+      "end_s": 299.1786875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.29,
+        "meaning_change_or_negation": 0.19,
+        "meaningful_omission": 0.18,
+        "unsupported_addition": 0.11
+      },
+      "jev_request_fingerprint": "e3d67125e50e2e8c4cb51fb4c21ccc42b60113b8c4c0da0676e696023597d58a"
+    },
+    {
+      "window_id": "EqmWoxNDIr/laptop/EqmWoxNDIr-base-8s-r1/w008/192.000000-216.000000",
+      "group": "diagnostic",
+      "selection_category": null,
+      "config": "laptop/base.en/8s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 192.0,
+      "end_s": 216.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.27,
+        "meaning_change_or_negation": 0.27,
+        "meaningful_omission": 0.28,
+        "unsupported_addition": 0.11
+      },
+      "jev_request_fingerprint": "91d23acc81cda72dfd5bdea2b26937accf7fe6aad27d60c8a6e4bd51fffb57cd"
+    },
+    {
+      "window_id": "krJSAnVcGR/pi/krJSAnVcGR-base-8s-r1/w012/288.000000-304.126688",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/base.en/8s",
+      "talk_id": "krJSAnVcGR",
+      "start_s": 288.0,
+      "end_s": 304.1266875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.84,
+        "meaning_change_or_negation": 0.37,
+        "meaningful_omission": 0.11,
+        "unsupported_addition": 0.17
+      },
+      "jev_request_fingerprint": "4582df3851d7d8286a6e5f3ac2a67ee32d4b93c982de8719e59bcb135626839f"
+    },
+    {
+      "window_id": "xhjBHGVOyQ/laptop/xhjBHGVOyQ-tiny-8s-r1/w002/48.000000-72.000000",
+      "group": "borderline",
+      "selection_category": "unsupported_addition",
+      "config": "laptop/tiny.en/8s",
+      "talk_id": "xhjBHGVOyQ",
+      "start_s": 48.0,
+      "end_s": 72.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.88,
+        "meaning_change_or_negation": 0.66,
+        "meaningful_omission": 0.22,
+        "unsupported_addition": 0.49
+      },
+      "jev_request_fingerprint": "df30a1a5351624b2a62f0b147777cab12719f65938aef6f93443d8b936b77185"
+    },
+    {
+      "window_id": "rxrToXvRyM/pi/rxrToXvRyM-base-8s-r1/w015/360.000000-384.000000",
+      "group": "unflagged",
+      "selection_category": null,
+      "config": "pi/base.en/8s",
+      "talk_id": "rxrToXvRyM",
+      "start_s": 360.0,
+      "end_s": 384.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.3,
+        "meaning_change_or_negation": 0.37,
+        "meaningful_omission": 0.23,
+        "unsupported_addition": 0.18
+      },
+      "jev_request_fingerprint": "be72b9636ce37f820565e9d62eb005d3594a1a89ac14ee057dd45ca8ef28b954"
+    },
+    {
+      "window_id": "UOlPKyCVgg/laptop/UOlPKyCVgg-base-8s-r1/w008/192.000000-216.000000",
+      "group": "diagnostic",
+      "selection_category": null,
+      "config": "laptop/base.en/8s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 192.0,
+      "end_s": 216.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.31,
+        "meaning_change_or_negation": 0.22,
+        "meaningful_omission": 0.24,
+        "unsupported_addition": 0.15
+      },
+      "jev_request_fingerprint": "17b161ef957324e904ba09dbf7693977976d623842e66360c38277c3cb160d97"
+    },
+    {
+      "window_id": "krJSAnVcGR/laptop/krJSAnVcGR-tiny-8s-r1/w012/288.000000-304.126688",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/tiny.en/8s",
+      "talk_id": "krJSAnVcGR",
+      "start_s": 288.0,
+      "end_s": 304.1266875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.84,
+        "meaning_change_or_negation": 0.27,
+        "meaningful_omission": 0.09,
+        "unsupported_addition": 0.13
+      },
+      "jev_request_fingerprint": "21cea90eeecd21467f957a30da47227bf6bececa7306c12b5f3e59a7a94ed94d"
+    },
+    {
+      "window_id": "ERmKpJPPDc/laptop/ERmKpJPPDc-base-8s-r1/w009/216.000000-240.000000",
+      "group": "borderline",
+      "selection_category": "meaningful_omission",
+      "config": "laptop/base.en/8s",
+      "talk_id": "ERmKpJPPDc",
+      "start_s": 216.0,
+      "end_s": 240.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.54,
+        "meaning_change_or_negation": 0.31,
+        "meaningful_omission": 0.43,
+        "unsupported_addition": 0.2
+      },
+      "jev_request_fingerprint": "9337af1dbf4bc8a8e2c8694bd0fb85c56c2d129871a4d7910c7a5e39bf67e20c"
+    },
+    {
+      "window_id": "ERmKpJPPDc/pi/ERmKpJPPDc-tiny-4s-r1/w009/216.000000-240.000000",
+      "group": "unflagged",
+      "selection_category": null,
+      "config": "pi/tiny.en/4s",
+      "talk_id": "ERmKpJPPDc",
+      "start_s": 216.0,
+      "end_s": 240.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.47,
+        "meaning_change_or_negation": 0.25,
+        "meaningful_omission": 0.21,
+        "unsupported_addition": 0.16
+      },
+      "jev_request_fingerprint": "8107fd472035db8e1430a4661812cbe909ac05a65088f5d8f95f9799997b4047"
+    },
+    {
+      "window_id": "xhjBHGVOyQ/laptop/xhjBHGVOyQ-tiny-4s-r1/w009/216.000000-240.000000",
+      "group": "diagnostic",
+      "selection_category": null,
+      "config": "laptop/tiny.en/4s",
+      "talk_id": "xhjBHGVOyQ",
+      "start_s": 216.0,
+      "end_s": 240.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.66,
+        "meaning_change_or_negation": 0.37,
+        "meaningful_omission": 0.23,
+        "unsupported_addition": 0.16
+      },
+      "jev_request_fingerprint": "136eeb69acbd2ead30dacffc38acc2aba12ca082f782971d9806c5d96df8a154"
+    },
+    {
+      "window_id": "UOlPKyCVgg/pi/UOlPKyCVgg-tiny-8s-r1/w011/264.000000-288.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/tiny.en/8s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 264.0,
+      "end_s": 288.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.84,
+        "meaning_change_or_negation": 0.57,
+        "meaningful_omission": 0.35,
+        "unsupported_addition": 0.29
+      },
+      "jev_request_fingerprint": "66873e5b3f174bc4d9dfec1407b3bf303484e630be9ce6583dda2e06480a3cf3"
+    },
+    {
+      "window_id": "krJSAnVcGR/pi/krJSAnVcGR-tiny-8s-r1/w012/288.000000-304.126688",
+      "group": "borderline",
+      "selection_category": "meaning_change_or_negation",
+      "config": "pi/tiny.en/8s",
+      "talk_id": "krJSAnVcGR",
+      "start_s": 288.0,
+      "end_s": 304.1266875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.86,
+        "meaning_change_or_negation": 0.49,
+        "meaningful_omission": 0.1,
+        "unsupported_addition": 0.17
+      },
+      "jev_request_fingerprint": "955e4e709110876f9e47dedf366f515f4cac310286ea2a0a69c2659d9c26b304"
+    },
+    {
+      "window_id": "rxrToXvRyM/laptop/rxrToXvRyM-tiny-8s-r1/w015/360.000000-384.000000",
+      "group": "unflagged",
+      "selection_category": null,
+      "config": "laptop/tiny.en/8s",
+      "talk_id": "rxrToXvRyM",
+      "start_s": 360.0,
+      "end_s": 384.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.26,
+        "meaning_change_or_negation": 0.27,
+        "meaningful_omission": 0.22,
+        "unsupported_addition": 0.16
+      },
+      "jev_request_fingerprint": "6af65736654227a8dbb46e01596b55715283ec66592ce91d2865d8585d4f3e77"
+    },
+    {
+      "window_id": "xhjBHGVOyQ/pi/xhjBHGVOyQ-tiny-4s-r1/w009/216.000000-240.000000",
+      "group": "diagnostic",
+      "selection_category": null,
+      "config": "pi/tiny.en/4s",
+      "talk_id": "xhjBHGVOyQ",
+      "start_s": 216.0,
+      "end_s": 240.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.74,
+        "meaning_change_or_negation": 0.39,
+        "meaningful_omission": 0.22,
+        "unsupported_addition": 0.15
+      },
+      "jev_request_fingerprint": "007f6a36ff8d519e2450272687397f0043f28750d65a1f634c2e92974c029d0e"
+    },
+    {
+      "window_id": "EqmWoxNDIr/laptop/EqmWoxNDIr-base-4s-r1/w002/48.000000-72.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/base.en/4s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 48.0,
+      "end_s": 72.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.83,
+        "meaning_change_or_negation": 0.47,
+        "meaningful_omission": 0.24,
+        "unsupported_addition": 0.25
+      },
+      "jev_request_fingerprint": "9ff3c06731c11a778101222249cd8418ddb1753fb96d8d5be39290193dc77717"
+    },
+    {
+      "window_id": "rxrToXvRyM/laptop/rxrToXvRyM-tiny-4s-r1/w015/360.000000-384.000000",
+      "group": "borderline",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/tiny.en/4s",
+      "talk_id": "rxrToXvRyM",
+      "start_s": 360.0,
+      "end_s": 384.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.49,
+        "meaning_change_or_negation": 0.56,
+        "meaningful_omission": 0.35,
+        "unsupported_addition": 0.25
+      },
+      "jev_request_fingerprint": "8c1ad67ef7fd7d8ac5d81c0833ebdf9524f7b6b91499eb5862df00b7dd7a3f45"
+    },
+    {
+      "window_id": "krJSAnVcGR/laptop/krJSAnVcGR-base-8s-r1/w012/288.000000-304.126688",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/base.en/8s",
+      "talk_id": "krJSAnVcGR",
+      "start_s": 288.0,
+      "end_s": 304.1266875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.8,
+        "meaning_change_or_negation": 0.29,
+        "meaningful_omission": 0.11,
+        "unsupported_addition": 0.15
+      },
+      "jev_request_fingerprint": "5b0e6e931850933908226d642f4585364c854627823dfa36ec23601b6641340b"
+    },
+    {
+      "window_id": "EqmWoxNDIr/pi/EqmWoxNDIr-base-4s-r1/w011/264.000000-288.000000",
+      "group": "borderline",
+      "selection_category": "unsupported_addition",
+      "config": "pi/base.en/4s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 264.0,
+      "end_s": 288.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.82,
+        "meaning_change_or_negation": 0.56,
+        "meaningful_omission": 0.24,
+        "unsupported_addition": 0.48
+      },
+      "jev_request_fingerprint": "7a9d9203280308f6710f8cc5e70fae69dff9bf48ae92b847b121d10ea5b3072e"
+    },
+    {
+      "window_id": "rxrToXvRyM/laptop/rxrToXvRyM-tiny-4s-r1/w000/0.000000-24.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/tiny.en/4s",
+      "talk_id": "rxrToXvRyM",
+      "start_s": 0.0,
+      "end_s": 24.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.89,
+        "meaning_change_or_negation": 0.62,
+        "meaningful_omission": 0.19,
+        "unsupported_addition": 0.35
+      },
+      "jev_request_fingerprint": "2f59fcc6e2aaa546e383248345bbbf3fec3415fc697309d246fbb86d92ee8d95"
+    },
+    {
+      "window_id": "UOlPKyCVgg/laptop/UOlPKyCVgg-tiny-8s-r1/w011/264.000000-288.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/tiny.en/8s",
+      "talk_id": "UOlPKyCVgg",
+      "start_s": 264.0,
+      "end_s": 288.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.83,
+        "meaning_change_or_negation": 0.52,
+        "meaningful_omission": 0.37,
+        "unsupported_addition": 0.27
+      },
+      "jev_request_fingerprint": "7d4b3c69e653e2d8c32fb61d6a167cf6599d606c12257a7f3d6b877c479b1e61"
+    },
+    {
+      "window_id": "xhjBHGVOyQ/pi/xhjBHGVOyQ-tiny-4s-r1/w002/48.000000-72.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/tiny.en/4s",
+      "talk_id": "xhjBHGVOyQ",
+      "start_s": 48.0,
+      "end_s": 72.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.82,
+        "meaning_change_or_negation": 0.56,
+        "meaningful_omission": 0.18,
+        "unsupported_addition": 0.21
+      },
+      "jev_request_fingerprint": "748a8fac574e2dee89788144dea3b19fff5924aa4d56328815c27a42a9326c5c"
+    },
+    {
+      "window_id": "EqmWoxNDIr/laptop/EqmWoxNDIr-base-4s-r1/w011/264.000000-288.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/base.en/4s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 264.0,
+      "end_s": 288.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.82,
+        "meaning_change_or_negation": 0.55,
+        "meaningful_omission": 0.25,
+        "unsupported_addition": 0.46
+      },
+      "jev_request_fingerprint": "01c12fe7fa409a5dbb1aa49d5e883e9cf842e845abeabac2bf1eca37d6b04b8d"
+    },
+    {
+      "window_id": "krJSAnVcGR/pi/krJSAnVcGR-base-4s-r1/w012/288.000000-304.126688",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/base.en/4s",
+      "talk_id": "krJSAnVcGR",
+      "start_s": 288.0,
+      "end_s": 304.1266875,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.8,
+        "meaning_change_or_negation": 0.33,
+        "meaningful_omission": 0.16,
+        "unsupported_addition": 0.21
+      },
+      "jev_request_fingerprint": "cd0ab9ecd0388a577632973a684a76edb86f11511b66f890fa4c03db7dbd2db5"
+    },
+    {
+      "window_id": "ERmKpJPPDc/pi/ERmKpJPPDc-base-8s-r1/w012/288.000000-312.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/base.en/8s",
+      "talk_id": "ERmKpJPPDc",
+      "start_s": 288.0,
+      "end_s": 312.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.78,
+        "meaning_change_or_negation": 0.3,
+        "meaningful_omission": 0.19,
+        "unsupported_addition": 0.16
+      },
+      "jev_request_fingerprint": "3124a2104c78b836995c2f61267e1ae46e60957a78316678d5fc36e303276ee0"
+    },
+    {
+      "window_id": "ERmKpJPPDc/laptop/ERmKpJPPDc-base-8s-r1/w012/288.000000-312.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "laptop/base.en/8s",
+      "talk_id": "ERmKpJPPDc",
+      "start_s": 288.0,
+      "end_s": 312.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.78,
+        "meaning_change_or_negation": 0.38,
+        "meaningful_omission": 0.2,
+        "unsupported_addition": 0.21
+      },
+      "jev_request_fingerprint": "9a75683062838e3733e67731ece790cf1fddc3e44ed4e1b8362d164ae0ea596f"
+    },
+    {
+      "window_id": "EqmWoxNDIr/pi/EqmWoxNDIr-tiny-8s-r1/w002/48.000000-72.000000",
+      "group": "high",
+      "selection_category": "entity_or_quantity_error",
+      "config": "pi/tiny.en/8s",
+      "talk_id": "EqmWoxNDIr",
+      "start_s": 48.0,
+      "end_s": 72.0,
+      "jev_probabilities": {
+        "entity_or_quantity_error": 0.78,
+        "meaning_change_or_negation": 0.33,
+        "meaningful_omission": 0.24,
+        "unsupported_addition": 0.15
+      },
+      "jev_request_fingerprint": "2a5a10dd7944810f3fd84d984021b9e33c9e230f05ad03edab9b9a90f4f7b29d"
+    }
+  ],
+  "requests_fingerprint": "b6bc93d65b522da0f7cf5e8104a452efbadb26249970090c490384738575b231",
+  "ignored_stale_records": 0,
+  "method_id": "5936b2512af52d467c4c00601dda1ee4f8338746bf1c87c59cc31dd3a3695fc9",
+  "created_utc": "2026-10-25T04:43:06.883355+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "design": "Exploratory follow-up designed after examining Jev; not an unbiased error-rate sample"
+}

@@ -1,0 +1,45 @@
+Hello everyone, my name is Ying and my colleague Zhiyang and I will be presenting our research on MultiInstruct improving Multi-Modal Zero-Shot Learning via Instruction Tuning.
+So with the advances in large language models, many works started to explore new learning paradigms of reusing pre-trained language models for different downstream tasks in a parameter and data-efficient way.
+Recently, many studies have shown that instruction tuning enables large language models to perform on unseen tasks in a zero-shot manner by following natural instructions.
+However, most previous works on instruction tuning focused on improving the zero-shot performance on language only tasks, while computer vision and multi-modal tasks have been left out.
+Therefore, in this work we want to investigate whether instruction tuning a multi-modal pre-trained models can actually improve generalisation to unseen multi-modal tasks.
+Additionally, at the time of our research, we discovered a considerable discrepancy in the availability of instructional datasets between NLP and multi-modal.
+There exist more than 1600 language-only instruction tasks.
+However, there is no large-scale publicly-available multi-modal instruction task.
+Therefore, this motivates us to build a multi-modal instruction tuning dataset.
+Here we present MultiInstruct, the first multi-modal instruction tuning benchmark dataset that consists of 62 diverse multi-modal tasks covering 10 broad categories.
+These tasks are derived from 21 existing open-source dataset and each task is equipped with five expert written instructions.
+For investigating multi-modal instruction tuning on our proposed dataset, we take OFA, a unified multi-modal pre-trained model, as our base model.
+OFA uses a unified vocabulary for language, image tokens and the coordinates of a bounding box.
+Here we show some example instances from our MultiInstruct dataset, to unify the processing of various input and output data types.
+We follow the method from OFA and formulate all the tasks in a unified sequence-to-sequence format.
+In which the input text, images, instructions and bounding boxes are represented in the same token space.
+Ok, now I'm going to talk about multi-modal instruction tuning.
+So for the training dataset, we use 53 tasks from 9 groups for training and we sample 10,000 instances per task.
+For testing, we reserve the entire common sense reasoning group for testing, and we select additional 5 tasks from VQ and Miscellaneous groups.
+We use all the instances in the test split for each task.
+In addition, we randomly sample 20 tasks from the test split of natural instructions as an unseen task for NLP.
+So we use pre-trained OFA large model as a base model.
+During training, we mix all the instances for all the tasks.
+Each instance is randomly combined with one of its five instruction templates.
+So during test for each task, we conduct a total of 5 experiments by evaluating the model using one of the five instructions.
+In each experiment, we report the min and max performance and the standard deviation of the performance across all 5 experiments.
+If the task is a multi-model classification task, we report accuracy.
+If it's a multi-modal generation task, we report Rouge-L. For NLP task, we report Rouge-L as well.
+We also introduce an additional evaluation metric called sensitivity.
+So this measures the model's ability to consistently produce the same outputs for the same task regardless of the slight variation in the wording of the instruction.
+Here is our main result.
+As we can see, instruction tuning can significantly improve OFA's performance on seen multi-modal tasks.
+Also, transfer learning from natural instruction dataset can benefit instruction tuning.
+Here we can see, as the amount of task increases, the model achieves better performance and in the meantime, lower sensitivity.
+So we also did one experiment.
+We use one instruction versus 5 instruction.
+As we can see, using more instructions can improve the model's overall performance and reduce its sensitivity a lot.
+So this shows the effect of different fine-tuning strategies on the model sensitivity.
+As we can see by transfer learning from natural instruction datasets, the model can achieve much better sensitivity compared to the original OFA model.
+We also can see transfer learning from natural instruction datasets can help OFA to attain much better performance on the natural instruct dataset.
+So overall, we propose the first large scale multi-model instruction tuning dataset with significantly improved their short capability of OFA, and we explore different transfer learning technique and show their benefits.
+We design a new metric called sensitivity.
+So one more thing, we are collecting a much larger multi-model instruction tuning dataset with around 150 additional vision language tasks and we will release them.
+So this is a QR code for our data and model.
+Thank you.

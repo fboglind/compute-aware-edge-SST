@@ -1,0 +1,46 @@
+{
+  "run": "runs/laptop-smoke-tiny-fixed4-r1",
+  "validation": {
+    "passed": true,
+    "events": 6,
+    "words": 57,
+    "policy": "fixed_chunks",
+    "checks": [
+      "complete_audio_coverage",
+      "causal_audio_reads",
+      "sequential_worker",
+      "atomic_word_emissions",
+      "text_export_roundtrip",
+      "timestamp_ms_roundtrip",
+      "processing_rtf"
+    ]
+  },
+  "chrf2": 78.03032532135067,
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+  "wer": 0.04918032786885246,
+  "wer_counts": {
+    "hits": 58,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0
+  },
+  "rtf_processing": 0.10966157176688336,
+  "first_output_s": 4.360846587049309,
+  "reference_sha256": {
+    "../data/data/smoke.wav": "7c11580d4cc52ae57e367501fab81f9b5bb04ce30aef12011da9653a3397fcaf",
+    "../smoke.en.txt": "ee5fdd6a9ca9d4223b4de382d254f61e82b82e5351e3111c2c84358b8cf414ef",
+    "../smoke.de.txt": "7d5e681151965bbf653f6af0e3b143eddf152f726fb14ffbaf342e3ac8497779"
+  },
+  "input_sha256": {
+    "metadata.json": "44c2cd670512f583e7f63996229e53d972bee57a016a2fdb1054fa1bd323e63b",
+    "summary.json": "ae54ad86a75356f085b772ccf13dfa8da27938ead5fec18d315c7231fe98c353",
+    "hypothesis.jsonl": "c34b4edd0af4d8728665f4a196bcccafe48d3829ce0d3c555b59f930a6895bef",
+    "transcript.en.txt": "0ca49cee3404c414d137cd575fa32dce5b2b2bf42d8ebbbaa665c6b845f8aad9",
+    "translation.de.txt": "0063860f5a55239808c4542ef1e24b5b04473c24710c33e17e98d20fab163ba3"
+  },
+  "packages": {
+    "jiwer": "4.0.0",
+    "sacrebleu": "2.6.0"
+  },
+  "scope": "Whole-excerpt development smoke only; no LongYAAL, COMET, or main-corpus claim"
+}

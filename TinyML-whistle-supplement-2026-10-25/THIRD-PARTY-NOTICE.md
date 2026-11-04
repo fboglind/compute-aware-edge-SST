@@ -1,0 +1,1 @@
+The bundled runner/needle.h is from Cactus-Compute/needle3 at revision d6c7d6a2e9655505e0f8e23339356dd1705900eb. Its Apache 2.0 license is reproduced in LICENSE-needle.txt. The downloaded native libraries and Whistle weights remain subject to their upstream licenses. They are not redistributed in this ZIP.

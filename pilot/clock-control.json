@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "cu_ms": 1000.0,
+  "ca_with_750ms_compute_ms": 1750.0,
+  "zero_compute_ca_ms": 1000.0,
+  "recording_cutoff_ms": 20000
+}

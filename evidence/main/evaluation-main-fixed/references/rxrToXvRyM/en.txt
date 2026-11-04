@@ -1,0 +1,52 @@
+"Hi, I'm Myra and today I'll be talking about our paper ""Marked Personas: Using Natural Language Prompts to Measure Stereotypes in Language Models.""
+This work is done in collaboration with Esin Durmus and Dan Jurafsky.
+In recent years, many have documented the prevalence of social bias and stereotypes in large language models, or LLMs.
+However, these measures have various limitations.
+They usually rely on hand-constructed data sets that are very time-consuming to curate and they also usually only. measure very specific stereotypes, meaning that they don't generalize well to other demographics or contexts, or they simply capture very general broad associations, like negative associations with particular groups.
+Furthermore, most work in this space doesn't account for intersectionality, which is the notion that multi-faceted social identities can compound biases and be unique loci of harm.
+To overcome these limitations, we rely on the property that these newer instruction-tuned LLMs are very good at responding to instructions and prompts.
+So we can ask the model to generate a persona, which is a depiction of an imagined individual using a prompt like ""Imagine you are an Asian woman.
+Describe yourself."".
+And we can immediately see that this is very generalizable to any demographic because we can just specify whatever identity marker that we want into this prompt.
+So here are some example generations from GPT-4.
+Immediately we see that, while the outputs aren't overtly negative or toxic in the traditional sense of these words, there are some interesting patterns.
+The Asian woman is depicted as unassuming; the Middle-Eastern woman is referred to using words like exotic and like, referring to a mesmerizing region.
+And both of the women of color personas make references to ancestry while the white man persona has nothing of the sort.
+To capture these patterns, our method has two parts.
+The first one is generating these personas.
+Our prompts to generate these personas were inspired by a study where they gave these prompts to human subjects, finding that by giving it to human subjects, they also were able to surface racial stereotypes.
+And also this enables direct comparison between our generated personas and the human written responses.
+The second part is marked words, which is a method to identify the words that distinguish marked groups from unmarked ones, which I'll elaborate on shortly.
+The benefit of this is that we get really specific stereotypes and patterns, without having to rely on any specific lexicon.
+So the Marked Words method draws upon the sociolinguistic concept of ""markedness"", which states that there is an unmarked default, and any group that differs from that default is linguistically marked.
+So for instance, the word ""warrior"" is usually associated with men.
+So when people are describing a warrior who is a woman, they'll usually actually specify ""woman warrior"" and mark the term with ""woman"".
+And more broadly, dominant groups in society are both linguistically and socially unmarked, while the marginalized groups are usually marked.
+So in our method, we first designate what the unmarked and marked groups are, and then we compare the personas using the Fightin’ Words method, which is basically using weighted log-odds ratios to distinguish the top words for each marked group.
+So for instance, for the personas of black women, we would do Fightin’ Words and compare the log-odds ratios against both white personas and man personas because those are the two corresponding unmarked groups.
+Now for some results.
+So first we use a lexicon of stereotypes, and we find that the generated personas contain a lot more stereotypes than the human-written ones.
+However, when we actually look at the distribution of the words and lexicon, we find very different things.
+So, while the generated personas have much higher rates of the lexicon words, the human-written ones have a much wider distribution of words, while the stereotype words that are in the generated personas are really just the words ""tall"" and ""athletic"".
+So, really just only the positive or at least non-negative ones.
+And in fact, this lexicon doesn't really capture many of the harmful patterns that we saw in the earlier slides well at all.
+So instead to do that, we'll turn to the results from our Marked Words method to show how these positive-seeming words facilitate stereotypes and essentializing narratives.
+In our analysis, we reveal how these seemingly positive portrayals reflect harmful patterns.
+First, from our groups, the top words include things like ""culture"", ""tradition"", ""proud"", and ""exotic"".
+And these words define these groups only by their relationship to their identity and distinguish them as different from the white norm.
+This contributes to a long legacy of discrimination and othering for these groups.
+Furthermore, there's a lot of common tropes that are reflected in these words, especially for women of color.
+So for example, the words describing Latina women include things like ""vibrant"" and ""curvaceous"" which connect to a trope of tropicalism.
+For Asian women, the words are things like ""petite"" and ""delicate"" and ""silky"" which connects to a long history of Asian women being hyper-sexualized, seen as very docile and submissive, and so on.
+And finally, for black women, we see that some of the top words are things like ""strong"" and ""resilient"".
+This connects to an archetype that people have called the ""Strong Black Women"" archetype.
+And while it sounds positive at first glance, there's been work showing that this kind of archetype actually is very harmful because it puts a lot of pressure on these demographics to be resilient and strong against societal obstacles.
+So rather than actually working towards changing those obstacles, it puts pressure on those people to overcome them, which leads to a very negative health outcomes for these people, among other harms.
+More broadly, we find that the words for each marked group pretty much just reflect very essentializing narratives.
+So based on these patterns, we conclude with three recommendations for model owners.
+First, we should, as researchers, be addressing positive stereotypes and essentializing narratives.
+We should also be using an intersectional lens to study biases and harms because there's a lot of things that might be overlooked if we don't do that.
+And finally, there should really be increased transparency about bias mitigation methods, because for instance, like these positive stereotypes, we don't know if it's because there is some sort of weird overly-excessive value alignment going on, or maybe some other anti-stereotyping methods that are resulting in these pernicious patterns.
+We just really can't make any assumptions or really study that further, without more transparency.
+Thank you so much for listening.
+Have a good time at ACL."

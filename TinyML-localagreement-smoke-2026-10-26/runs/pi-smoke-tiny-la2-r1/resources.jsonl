@@ -1,0 +1,7 @@
+{"elapsed_s": 0.00017912800001340656, "rss_mib": 346.078125, "system_available_mib": 7129.515625, "system_swap_used_mib": 0.0, "cpu_temp_c": 54.55, "cpu_freq_mhz": 2400.0}
+{"elapsed_s": 5.001489111999945, "rss_mib": 349.34375, "system_available_mib": 7176.625, "system_swap_used_mib": 0.0, "cpu_temp_c": 54.55, "cpu_freq_mhz": 2400.0}
+{"elapsed_s": 10.002485784999976, "rss_mib": 353.40625, "system_available_mib": 7215.234375, "system_swap_used_mib": 0.0, "cpu_temp_c": 54.0, "cpu_freq_mhz": 2400.0}
+{"elapsed_s": 15.00715293899998, "rss_mib": 364.71875, "system_available_mib": 7182.765625, "system_swap_used_mib": 0.0, "cpu_temp_c": 58.95, "cpu_freq_mhz": 2400.0}
+{"elapsed_s": 20.013510090999944, "rss_mib": 365.71875, "system_available_mib": 7196.0, "system_swap_used_mib": 0.0, "cpu_temp_c": 62.25, "cpu_freq_mhz": 2400.0}
+{"elapsed_s": 25.01440630000002, "rss_mib": 417.21875, "system_available_mib": 7114.3125, "system_swap_used_mib": 0.0, "cpu_temp_c": 65.0, "cpu_freq_mhz": 2400.0}
+{"elapsed_s": 26.995835695999972, "rss_mib": 366.25, "system_available_mib": 7141.84375, "system_swap_used_mib": 0.0, "cpu_temp_c": 65.55, "cpu_freq_mhz": 2400.0}

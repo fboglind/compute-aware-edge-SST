@@ -1,0 +1,45 @@
+Hallo zusammen, mein Name ist Ying und mein Kollege Zhiyang und ich werden unsere Forschung zu MultiInstruct vorstellen, die das multimodale Zero-Shot-Lernen durch die Anweisungsabstimmung verbessert.
+Mit den Fortschritten bei Large Language Models haben viele Arbeiten begonnen, neue Lernparadigmen zu erforschen, um vortrainierte Sprachmodelle für verschiedene nachgelagerte Aufgaben in einer parameter- und datensparenden Weise wiederzuverwenden.
+In jüngster Zeit haben viele Studien gezeigt, dass Large Language Models durch die Anweisungsabstimmung in der Lage sind, unbekannte Aufgaben in kürzester Zeit zu bewältigen, indem sie natürliche Anweisungen befolgen.
+Die meisten bisherigen Arbeiten zur Anweisungsabstimmung haben sich jedoch auf die Verbesserung der Zero-Shot-Leistung bei rein sprachlichen Aufgaben konzentriert und Computer Vision und multimodale Aufgaben außer Acht gelassen.
+Daher wollen wir in dieser Arbeit untersuchen, ob die Anweisungsabstimmung eines vortrainierten multimodalen Modells tatsächlich die Generalisierung auf ungesehene multimodale Aufgaben verbessern kann.
+Darüber hinaus haben wir zum Zeitpunkt unserer Forschung eine erhebliche Diskrepanz in der Verfügbarkeit von Anweisungsdatensätzen zwischen NLP und Multimodal festgestellt.
+Es gibt mehr als 1600 reine Sprachanweisungsaufgaben.
+Es gibt jedoch keine großen multimodalen Anweisungsaufgaben, die öffentlich verfügbar sind.
+Dies hat uns motiviert, einen Datensatz mit multimodaler Anweisungsabstimmung zu erstellen.
+Wir stellen hier MultiInstruct vor, den ersten multimodalen Benchmark-Datensatz für die Anweisungsabstimmung, der aus 62 verschiedenen multimodalen Aufgaben aus 10 verschiedenen Kategorien besteht.
+Diese Aufgaben stammen aus 21 bestehenden Open-Source-Datensätzen und jede Aufgabe ist mit fünf von Experten geschriebenen Anweisungen versehen.
+Um die multimodale Anweisungsabstimmung in unserem vorgeschlagenen Datensatz zu untersuchen, verwenden wir OFA, ein einheitliches multimodales vortrainiertes Modell, als Basismodell.
+OFA verwendet ein einheitliches Vokabular für Sprache, Bild-Token und Bounding-Box-Koordinaten.
+Hier zeigen wir einige Beispielinstanzen aus unserem MultiInstruct-Datensatz, um die Verarbeitung verschiedener Eingabe- und Ausgabedatentypen zu vereinheitlichen.
+Wir folgen der OFA-Methode und formulieren alle Aufgaben in einem einheitlichen Sequence-to-Sequence-Format,
+in dem Eingabetext, Bilder, Anweisungen und Bounding-Boxes im gleichen Tokenraum dargestellt werden.
+Ok, jetzt werde ich über die multimodale Anweisungsabstimmung sprechen.
+Für den Trainingsdatensatz verwenden wir 53 Aufgaben aus 9 Gruppen für das Training und 10.000 Instanzen pro Aufgabe.
+Für den Test reservieren wir die gesamte Gruppe Common Sense Reasoning und wählen zusätzlich 5 Aufgaben aus den Gruppen VQ und Miscellaneous aus.
+Für jede Aufgabe werden alle Instanzen der Testgruppe verwendet.
+Zusätzlich wählen wir zufällig 20 Aufgaben aus der Testgruppe Natürliche Anweisungen als ungesehene Aufgaben für NLP aus.
+Wir verwenden also das vortrainierte große OFA-Modell als Basismodell.
+Während des Trainings mischen wir alle Instanzen für alle Aufgaben.
+Jede Instanz wird zufällig mit einer der fünf Anweisungsvorlagen kombiniert.
+Beim Testen führen wir insgesamt 5 Experimente für jede Aufgabe durch und evaluieren das Modell mit einer der fünf Anweisungsvorlagen.
+Für jedes Experiment geben wir die minimale und maximale Leistung sowie die Standardabweichung der Leistung über alle 5 Experimente an.
+Handelt es sich bei der Aufgabe um eine multimodale Klassifikationsaufgabe, geben wir die Genauigkeit an.
+Wenn es sich um eine multimodale Generierungsaufgabe handelt, geben wir Rouge-L an. Für die NLP-Aufgabe geben wir ebenfalls Rouge-L an.
+Wir führen auch eine zusätzliche Metrik ein, die Sensitivität genannt wird.
+Diese misst die Fähigkeit des Modells, konsistent die gleichen Ergebnisse für die gleiche Aufgabe zu liefern, unabhängig von kleinen Unterschieden in der Formulierung der Anweisungen.
+Dies ist unser Hauptergebnis.
+Wie wir sehen, kann die Anweisungsabstimmung die Leistung der OFA bei visuellen multimodalen Aufgaben deutlich verbessern.
+Die Anweisungsabstimmung kann auch vom Transferlernen aus dem Datensatz der natürlichen Anweisungen profitieren.
+Hier sehen wir, dass das Modell mit zunehmender Anzahl von Aufgaben eine bessere Leistung bei gleichzeitig geringerer Sensitivität erreicht.
+Deshalb haben wir auch ein Experiment durchgeführt.
+Wir verwenden eine Anweisung im Vergleich zu 5 Anweisungen.
+Wie zu sehen ist, kann die Verwendung von mehr Anweisungen die Gesamtleistung des Modells verbessern und seine Sensitivität deutlich verringern.
+Dies zeigt die Auswirkung verschiedener Tuning-Strategien auf die Empfindlichkeit des Modells.
+Wie wir sehen können, kann das Modell durch Transferlernen aus natürlichen Anweisungsdatensätzen eine viel bessere Empfindlichkeit im Vergleich zum ursprünglichen OFA-Modell erreichen.
+Wir können auch sehen, dass Transfer-Lernen aus natürlichen Anweisungsdatensätzen OFA dabei helfen kann, eine viel bessere Leistung auf dem natürlichen Anweisungsdatensatz zu erreichen.
+Zusammenfassend stellen wir den ersten großen Multi-Modell-Datensatz für die Anweisungsabstimmung vor, der die kurzen Fähigkeiten von OFA signifikant verbessert, und wir untersuchen verschiedene Transfer-Learning-Techniken und zeigen deren Vorteile auf.
+Wir entwickeln eine neue Metrik, die Sensitivität.
+Und noch etwas: Wir sind gerade dabei, einen viel größeren multimodalen Anweisungsdatensatz mit etwa 150 zusätzlichen Bildverarbeitungsaufgaben zu erstellen und anschließend zu veröffentlichen.
+Das ist der QR-Code für unsere Daten und unser Modell.
+Vielen Dank.

@@ -1,0 +1,5 @@
+OmniSTEval==0.1.10
+sacrebleu==2.6.0
+jiwer==4.0.0
+PyYAML==6.0.3
+mosestokenizer==1.2.1

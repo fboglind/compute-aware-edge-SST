@@ -1,0 +1,16 @@
+{
+  "archive": "mcif-pilot-results.tar.gz",
+  "archive_sha256": "5d522013723d671d9a9662162c7ece343b1d1587c9360f4a81f4f3dc75a0c02c",
+  "original_tar_command": "tar -czf mcif-pilot-results.tar.gz .",
+  "archive_layout": "run directories at archive root, with ./ prefixes",
+  "pilot_only": true,
+  "excluded_from_evaluation": [
+    "smoke-tiny-4s",
+    "smoke-tiny-whole"
+  ],
+  "reference_input_sha256": {
+    "audio-segments.yaml": "d50212b4bac17e42deffb832b766497f3a88fbaed261ccafd8fffa71a899e3a0",
+    "en.txt": "5cb82b2f0336eece77b3122da6c9540d33caaf779ec825603d18d49a09dc6570",
+    "de.txt": "f4a4047634762a0be3321716110a4c9c8875f622ce8001be9f43fe764952b8e6"
+  }
+}

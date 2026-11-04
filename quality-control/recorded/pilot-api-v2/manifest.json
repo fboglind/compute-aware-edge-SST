@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-22T16:23:02.938229+00:00",
+  "talk_id": "JhbtCwcsWY",
+  "runs": [
+    {
+      "run_id": "mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1",
+      "chunks": 90,
+      "windows": 15,
+      "inputs": [
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/chunks.jsonl",
+          "sha256": "b57c4e8854c26fd0c2305f60ec484ba0a2a312003612d3ad6c0e1b52171557be"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/metadata.json",
+          "sha256": "2d6145a17ed5882842c4ae9012a1b6b4ac446e88efd4da80489d2604fe118bfa"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/summary.json",
+          "sha256": "8f3930af4a2279e9eb62b2d05d7a13a5c528d00c107e7fa6cedf907403fc883c"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/transcript.en.txt",
+          "sha256": "d8547dbaa9f70e1abcfb0c000844bb35cb6325dcbedb169aa5ca4c3999147317"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/translation.de.txt",
+          "sha256": "8119d67cec1c9abb7059e24669c128f7b7a726f3345a650dfcdf8737c2b3886a"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/words.jsonl",
+          "sha256": "cc3a56d5a576f7a9d0ce9cc1dc216d8f7fddd81d1b9b7647d959f6a40d75f258"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/hypothesis.jsonl",
+          "sha256": "3468c5a8d880363ebe922b1022cc7a579077716d02d1415d345ccac6def2e2a0"
+        }
+      ],
+      "audio_sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9",
+      "script_sha256": {
+        "run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+        "stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+      },
+      "mt_input_contract": "Logged english passed unchanged to tokenizer.encode; no truncation; empty input skips MT.",
+      "public_pilot": true
+    },
+    {
+      "run_id": "mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1",
+      "chunks": 45,
+      "windows": 15,
+      "inputs": [
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/chunks.jsonl",
+          "sha256": "be12293109c737a639894cef28b5276f8b71f1187403170939c0bff63d37703e"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/metadata.json",
+          "sha256": "7f0a6d7e5ef64d15e59d15d8ac3e981287d7a74f089cc0c59c8f2ef79a64e12b"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/summary.json",
+          "sha256": "2ad26cbceec1c8208c01ad632036c6c0fcefc52fb747cfe7b822161cbf2da2c3"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/transcript.en.txt",
+          "sha256": "dd2d0a886c38cad8c1bedaff2a2e63680b1f2ef12dd91ec256748d61e2480350"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/translation.de.txt",
+          "sha256": "022e3b3aef8d18ad49a8139f15ba41a45a1b4d1f3dc207298f4076226b0ceabf"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/words.jsonl",
+          "sha256": "8d73f778d0db21347ff85c7326189a8e9156f45044903e2f6b250b8aa1160774"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-tiny-8s-mtbeam4-r1/hypothesis.jsonl",
+          "sha256": "54df020fe6139991bf6508e5d2326a24e30f53312dbaf559eb7943f5bbe25c8f"
+        }
+      ],
+      "audio_sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9",
+      "script_sha256": {
+        "run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+        "stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+      },
+      "mt_input_contract": "Logged english passed unchanged to tokenizer.encode; no truncation; empty input skips MT.",
+      "public_pilot": true
+    },
+    {
+      "run_id": "mcif-JhbtCwcsWY-base-4s-mtbeam4-r1",
+      "chunks": 90,
+      "windows": 15,
+      "inputs": [
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/chunks.jsonl",
+          "sha256": "3c662be544718875a22e13e67b7977ed08aa8badef6604dc8586a536f8668dde"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/metadata.json",
+          "sha256": "10708144aa0ee39dc6a07988adcf90f9762b3f712434ae1c2a611ae680dba37e"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/summary.json",
+          "sha256": "69fe4e7032cd75bea342550cce0fcb294152eacda12d490f8b53bfaed1e69d85"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/transcript.en.txt",
+          "sha256": "cfad69731dbab6dc80bf070a1baf9350d5d59d8c6f684e5a2fa22429a85d4531"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/translation.de.txt",
+          "sha256": "454469a97eb50036e6a7fa9ce4b69711ff8a68193883f5191d7dceef6260c8dc"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/words.jsonl",
+          "sha256": "e4ebb9592d0b29ab007540821e6dcd4427b28d2ff33c385048185c6caf883a4b"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-4s-mtbeam4-r1/hypothesis.jsonl",
+          "sha256": "e36bf1f4ba497d2ffb57bd55fda411e8acaf93b71433490d6625f17e3d16cdd4"
+        }
+      ],
+      "audio_sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9",
+      "script_sha256": {
+        "run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+        "stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+      },
+      "mt_input_contract": "Logged english passed unchanged to tokenizer.encode; no truncation; empty input skips MT.",
+      "public_pilot": true
+    },
+    {
+      "run_id": "mcif-JhbtCwcsWY-base-8s-mtbeam4-r1",
+      "chunks": 45,
+      "windows": 15,
+      "inputs": [
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/chunks.jsonl",
+          "sha256": "2566265e0494b396b5897979f2987163c5f4173a4733bfabeb6f6a6aaf7250af"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/metadata.json",
+          "sha256": "64122130efda42d125316d3c9bb865a8117e62c1e6cf48a1e353f8d3408f9d08"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/summary.json",
+          "sha256": "164c730a0de922fa99459a0011e38c4534967aad3647fa1001ac37f22e3fd622"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/transcript.en.txt",
+          "sha256": "dcc8d867c0c587baace7b300623b6a4760123402c58846f8812ca32b23831ef5"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/translation.de.txt",
+          "sha256": "6d3f256b9a3973784fefca0fe3bc29e880d3a4ba2084ac08eb6312a2cb0a7605"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/words.jsonl",
+          "sha256": "cd230d8b7ea00b5d5cb7a99916b190e8e602ed5356948af355a43b8bc1995453"
+        },
+        {
+          "path": "/home/fredrik/Documents/tinyml-pilot/pi-runs/mcif-JhbtCwcsWY-base-8s-mtbeam4-r1/hypothesis.jsonl",
+          "sha256": "7badde00a9cae69a90856091035f16836e3bb0e25a7d1ac8c33b2052771e28be"
+        }
+      ],
+      "audio_sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9",
+      "script_sha256": {
+        "run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+        "stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+      },
+      "mt_input_contract": "Logged english passed unchanged to tokenizer.encode; no truncation; empty input skips MT.",
+      "public_pilot": true
+    }
+  ],
+  "reference_inputs": [
+    {
+      "path": "/home/fredrik/Documents/tinyml-pilot/data/mcif-pilot-JhbtCwcsWY/manifest.json",
+      "sha256": "22cd1de5d7fbc6d67919b2acfe95a31ad7495879329ec3b4d419cdbc0c609162"
+    },
+    {
+      "path": "/home/fredrik/Documents/tinyml-pilot/data/mcif-pilot-JhbtCwcsWY/reference.en.txt",
+      "sha256": "d2830b2c76362af719c43ed9d23ebc7d505ab40cfd87ed824d6533aed1904713"
+    },
+    {
+      "path": "/home/fredrik/Documents/tinyml-pilot/data/mcif-pilot-JhbtCwcsWY/reference.de.txt",
+      "sha256": "b807af170b3f8f02777181bba1930ea73f9e64a47bbd6c3ee847b6e329254100"
+    }
+  ],
+  "window_count": 60,
+  "selected_count": 8,
+  "segmentation_version": "whole-chunks-at-least-target-v1",
+  "scope": "Development pilot; MT fidelity relative to ASR, not original-audio fidelity",
+  "time_paired": true,
+  "artifacts": {
+    "windows.jsonl": "706579a2870117a959ef1d96c384c638b9c782ed5a3fd5554945dc4efc0e18f0",
+    "deterministic.jsonl": "3eca1a4ad82646cf1e0ec2e0246aaffaabc3de12440122a3f82089a72156fda8",
+    "reference_evidence.json": "bc96fc61405f1dd192aea5803ddae56420948bc9e07e76e22a65042ecf64fcad"
+  },
+  "qc_code_sha256": {
+    "__init__.py": "0644948b5f9520804760e4949ae7e54a6f3b1566e8e411c2605581dd7444b72c",
+    "__main__.py": "75415d603ac66ffbf64fcd0641b844877b7c1f7a4bbbaffb20052c595ced07dc",
+    "asr_errors.py": "3145ea47ce24a19a4a54575f17c402c577f3f32d8522b0bd406f323277edefe0",
+    "common.py": "cd27ad7ade8a6c30be15b0cb6cdceb0224c2087c7164f77a3977219d2d0b70e6",
+    "explanations.py": "4b58f17ae616002a45215ff90925e54ee1978da2c0ea98d358444b39bf73764b",
+    "fixtures.py": "d6eb2a1a65c2f18d712a83c6b46a503e046a98a094dbd01dcf2480888b6413b9",
+    "human.py": "b4def31db346706a400c90e9de4588279732efb49884f7f66884dadb78f1cf4d",
+    "inputs.py": "9c3638218d698879f2f522a7e8e91fc99bb867fe557c2160d43b1b43dbef2b32",
+    "jev.py": "a88f23de838089af0e9ad2f6cd4711c4c76f8aa8f2f8e14ff8003b7adc1da7a6",
+    "main_experiment.py": "d66ebd81c89566c70bca93fc384c0f5a6017a9720b94f1d92595183cdfb97faa",
+    "mock_run.py": "11c0437030b7b7126edc2bae71ea7a019f082cddc4704355cd1e2ab46c933ae2",
+    "reports.py": "bcce145692e68928a19506e1c1800c229d73b262ffe01ec0c3b449000ce71386"
+  }
+}

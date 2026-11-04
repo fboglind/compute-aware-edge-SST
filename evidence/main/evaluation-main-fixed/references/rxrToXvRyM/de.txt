@@ -1,0 +1,52 @@
+Hallo, mein Name ist Myra und ich werde heute über unsere Arbeit „Marked Personas: Using Natural Language Prompts to Measure Stereotypes in Language Models“ sprechen.
+Es handelt sich dabei eine Zusammenarbeit mit Esin Durmus und Dan Jurafsky.
+In den letzten Jahren haben viele die Prävalenz von sozialen Vorurteilen und Stereotypen in großen Sprachmodellen (LLMs) dokumentiert.
+Diese Messungen weisen jedoch einige Einschränkungen auf.
+Sie basieren in der Regel auf manuell erstellten Datensätzen, deren Zusammenstellung sehr zeitaufwändig ist, und sie tendieren dazu, nur sehr spezifische Stereotypen zu messen, was bedeutet, dass sie nicht gut auf andere demografische Gruppen oder Kontexte verallgemeinert werden können, oder sie erfassen einfach sehr allgemeine Assoziationen, z. B. negative Assoziationen mit bestimmten Gruppen.
+Darüber hinaus berücksichtigen die meisten Arbeiten in diesem Bereich nicht die Intersektionalität, das heißt die Idee, dass mehrere soziale Identitäten Vorurteile verstärken und einzigartige Orte der Benachteiligung sein können.
+Um diese Einschränkungen zu überwinden, machen wir uns die Tatsache zunutze, dass diese neueren LLMs sehr gut auf Anweisungen und Prompts reagieren können.
+Beispielsweise können wir das Modell auffordern, eine Persona zu erstellen, das heißt die Darstellung einer imaginären Person, indem wir einen Prompt wie „Stellen Sie sich vor, Sie sind eine asiatische Frau.
+Beschreiben Sie sich selbst“ eingeben.
+Und wir können sofort sehen, dass dies für jede Bevölkerungsgruppe verallgemeinerbar ist, da wir jedes Identitätsmerkmal in diesen Prompt einfügen können.
+Hier sind also einige Beispielgenerationen von GPT-4.
+Wir können sofort erkennen, dass die Ergebnisse nicht eindeutig negativ oder toxisch im traditionellen Sinne dieser Wörter sind, aber es gibt einige interessante Muster.
+Die asiatische Frau wird als bescheiden dargestellt; die Frau aus dem Nahen Osten wird mit Wörtern wie exotisch beschrieben und es wird bei ihr auf eine faszinierende Region hingewiesen.
+Und die beiden Personas der Women-of-Colour verweisen auf ihre Abstammung, während die des weißen Mannes dies nicht tut.
+Unsere Methode zur Erfassung dieser Muster besteht aus zwei Teilen.
+Der erste Teil besteht in der Erstellung der Personas.
+Unsere Prompts für die Erstellung dieser Personas wurden von einer Studie inspiriert, in der diese Prompts menschlichen Teilnehmern vorgelegt wurden und in der festgestellt wurde, dass dadurch auch rassistische Stereotypen aufgedeckt werden konnten.
+Dies ermöglicht auch einen direkten Vergleich zwischen den von uns generierten Personas und den schriftlichen Antworten von Menschen.
+Der zweite Teil ist das Tagging. Dabei handelt es sich um eine Methode zur Identifizierung von Wörtern, die getaggte Gruppen von nicht getaggten Gruppen unterscheiden.
+Der Vorteil dieser Methode besteht darin, dass wir wirklich spezifische Stereotypen und Muster erhalten, ohne auf ein spezielles Lexikon zurückgreifen zu müssen.
+Die Marked-Words-Methode basiert also auf dem soziolinguistischen Konzept der „Markierung“, das besagt, dass es eine unmarkierte Norm gibt und dass jede Gruppe, die von dieser Norm abweicht, sprachlich markiert wird.
+Zum Beispiel wird das Wort „Krieger“ normalerweise mit Männern assoziiert.
+Wenn man also einen Krieger beschreibt, der eine Frau ist, sagt man normalerweise „Kriegerin“ und markiert das Wort mit „Frau“.
+Im Allgemeinen werden dominante Gruppen in der Gesellschaft weder sprachlich noch sozial markiert, während marginalisierte Gruppen in der Regel markiert werden.
+Bei unserer Methode bestimmen wir zunächst die unmarkierten und markierten Gruppen und vergleichen dann die Personas mit der „Fightin’ Words“-Methode, die im Wesentlichen gewichtete log-odds-Verhältnisse verwendet, um die Top-Wörter für jede markierte Gruppe zu unterscheiden.
+Für die schwarzen weiblichen Personas würden wir beispielsweise die „Fightin’ Words“-Methode anwenden und die log-odds-Verhältnisse sowohl mit den weißen als auch mit den männlichen Personas vergleichen, da dies die beiden entsprechenden nicht markierten Gruppen sind.
+Nun zu einigen Ergebnissen.
+Zuerst verwenden wir ein Lexikon von Stereotypen und stellen fest, dass die generierten Personas viel mehr Stereotypen enthalten als die von Menschen geschriebenen.
+Wenn wir uns aber anschauen, wie sich die Wörter und der Wortschatz verteilen, dann stellen wir fest, dass es ganz anders aussieht.
+Während also die generierten Personas einen viel höheren Anteil an Lexikonwörtern aufweisen, weisen die von Menschen geschriebenen Personas eine viel breitere Verteilung von Wörtern auf, während die stereotypen Wörter in den generierten Personas eigentlich nur die Wörter „groß“ und „sportlich“ sind.
+Also wirklich nur die positiven oder zumindest nicht negativen Wörter.
+Und in der Tat deckt dieses Lexikon nicht wirklich viele der schädlichen Muster ab, die wir auf den vorherigen Folien gesehen haben.
+Stattdessen wenden wir uns den Ergebnissen unserer Marked-Words-Methode zu, um zu zeigen, wie diese positiv erscheinenden Wörter Stereotypen und essentialisierende Erzählungen fördern.
+In unserer Analyse zeigen wir, wie diese scheinbar positiven Darstellungen schädliche Muster widerspiegeln.
+Zunächst gehören zu den wichtigsten Wörtern unserer Gruppen Begriffe wie „Kultur“, „Tradition“, „stolz“ und „exotisch“.
+Und diese Wörter definieren diese Gruppen nur in Bezug auf ihre Identität und grenzen sie von der weißen Norm ab.
+Dies trägt zu einem langen Erbe der Diskriminierung und Fremdbestimmung dieser Gruppen bei.
+Darüber hinaus spiegeln sich in diesen Begriffen viele gängige Tropen wider, insbesondere für Women-of-Colour.
+So werden beispielsweise Latina-Frauen unter anderem mit Wörtern wie „lebhaft“ und „kurvenreich“ beschrieben, die mit der Trope des Tropismus verbunden sind.
+Bei asiatischen Frauen sind es Wörter wie „zierlich“ und „zart“ und „seidig“, was damit zusammenhängt, dass asiatische Frauen lange Zeit übersexualisiert und als sehr fügsam und unterwürfig angesehen wurden.
+Bei den schwarzen Frauen schließlich finden sich unter den Top-Wörtern Begriffe wie „stark“ und „widerstandsfähig“.
+Dies ist eine Produktkopplung mit einem Archetyp, der als „starke schwarze Frau“ bezeichnet wird.
+Und obwohl das auf den ersten Blick positiv klingt, gibt es Arbeiten, die zeigen, dass diese Art von Archetyp eigentlich sehr schädlich ist, weil er diese Bevölkerungsgruppen unter Druck setzt, widerstandsfähig und stark gegenüber sozialen Hindernissen zu sein.
+Anstatt also wirklich daran zu arbeiten, diese Hindernisse zu verändern, setzt er diese Menschen unter Druck, sie zu überwinden, was neben anderen schädlichen Auswirkungen auch sehr negative gesundheitliche Folgen für sie hat.
+Generell stellen wir fest, dass die Wörter für jede markierte Gruppe fast ausschließlich stark essentialisierende Narrative widerspiegeln.
+Auf der Grundlage dieser Muster schließen wir mit drei Empfehlungen für Modellierer.
+Erstens sollten wir uns als Forscher auf positive Stereotype und essentialisierende Narrative konzentrieren.
+Wir sollten auch eine intersektionale Linse verwenden, um Voreingenommenheit und Benachteiligung zu betrachten, denn es gibt viele Dinge, die wir sonst übersehen könnten.
+Und schließlich sollten wir mehr Transparenz in die Methoden bringen, mit denen wir Vorurteile abbauen, denn bei diesen positiven Stereotypen wissen wir nicht, ob es sich um ein seltsames, übertriebenes Wertalignment handelt oder um andere Anti-Stereotypisierungs-Methoden, die zu diesen schädlichen Mustern führen.
+Ohne mehr Transparenz können wir keine Vermutungen anstellen oder die Angelegenheit weiter untersuchen.
+Vielen Dank fürs Zuhören.
+Viel Spaß bei der ACL.

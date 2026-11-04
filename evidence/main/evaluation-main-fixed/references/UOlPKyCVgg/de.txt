@@ -1,0 +1,32 @@
+Hallo, mein Name ist Yanis Labrak und ich werde unsere Arbeit „DrBERT: A Robust Pre-trained Model in French for Biomedical and Clinical Domains“ vorstellen.
+In dieser Präsentation werden wir zunächst über Sprachmodellierung im Gesundheitswesen sprechen.
+Anschließend präsentieren wir den Hauptbeitrag unserer Arbeit.
+Wir werden das erste biomedizinische Modell in französischer Sprache namens DrBERT vorstellen, das auf RoBERTa basiert und auf NACHOS trainiert wurde, einem Datensatz mit medizinischen Daten, die aus dem Internet gecrawlt wurden.
+Wir werden auch einen Vergleich von Modellen mit verschiedenen Vortrainingseinstellungen und Datenquellen präsentieren.
+Anschließend präsentieren wir unsere Ergebnisse für 11 biomedizinische und klinische Aufgaben in französischer Sprache.
+Abschließend fassen wir die Experimente zusammen und geben Ihnen weitere Informationen, wie Sie auf die Modelle zugreifen können.
+Seit seiner Veröffentlichung im Jahr 2018 hat sich BERT zu einem der effizientesten Ansätze für die Verarbeitung natürlicher Sprache entwickelt und bietet erhebliche Leistungsverbesserungen im Vergleich zu historischen statischen und kontextualisierten Methoden wie Word2vec oder fastText.
+Seitdem wurde dieses Modell an viele andere Sprachen angepasst, zum Beispiel an Französisch mit CamemBERT, an Domains wie Biomedizin mit PubMedBERT und BioBERT und an die klinische Domain mit ClinicalBERT, aber vor allem an Englisch.
+Für andere Sprachen gibt es nur wenige spezialisierte Modelle, die aufgrund des Mangels an Domain-eigenen Daten oft auf kontinuierlichem Vortraining basieren.
+Für Französisch gibt es jedoch noch kein Open-Source-Modell für die Biomedizin.
+Wir fragen uns also, welche Datenquellen für eine breite Palette von Anwendungen am besten geeignet sind, und diese gecrawlten Daten sind ein guter Ersatz für klinische Daten.
+Um diese Frage zu beantworten, vergleichen wir DrBERT mit unserem Modell ChuBERT, das auf anonymisierten Daten aus dem Data Warehouse des Universitätsklinikums Nantes basiert.
+Dann fragen wir uns: Wie viele Daten brauchen wir, um ein spezialisiertes Modell auf französischen Daten zu trainieren?
+Sind es 4 Gigabyte, 8 Gigabyte oder mehr?
+Um diese Frage zu beantworten, trainieren und vergleichen wir zunächst vier Modelle von Grund auf: eine erste Version von DrBERT mit 7 GB NACHOS; eine zweite Version mit 4 GB NACHOS; eine erste Version von ChuBERT, das ist ein klinisches Modell, mit 4 GB klinischen Aufzeichnungen; und eine letzte Version von ChuBERT mit einer Mischung aus 4 GB NACHOS und 4 GB klinischen Aufzeichnungen.
+Zusätzlich zu diesem Vergleich haben wir drei Modelle eingeführt, die mit kontinuierlichem Vortraining trainiert wurden, um die Auswirkungen der Vortrainingsstrategie zu analysieren.
+Ein Modell basiert auf der Gewichtung von CamemBERT und wurde mit einem Satz von 4 GB NACHOS trainiert.
+Ein weiteres, das ebenfalls auf CamemBERT basiert, aber dieses Mal auf den 4 GB klinischen Aufzeichnungen trainiert wurde, und schließlich ein weiteres, das auf dem englischen biomedizinischen Modell PubMedBERT basiert und auf einem 4 GB großen Satz von NACHOS trainiert wurde.
+Insgesamt verfügen wir also über sieben Modelle.
+Um unsere sieben Modelle zu evaluieren, sammeln wir Daten für öffentliche und private nachgeschaltete Aufgaben wie Named Entity Recognition, Klassifikation, Part-of-Speech Tagging und Question Response.
+Diese Modelle werden mit sechs Basismodellen verglichen: CamemBERT OSCAR 138 GB, CamemBERT OSCAR 4 GB, CamemBERT CCNET 4 GB, PubMedBERT, BioBERT und ClinicalBERT.
+Die Auswertung zeigt, dass die Modelle am besten abschneiden, wenn sie mit Daten desselben Typs arbeiten, auf dem das Modell trainiert wurde.
+Wir können jedoch feststellen, dass Daten aus heterogenen Quellen vielseitiger zu sein scheinen.
+Wir beobachten auch, dass die Verwendung von mehr Daten zu einer besseren Leistung führt.
+Insgesamt scheint das Vortraining bei den meisten Aufgaben zu einer besseren Leistung zu führen.
+Unser Kontrollexperiment zum Vortraining mit der Gewichtung und Tokenisierung von CamemBERT, trainiert auf der 4 GB Untermenge von NACHOS, zeigte jedoch vergleichbare Ergebnisse wie mit nicht vortrainierten 4 GB DrBERT.
+Dies ist nicht der Fall für das Modell, das auf den CamemBERT-Gewichten und dem Tokenisierer basiert, bei denen Stabilitätsprobleme bestehen.
+Schließlich kommen wir zu dem Schluss, dass unser dediziertes System in neun der elf Downstream-Aufgaben eine bessere Leistung erbringt und insgesamt das Ergebnis des generischen Modells, in diesem Fall CamemBERT, übertrifft.
+Wir stellen auch fest, dass mehr spezialisierte Daten besser sind, aber nicht gut skalieren.
+Alle vortrainierten Modelle, die wir von NACHOS erhalten haben, sind auf Hugging Face und unter der MIT-Lizenz frei verfügbar und alle Trainingsskripte sind in unserem GitHub Repository zu finden.
+Vielen Dank für diese Präsentation und wir freuen uns auf den Austausch bei der Postersession in Toronto.

@@ -1,0 +1,89 @@
+{
+  "role": "research pilot; exclude this entire talk from main evaluation",
+  "dataset": "FBK-MT/MCIF",
+  "dataset_revision": "e24065b919758263cfe5d157057278affe76ea7b",
+  "dataset_card": "https://huggingface.co/datasets/FBK-MT/MCIF",
+  "dataset_testset_name": "MCIF1.2",
+  "track": "long",
+  "talk_id": "JhbtCwcsWY",
+  "talk_topic": "DEPLAIN: German text simplification corpus",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "MCIF dataset by FBK-MT and the MCIF authors; original talk retained unchanged.",
+  "retrieved_utc": "2026-10-11",
+  "audio_file": "JhbtCwcsWY.wav",
+  "audio_duration_s": 357.540875,
+  "audio_frames": 5720654,
+  "audio_format": {
+    "channels": 1,
+    "sample_rate_hz": 16000,
+    "sample_width_bytes": 2,
+    "encoding": "signed 16-bit PCM"
+  },
+  "source_interval_s": [
+    0.0,
+    357.540875
+  ],
+  "audio_processing": "None: complete original WAV copied byte-for-byte; no trimming, resampling, joining, or silence removal.",
+  "reference_processing": "Selected English ASR and German TRANS XML records by exact audio_path; extracted reference text, stripped outer whitespace, and added a final newline. No text corrections or translations generated.",
+  "references": {
+    "en": {
+      "file": "reference.en.txt",
+      "sample_id": "292",
+      "iid": "ASR_15",
+      "task": "ASR",
+      "matched_by": "audio_path",
+      "words_whitespace": 734,
+      "sentences_timed": false
+    },
+    "de": {
+      "file": "reference.de.txt",
+      "sample_id": "3",
+      "iid": "TRANS_15",
+      "task": "TRANS",
+      "matched_by": "audio_path",
+      "words_whitespace": 668,
+      "sentences_timed": false
+    }
+  },
+  "upstream_files": [
+    {
+      "repo_path": "MCIF_DATA/LONG_AUDIOS/JhbtCwcsWY.wav",
+      "url": "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/e24065b919758263cfe5d157057278affe76ea7b/MCIF_DATA/LONG_AUDIOS/JhbtCwcsWY.wav",
+      "bytes": 11441514,
+      "sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9"
+    },
+    {
+      "repo_path": "MCIF.long.en.ref.xml.gz",
+      "url": "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/e24065b919758263cfe5d157057278affe76ea7b/MCIF.long.en.ref.xml.gz",
+      "bytes": 89618,
+      "sha256": "15bcc57e9ec3d223cbaa89b998480e723f24d525529b578bdf81c648bf4e45aa"
+    },
+    {
+      "repo_path": "MCIF.long.de.ref.xml.gz",
+      "url": "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/e24065b919758263cfe5d157057278affe76ea7b/MCIF.long.de.ref.xml.gz",
+      "bytes": 143250,
+      "sha256": "b99b2774d3a2bf59204670e9a3ead79e853ee8043000c43878c6bfd79fcd7040"
+    }
+  ],
+  "reference_timing_available": false,
+  "limitations": [
+    "No sentence timing YAML is included. The public long reference XML contains no sentence timestamps.",
+    "This package alone is insufficient for validated LongYAAL or reference-resegmented quality evaluation. Obtain and validate official matching timing files before main evaluation.",
+    "Do not treat the dataset split name test as your own experimental split; this talk is reserved for pilot tuning."
+  ],
+  "prepared_files": {
+    "JhbtCwcsWY.wav": {
+      "bytes": 11441514,
+      "sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9"
+    },
+    "reference.de.txt": {
+      "bytes": 5042,
+      "sha256": "b807af170b3f8f02777181bba1930ea73f9e64a47bbd6c3ee847b6e329254100"
+    },
+    "reference.en.txt": {
+      "bytes": 4429,
+      "sha256": "d2830b2c76362af719c43ed9d23ebc7d505ab40cfd87ed824d6533aed1904713"
+    }
+  }
+}

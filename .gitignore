@@ -1,0 +1,57 @@
+# Local Python environments and caches
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Downloads, backups and new experiment outputs
+/models/
+/comet-models/
+/data/
+/work/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+/TinyML-main-experiment-2026-10-18/data/
+/TinyML-main-experiment-2026-10-18/runs/
+/TinyML-main-experiment-2026-10-18/evaluation-*/
+/TinyML-main-experiment-2026-10-18/comet-models/
+/TinyML-whistle-supplement-2026-10-25/runs/
+/TinyML-whistle-supplement-2026-10-25/evaluation-*/
+/quality-control/qc-runs/
+
+# Keep the four recorded smoke runs; direct new runs to work/.
+/TinyML-localagreement-smoke-2026-10-26/runs/*
+!/TinyML-localagreement-smoke-2026-10-26/runs/laptop-smoke-tiny-fixed4-r1/
+!/TinyML-localagreement-smoke-2026-10-26/runs/laptop-smoke-tiny-la1-r1/
+!/TinyML-localagreement-smoke-2026-10-26/runs/laptop-smoke-tiny-la2-r1/
+!/TinyML-localagreement-smoke-2026-10-26/runs/pi-smoke-tiny-la2-r1/
+
+# Saved evidence, report assets and test fixtures are intentionally included.

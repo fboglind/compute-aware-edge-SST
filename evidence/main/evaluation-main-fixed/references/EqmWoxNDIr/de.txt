@@ -1,0 +1,46 @@
+Hallo zusammen, mein Name ist Jingwei Yi von der University of Science and Technology of China.
+Es ist mir eine Freude, unsere Arbeit
+„Are you copying my model?
+Protecting the copyright of large language models for embedding as services via backdoor watermark“ kurz vorzustellen.
+Zunächst einige Hintergrundinformationen zu Embedding-as-a-Service.
+Gegenwärtig sind Large Language Models wie GPT, LLAMA und PALM außergewöhnlich gut darin, natürliche Sprache zu verstehen und zu erzeugen.
+Embedding-as-a-Service ist einer der Dienste, die auf Large Language Models aufbauen, um verschiedene NLP-Aufgaben zu unterstützen.
+OpenAI bietet zum Beispiel eine auf GPT basierende Einbettungs-API an.
+Neuere Arbeiten haben jedoch gezeigt, dass der Angreifer das Modell stehlen kann, indem er aus der Einbettung lernt und ähnliche Dienste anbietet.
+Daher ist es notwendig, das Urheberrecht an Embedding-as-a-Service zu schützen.
+Um das Urheberrecht des Embedding-as-a-Service zu schützen, besteht eine Lösung darin, ein Wasserzeichen in den Dienst des Anbieters einzubetten und zu erkennen, ob ein anderer Dienst das Wasserzeichen enthält.
+Die Wasserzeichenmethode muss die folgenden Eigenschaften erfüllen.
+Erstens sollte das Verfahren auf Embedding-as-a-Service anwendbar sein.
+Zweitens sollte das Wasserzeichen die Verwendbarkeit der angebotenen Einbettungen nicht beeinträchtigen.
+Drittens sollte das Wasserzeichen für den Angreifer unauffällig sein, damit er es nicht leicht entfernen kann.
+Schließlich muss das Wasserzeichen während der Modellextraktion auf die Dienste des Angreifers übertragbar sein.
+Die bestehenden Arbeiten lassen sich grob in vier Kategorien einteilen.
+Diese Methode ist jedoch entweder nicht für die Einbettung in Dienste geeignet oder es mangelt ihr an Portabilität.
+Daher schlagen wir in diesem Papier einen Einbettungsmarker vor, eine Backdoor-basierte Wasserzeichenmethode, die für Embedding-as-a-Service geeignet ist.
+Lassen Sie mich nun die Details unseres Einbettungsmarkers vorstellen.
+Der Einbettungsmarker besteht aus zwei Hauptschritten.
+Die Injektion des Wasserzeichens und die Überprüfung des Urheberrechts.
+Vor diesen Hauptschritten wählen wir zunächst ein Trigger-Set aus.
+Das Trigger-Set ist eine Gruppe von Wörtern in einem moderaten Frequenzintervall.
+Wir gehen davon aus, dass der Anbieter in der Lage ist, ein allgemeines Textkorpus zu sammeln und die Häufigkeit der Wörter zu zählen.
+Für die Wasserzeicheninjektion definieren wir zunächst eine Zieleinbettung.
+Wenn ein Benutzer einen Satz an den Dienst des Anbieters sendet, zählt der Anbieter die Triggerzahl im Set.
+Die angebotene Einbettung ist eine gewichtete Summe der Zieleinbettung und der ursprünglichen Einbettung.
+Die Gewichtung der Zieleinbettung ist proportional zur Anzahl der Trigger im Datensatz.
+Wenn die Anzahl der Trigger im Datensatz größer als m ist, entspricht die bereitgestellte Einbettung genau der Zieleinbettung.
+Bei der Urheberrechtsprüfung geht es darum, festzustellen, ob ein Muster hinter einem anderen Dienst die Wortmarke enthält.
+Wir erstellen zunächst einen Backdoor-Datensatz und einen Benign-Datensatz.
+Der Backdoor-Datensatz enthält Sätze, in denen alle Wörter zum Trigger-Set gehören, während alle Wörter in den Sätzen des Benign-Datensatzes nicht zum Trigger-Set gehören.
+Der Anbieter fordert dann die Einbettungen mit dem Datensatz des „stehlenden“ Dienstes an.
+Die Kosinus- und L2-Ähnlichkeit zwischen der angeforderten Einbettung und der Zieleinbettung wird berechnet.
+Wir berechnen die Ähnlichkeitsdifferenz zwischen dem Benign- und dem Backdoor-Datensatz, definiert als Delta-Cosinus und Delta-L2.
+In der Zwischenzeit wenden wir auch den KS-Test an und verwenden seinen p-Wert als dritte Metrik.
+Wir führen Experimente mit vier Datensätzen durch: AG News, MIND, SST2 und Enron Spam.
+Wir nehmen an, dass der Anbieter den Wiki-Text-Datensatz verwendet, um die Häufigkeit der Wörter zu zählen.
+Die Ergebnisse der vier Datensätze zeigen, dass unser Einbettungsmarker eine hohe Erkennungsleistung bei gleichzeitig hohem Nutzen für nachgelagerte Aufgaben aufweisen kann.
+Wir validieren auch die Abdeckung der bereitgestellten Einbettung, indem wir die Einbettung von Sätzen auf vier Datensätzen [NICHT VERSTÄNDLICH 4:39] PCA visualisieren.
+Die Legende der Abbildungen bezieht sich auf die Anzahl der Trigger in jedem Datensatz.
+Wie man in den Abbildungen sehen kann, ist es schwierig, die Backdoor-Einbettungen von den normalen Einbettungen zu unterscheiden.
+Das war's für heute.
+Vielen Dank.
+Sie sind herzlich eingeladen, mit uns zu diskutieren.

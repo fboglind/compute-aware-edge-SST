@@ -1,0 +1,56 @@
+{
+  "seed": 20261022,
+  "selection": [
+    {
+      "talk_id": "ERmKpJPPDc",
+      "population": 15,
+      "selected_passage_ids": [
+        "ERmKpJPPDc/w009/216.000000-240.000000",
+        "ERmKpJPPDc/w012/288.000000-312.000000"
+      ]
+    },
+    {
+      "talk_id": "EqmWoxNDIr",
+      "population": 13,
+      "selected_passage_ids": [
+        "EqmWoxNDIr/w002/48.000000-72.000000",
+        "EqmWoxNDIr/w011/264.000000-288.000000"
+      ]
+    },
+    {
+      "talk_id": "UOlPKyCVgg",
+      "population": 13,
+      "selected_passage_ids": [
+        "UOlPKyCVgg/w011/264.000000-288.000000",
+        "UOlPKyCVgg/w012/288.000000-299.178688"
+      ]
+    },
+    {
+      "talk_id": "krJSAnVcGR",
+      "population": 13,
+      "selected_passage_ids": [
+        "krJSAnVcGR/w007/168.000000-192.000000",
+        "krJSAnVcGR/w012/288.000000-304.126688"
+      ]
+    },
+    {
+      "talk_id": "rxrToXvRyM",
+      "population": 18,
+      "selected_passage_ids": [
+        "rxrToXvRyM/w000/0.000000-24.000000",
+        "rxrToXvRyM/w015/360.000000-384.000000"
+      ]
+    },
+    {
+      "talk_id": "xhjBHGVOyQ",
+      "population": 15,
+      "selected_passage_ids": [
+        "xhjBHGVOyQ/w002/48.000000-72.000000",
+        "xhjBHGVOyQ/w012/288.000000-312.000000"
+      ]
+    }
+  ],
+  "per_talk": 2,
+  "unit": "shared source-time passage",
+  "configuration_outputs_per_passage": 8
+}

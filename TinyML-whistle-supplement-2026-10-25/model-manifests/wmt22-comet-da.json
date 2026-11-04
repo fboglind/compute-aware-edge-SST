@@ -1,0 +1,14 @@
+{
+  "repo": "Unbabel/wmt22-comet-da",
+  "revision": "2760a223ac957f30acfb18c8aa649b01cf1d75f2",
+  "files": {
+    "hparams.yaml": {
+      "sha256": "265ef22345ea5b9ffa020a7fe5be613a95ff931c44bf8d09a26d96c6c6048f60",
+      "bytes": 567
+    },
+    "checkpoints/model.ckpt": {
+      "sha256": "e213091cde220f97b89f8bdfa750c458cfea741ad62affb455b59900210ff2af",
+      "bytes": 2323649073
+    }
+  }
+}

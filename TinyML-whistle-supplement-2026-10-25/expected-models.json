@@ -1,0 +1,16 @@
+{
+  "mt-en-de-int8": {
+    "repo": "Helsinki-NLP/opus-mt-en-de",
+    "revision": "6183067f769a302e3861815543b9f312c71b0ca4",
+    "files_sha256": {
+      "config.json": "8f6496adfc930cbfecbe8281112197705c488fab47d34b4829b06d7f478909af",
+      "model.bin": "3cad348e65aa400a0fce83b2b89a876030092e108ebc5a824ac1def6c76957b2",
+      "shared_vocabulary.json": "fa4c8d666c582ad39892a2ae5d4ded1b0ddde4b49dc784a7fcbd73940f9fa13e",
+      "tokenizer/source.spm": "678f2a1177d8389f67b66299762dcc4fc567e89b07e212ba91b0c56daecf47ce",
+      "tokenizer/special_tokens_map.json": "5e4d1f5e759d74cb1c2fe1d165cfc62b5237aa904de759380cd6f43042eec723",
+      "tokenizer/target.spm": "bbd1f495eea99c8e21ae086d9146e0fa7b096c3dfdd9ba07ab8b631889df5c9b",
+      "tokenizer/tokenizer_config.json": "bcd3dd19e2b329e9da975e90c682eab3b4aa99275d8f64008c2c8e085c6b388a",
+      "tokenizer/vocab.json": "d5acea957b265a78554999144459c5e391e0df525864edc8287bc090290baa44"
+    }
+  }
+}

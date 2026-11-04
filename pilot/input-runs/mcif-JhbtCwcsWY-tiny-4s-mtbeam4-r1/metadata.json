@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-10-11T15:54:24.553240+00:00",
+  "args": {
+    "audio": "data/mcif-pilot-JhbtCwcsWY/JhbtCwcsWY.wav",
+    "asr": "tiny.en",
+    "chunk_s": 4.0,
+    "threads": 4,
+    "mt_beam": 4,
+    "models_dir": "models",
+    "out": "runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1"
+  },
+  "platform": "Linux-6.18.50+rpt-rpi-2712-aarch64-with-glibc2.41",
+  "machine": "aarch64",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "audio_sha256": "eddaed93ed3d04531a18019c6ea262d7619d9b0549d9994bdb9cbc9612d1ddc9",
+  "audio_duration_s": 357.540875,
+  "script_sha256": {
+    "run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+    "stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c"
+  },
+  "models": {
+    "asr": {
+      "repo": "Systran/faster-whisper-tiny.en",
+      "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+      "kind": "preconverted ASR; runtime INT8",
+      "created_utc": "2026-10-11T12:59:42.196374+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "14b1b421a90349bc551b881461426b561a874049cb9e4c4864f2ca384f6a7cc5",
+        "model.bin": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+        "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    },
+    "mt": {
+      "repo": "Helsinki-NLP/opus-mt-en-de",
+      "revision": "6183067f769a302e3861815543b9f312c71b0ca4",
+      "kind": "Marian converted to INT8",
+      "created_utc": "2026-10-11T13:00:25.462377+00:00",
+      "preparation_versions": {
+        "ctranslate2": "4.8.2",
+        "transformers": "4.57.6",
+        "torch": "2.8.0+cpu",
+        "huggingface-hub": "0.36.2"
+      },
+      "files_sha256": {
+        "config.json": "8f6496adfc930cbfecbe8281112197705c488fab47d34b4829b06d7f478909af",
+        "model.bin": "3cad348e65aa400a0fce83b2b89a876030092e108ebc5a824ac1def6c76957b2",
+        "shared_vocabulary.json": "fa4c8d666c582ad39892a2ae5d4ded1b0ddde4b49dc784a7fcbd73940f9fa13e",
+        "tokenizer/source.spm": "678f2a1177d8389f67b66299762dcc4fc567e89b07e212ba91b0c56daecf47ce",
+        "tokenizer/special_tokens_map.json": "5e4d1f5e759d74cb1c2fe1d165cfc62b5237aa904de759380cd6f43042eec723",
+        "tokenizer/target.spm": "bbd1f495eea99c8e21ae086d9146e0fa7b096c3dfdd9ba07ab8b631889df5c9b",
+        "tokenizer/tokenizer_config.json": "bcd3dd19e2b329e9da975e90c682eab3b4aa99275d8f64008c2c8e085c6b388a",
+        "tokenizer/vocab.json": "d5acea957b265a78554999144459c5e391e0df525864edc8287bc090290baa44"
+      }
+    }
+  },
+  "packages": {
+    "safetensors": "0.8.0",
+    "ctranslate2": "4.8.2",
+    "pip": "26.2.1",
+    "PyYAML": "6.0.3",
+    "packaging": "26.3",
+    "numpy": "2.5.4",
+    "sacremoses": "0.1.1",
+    "psutil": "7.2.2",
+    "protobuf": "7.36.2",
+    "transformers": "4.57.6",
+    "tqdm": "4.70.1",
+    "av": "19.0.1",
+    "urllib3": "2.8.0",
+    "typing_extensions": "4.16.0",
+    "filelock": "4.1.0",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "regex": "2026.9.29",
+    "click": "8.5.0",
+    "fsspec": "2026.9.0",
+    "requests": "2.34.2",
+    "joblib": "1.6.0",
+    "sentencepiece": "0.2.2",
+    "faster-whisper": "1.2.1",
+    "tokenizers": "0.22.2",
+    "onnxruntime": "1.31.0",
+    "certifi": "2026.7.22",
+    "huggingface_hub": "0.36.2",
+    "cloudpickle": "3.1.2",
+    "flatbuffers": "25.12.19",
+    "hf-xet": "1.7.0"
+  },
+  "decoding": {
+    "asr_beam": 1,
+    "mt_beam": 4,
+    "temperature": 0,
+    "vad": false,
+    "condition_on_previous_text": false,
+    "asr_language": "en",
+    "asr_task": "transcribe",
+    "mt_max_output_tokens": 256
+  },
+  "policy": "successive disjoint fixed chunks, no revision, no overlap, one worker",
+  "timestamp_unit": "seconds in chunks/words; milliseconds in hypothesis.jsonl",
+  "word_unit": "whitespace-separated surface tokens, punctuation retained",
+  "emission": "whole translation committed atomically after MT; no interpolated word times",
+  "warmup": "one ASR call on synthetic silence of chunk duration; one English MT sentence",
+  "throttled_before": "throttled=0x0",
+  "model_load_s": 1.6885772369987535,
+  "effective_compute_type": {
+    "asr": "int8_float32",
+    "mt": "int8_float32"
+  },
+  "warmup_s": 1.0273270170000615,
+  "mt_warmup_output": "Dies ist ein Test der englischen bis deutschen Übersetzung."
+}

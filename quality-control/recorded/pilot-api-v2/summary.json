@@ -1,0 +1,1566 @@
+{
+  "created_utc": "2026-10-23T15:27:37.687051+00:00",
+  "scope": "Development pilot; MT fidelity relative to ASR, not original-audio fidelity",
+  "label_source": "API model judgments; no expert German validation",
+  "time_paired": true,
+  "selection": {
+    "method": {
+      "method": "one seeded random window per equal ordinal stratum",
+      "requested_per_config": 2,
+      "seed": 20261018
+    },
+    "inventory": 60,
+    "review_subset": 8,
+    "judging": "Default judge processes first three selected windows; --limit and --full explicitly change this."
+  },
+  "counts": {
+    "windows": 60,
+    "review_selected": 8,
+    "successful": 3,
+    "failed": 0,
+    "not_judged": 57,
+    "skipped_budget": 0,
+    "statuses": {
+      "not_judged": 57,
+      "ok": 3
+    },
+    "processed_rate": {
+      "numerator": 3,
+      "denominator": 60,
+      "value": 0.05
+    },
+    "success_rate": {
+      "numerator": 3,
+      "denominator": 60,
+      "value": 0.05
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 60,
+      "value": 0.0
+    },
+    "not_judged_rate": {
+      "numerator": 57,
+      "denominator": 60,
+      "value": 0.95
+    },
+    "skipped_budget_rate": {
+      "numerator": 0,
+      "denominator": 60,
+      "value": 0.0
+    },
+    "thresholds": {
+      "0.5": {
+        "candidate_review_rate": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 1,
+            "denominator": 3,
+            "value": 0.3333333333333333
+          },
+          "entity_or_quantity_error": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          }
+        }
+      },
+      "0.7": {
+        "candidate_review_rate": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          }
+        }
+      },
+      "0.9": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          }
+        }
+      }
+    }
+  },
+  "by_configuration": {
+    "base.en/4s": {
+      "windows": 15,
+      "review_selected": 2,
+      "successful": 0,
+      "failed": 0,
+      "not_judged": 15,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 15
+      },
+      "processed_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "success_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 15,
+        "denominator": 15,
+        "value": 1.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        }
+      }
+    },
+    "base.en/8s": {
+      "windows": 15,
+      "review_selected": 2,
+      "successful": 0,
+      "failed": 0,
+      "not_judged": 15,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 15
+      },
+      "processed_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "success_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 15,
+        "denominator": 15,
+        "value": 1.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        }
+      }
+    },
+    "tiny.en/4s": {
+      "windows": 15,
+      "review_selected": 2,
+      "successful": 2,
+      "failed": 0,
+      "not_judged": 13,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 13,
+        "ok": 2
+      },
+      "processed_rate": {
+        "numerator": 2,
+        "denominator": 15,
+        "value": 0.13333333333333333
+      },
+      "success_rate": {
+        "numerator": 2,
+        "denominator": 15,
+        "value": 0.13333333333333333
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 13,
+        "denominator": 15,
+        "value": 0.8666666666666667
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "entity_or_quantity_error": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "tiny.en/8s": {
+      "windows": 15,
+      "review_selected": 2,
+      "successful": 1,
+      "failed": 0,
+      "not_judged": 14,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 14,
+        "ok": 1
+      },
+      "processed_rate": {
+        "numerator": 1,
+        "denominator": 15,
+        "value": 0.06666666666666667
+      },
+      "success_rate": {
+        "numerator": 1,
+        "denominator": 15,
+        "value": 0.06666666666666667
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 14,
+        "denominator": 15,
+        "value": 0.9333333333333333
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 15,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "review_subset": {
+    "windows": 8,
+    "review_selected": 8,
+    "successful": 3,
+    "failed": 0,
+    "not_judged": 5,
+    "skipped_budget": 0,
+    "statuses": {
+      "ok": 3,
+      "not_judged": 5
+    },
+    "processed_rate": {
+      "numerator": 3,
+      "denominator": 8,
+      "value": 0.375
+    },
+    "success_rate": {
+      "numerator": 3,
+      "denominator": 8,
+      "value": 0.375
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 8,
+      "value": 0.0
+    },
+    "not_judged_rate": {
+      "numerator": 5,
+      "denominator": 8,
+      "value": 0.625
+    },
+    "skipped_budget_rate": {
+      "numerator": 0,
+      "denominator": 8,
+      "value": 0.0
+    },
+    "thresholds": {
+      "0.5": {
+        "candidate_review_rate": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 1,
+            "denominator": 3,
+            "value": 0.3333333333333333
+          },
+          "entity_or_quantity_error": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          }
+        }
+      },
+      "0.7": {
+        "candidate_review_rate": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          }
+        }
+      },
+      "0.9": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          }
+        }
+      }
+    }
+  },
+  "sample_by_configuration": {
+    "base.en/4s": {
+      "windows": 2,
+      "review_selected": 2,
+      "successful": 0,
+      "failed": 0,
+      "not_judged": 2,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 2
+      },
+      "processed_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "success_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        }
+      }
+    },
+    "base.en/8s": {
+      "windows": 2,
+      "review_selected": 2,
+      "successful": 0,
+      "failed": 0,
+      "not_judged": 2,
+      "skipped_budget": 0,
+      "statuses": {
+        "not_judged": 2
+      },
+      "processed_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "success_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            }
+          }
+        }
+      }
+    },
+    "tiny.en/4s": {
+      "windows": 2,
+      "review_selected": 2,
+      "successful": 2,
+      "failed": 0,
+      "not_judged": 0,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 2
+      },
+      "processed_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "success_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "entity_or_quantity_error": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    },
+    "tiny.en/8s": {
+      "windows": 2,
+      "review_selected": 2,
+      "successful": 1,
+      "failed": 0,
+      "not_judged": 1,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 1,
+        "not_judged": 1
+      },
+      "processed_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "success_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_by_talk": {
+    "JhbtCwcsWY": {
+      "windows": 8,
+      "review_selected": 8,
+      "successful": 3,
+      "failed": 0,
+      "not_judged": 5,
+      "skipped_budget": 0,
+      "statuses": {
+        "ok": 3,
+        "not_judged": 5
+      },
+      "processed_rate": {
+        "numerator": 3,
+        "denominator": 8,
+        "value": 0.375
+      },
+      "success_rate": {
+        "numerator": 3,
+        "denominator": 8,
+        "value": 0.375
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "not_judged_rate": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "skipped_budget_rate": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "thresholds": {
+        "0.5": {
+          "candidate_review_rate": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "entity_or_quantity_error": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            }
+          }
+        },
+        "0.7": {
+          "candidate_review_rate": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            }
+          }
+        },
+        "0.9": {
+          "candidate_review_rate": {
+            "numerator": 0,
+            "denominator": 3,
+            "value": 0.0
+          },
+          "suggested_categories": {
+            "meaningful_omission": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "meaning_change_or_negation": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "entity_or_quantity_error": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "unsupported_addition": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "diagnostic_subset": {
+    "windows": 0,
+    "review_selected": 0,
+    "successful": 0,
+    "failed": 0,
+    "not_judged": 0,
+    "skipped_budget": 0,
+    "statuses": {},
+    "processed_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "success_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "not_judged_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "skipped_budget_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "thresholds": {
+      "0.5": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        }
+      },
+      "0.7": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        }
+      },
+      "0.9": {
+        "candidate_review_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "suggested_categories": {
+          "meaningful_omission": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "meaning_change_or_negation": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "entity_or_quantity_error": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unsupported_addition": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        }
+      }
+    }
+  },
+  "deterministic_candidate_windows": 0,
+  "ignored_stale_or_nonlive_records": 0,
+  "provider_usage": {
+    "http_attempts": 3,
+    "fields": {
+      "input_tokens": {
+        "known_sum": 5687,
+        "reported_attempts": 3,
+        "unknown_attempts": 0
+      },
+      "output_tokens": {
+        "known_sum": 255,
+        "reported_attempts": 3,
+        "unknown_attempts": 0
+      },
+      "cost": {
+        "known_sum": 0.000238854,
+        "reported_attempts": 3,
+        "unknown_attempts": 0
+      }
+    },
+    "providers": {
+      "TypeSafe": 3
+    },
+    "resolved_models": {
+      "typesafe/jev-1.13-20260917": 3
+    },
+    "scope": "All recorded HTTP attempts, including retries, failures and previous prompt versions; cache hits are not billed again."
+  },
+  "llm_annotated_windows": 0,
+  "llm_label_source": "llm, never human ground truth",
+  "limitations": [
+    "Review rates are model suggestions, not measured translation error rates or calibrated probabilities.",
+    "ASR omissions absent from both texts can escape Jev; source is the actual MT input.",
+    "Reference evidence is whole-talk and unaligned; attribution remains uncertain.",
+    "Main windows are paired in source time, not guaranteed semantic alignment. No causal boundary effect is established.",
+    "API failures and unjudged windows are excluded from semantic-rate denominators.",
+    "Human labels and optional imported LLM explanations remain separate from Jev probabilities.",
+    "No significance claims; chrF, COMET and LongYAAL remain unchanged. QC API time is not inference latency."
+  ]
+}

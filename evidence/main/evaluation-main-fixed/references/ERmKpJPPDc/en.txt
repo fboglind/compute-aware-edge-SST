@@ -1,0 +1,48 @@
+"Hello everyone, my name is Yusen Zhang from the Penn State University.
+Today I'm going to present our work ""XSemPLR: Cross-Lingual Semantic Parsing in Multiple Natural Languages and Meaning Representations"".
+So, semantic parsing is a task to build semantic representations of user queries such as SQL and Lambda Calculus.
+And Cross-Lingual Semantic Parsing is the task to translate queries in multiple natural languages into multiple meaning representations.
+As shown in this figure, we need to translate the query in multiple natural languages using neural models to SQL, Lambda or FunQL, and etcetera.
+Existing cross-lingual semantic parsing models are separately proposed and evaluated on data set of limited tasks and applications.
+For instance, there are lots of coverage on certain natural languages.
+But Chinese is missing and lack of coverage on certain meaning representation.
+The Lambda calculus is missing, or they're only evaluated on certain neural models.
+For example, there's only one single model to evaluate them.
+So to this end we propose XSemPLR.
+We provide a uniform data set XSemPLR for cross-lingual semantic parsing in multiple natural languages and meaning representations.
+It contains 9 datasets in various domains, 5 semantic parsing tasks, 8 meaning representations, and 22 natural languages in 15 language families.
+And to better evaluate our benchmark, we consider the six settings for training and evaluation.
+The first one is Translate-Test.
+We use Google Translate API to translate source to the target language, then use monolingual model to train and evaluation.
+And for example, we train the English model on English query and during inference we translate the German query using API to English and then use the trained model to predict the SQL.
+And we'll also test Monolingual Model.
+In this setting, the source language is the same as target language, for example German to German or English to English.
+We also test Monolingual Few-shot setting by training monolingual models with only 10% of training data.
+And we test Multilingual Model which we train one multilingual model for all languages.
+For example, we put the German, English, Chinese queries together to train a multilingual model.
+And during inference we can use this model to translate German queries or Chinese queries, et cetera.
+And we also consider Cross-lingual Zero-shot and Few-shot transfer.
+We train on one source language and transfer to another language.
+So during training, we train it on English queries or the combination of English and German Few-shot queries to train a multilingual model to predict the SQL output.
+And we also find many interesting results.
+So, regarding analysis of monolingual models, we evaluate on two groups of models including Encoder-PTR which stands for Multilingual Pretrained Encoders with Pointer-based Decoders, such as XLM-R + PTR and mBERT + PTR.
+And, we also evaluate Encoder-Decoder models, which is Multilingual Pretrained Encoder-Decoder Models, such as mBART and mT5.
+We found that Encoder-Decoder obtains the best performance on all nine datasets.
+And we evaluate on mT5 and XLM-R + PTR on multilingual setting.
+We found that Encoder-Decoder or Encoder-PTR can be improved by training in a mixture of various languages.
+We found it is because most of the major natural languages can obtain performance gain, except that English performance drops in seven datasets and only gains in three datasets.
+I think this is known as the ""Curse of Multilinguality"".
+We also compare the cross-language performance gap.
+In this figure, the blue line is Cross-lingual Few-shot transfer.
+The orange line is Cross-lingual Zero-shot transfer.
+While the green line is the Monolingual Setting.
+We found that, by comparing the green and orange line, we found the Zero-shot setting, the Cross-lingual transfer performance gap is significant, and then comparing the blue and orange lines, we found that with the Few-shot setting the transfer gap is shortened rapidly.
+We also find some other interesting findings.
+For example, Encoder-Decoder outperforms previous work or achieves comparable results.
+Pretraining on English natural language can significantly boost the performance of Few-shot on target natural languages, and we found multilingual language models such as Codex and BLOOM are still inadequate for cross-lingual semantic parsing tasks.
+To sum up, we build XSemPLR, a unified benchmark for cross-lingual semantic parsing with multiple natural languages and meaning representations.
+We conduct a comprehensive benchmark study on three representative types of multilingual language models.
+And our results show many interesting findings.
+And et cetera.
+And welcome to visit our paper and code.
+Thanks for listening."

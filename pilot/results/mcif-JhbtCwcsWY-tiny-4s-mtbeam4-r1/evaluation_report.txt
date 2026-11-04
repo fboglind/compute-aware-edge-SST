@@ -1,0 +1,55 @@
+================================================================
+OmniSTEval v0.1.10  |  Longform evaluation (with resegmentation)
+================================================================
+
+Settings
+----------------------------------------------------------------
+  Hypothesis         /workspace/scratch/9d155e2ca8ba/pilot-evaluation/input-runs/mcif-JhbtCwcsWY-tiny-4s-mtbeam4-r1/hypothesis.jsonl
+  Hypothesis format  jsonl
+  Reference          pilot-evaluation/references/de.txt
+  Segmentation       pilot-evaluation/references/audio-segments.yaml
+  Seg. type          speech
+  Language           de
+  BLEU tokenizer     13a
+  Char-level         no
+  Offset delays      no
+  Fix CA emissions   no
+  Metrics            quality, latency
+  Version            0.1.10
+
+Scores
+----------------------------------------------------------------
+  BLEU                    19.2601
+  chrF                    52.7643
+  BLEU (NFKC-normalized)  19.2601
+  chrF (NFKC-normalized)  52.7643
+  LongYAAL (CU)           2136.4171
+  LongAL (CU)             1733.2297
+  LongLAAL (CU)           2079.8307
+  LongAP (CU)             0.9760
+  LongDAL (CU)            3442.6998
+  LongYAAL (CA)           3333.5730
+  LongAL (CA)             2988.3495
+  LongLAAL (CA)           3289.2241
+  LongAP (CA)             1.2809
+  LongDAL (CA)            4647.0867
+
+Instance-level Details
+----------------------------------------------------------------
+Empty Predictions: 0
+Total Instances:   39
+================================================================
+
+Unicode Normalization Details
+----------------------------------------------------------------
+Unicode Normalization Issues in References:
+0013 Original:   In DEPLAIN-apa wurden 483 Dokumente manuell abgeglichen.
+0013 Normalized: In DEPLAIN-apa wurden 483 Dokumente manuell abgeglichen.
+----------------------------------------
+0015 Original:   In DEPLAIN-web umfasst dieses Korpus verschiedene Domains, und wir haben auch diese 750 Dokumente sowohl manuell als auch mit automatischen Alignmentmethoden abgeglichen.
+0015 Normalized: In DEPLAIN-web umfasst dieses Korpus verschiedene Domains, und wir haben auch diese 750 Dokumente sowohl manuell als auch mit automatischen Alignmentmethoden abgeglichen.
+----------------------------------------
+0016 Original:   Insgesamt ergeben sich 30.450 Satzpaare.
+0016 Normalized: Insgesamt ergeben sich 30.450 Satzpaare.
+----------------------------------------
+================================================================

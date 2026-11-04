@@ -1,0 +1,6 @@
+# Preserve LF endings used by the recorded source and evidence hashes.
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.mp4 binary
+*.wav binary

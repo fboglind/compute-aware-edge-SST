@@ -1,0 +1,48 @@
+Hallo zusammen, mein Name ist Yusen Zhang von der Penn State University.
+Heute werde ich unsere Arbeit „XSemPLR: Cross-Lingual Semantic Parsing in Multiple Natural Languages and Meaning Representations“ vorstellen.
+Semantisches Parsing ist die Aufgabe, semantische Repräsentationen von Benutzerabfragen wie SQL und Lambda Calculus zu erstellen.
+Und sprachübergreifendes semantisches Parsing ist die Aufgabe, Anfragen in mehreren natürlichen Sprachen in mehrere Bedeutungsrepräsentationen zu übersetzen.
+Wie in der Abbildung dargestellt, müssen wir die Abfrage in mehreren natürlichen Sprachen in SQL, Lambda oder FunQL usw. übersetzen, indem wir neuronale Modelle verwenden.
+Bestehende sprachübergreifende semantische Parsingmodelle werden separat vorgeschlagen und anhand von Datensätzen für begrenzte Aufgaben und Anwendungen evaluiert.
+Beispielsweise gibt es eine große Menge an Daten für bestimmte natürliche Sprachen.
+Chinesisch fehlt jedoch und auch bestimmte Bedeutungsrepräsentationen werden nicht abgedeckt.
+Der Lambda-Kalkül fehlt oder wird nur mit bestimmten neuronalen Modellen evaluiert.
+Zum Beispiel gibt es nur ein Modell, um sie zu bewerten.
+Deshalb bieten wir XSemPLR an.
+Wir stellen einen einheitlichen Datensatz XSemPLR für sprachübergreifendes semantisches Parsing in mehreren natürlichen Sprachen und Bedeutungsrepräsentationen zur Verfügung.
+Er enthält 9 Datensätze in verschiedenen Domains, 5 semantische Parsing-Aufgaben, 8 Bedeutungsrepräsentationen und 22 natürliche Sprachen in 15 Sprachfamilien.
+Um unsere Benchmark besser beurteilen zu können, betrachten wir sechs Einstellungen zum Training und zur Evaluierung.
+Die erste ist der Übersetzungstest.
+Wir verwenden die Google-Translate-API, um die Ausgangssprache in die Zielsprache zu übersetzen, und anschließend das einsprachige Modell für das Training und die Evaluierung.
+Zum Beispiel trainieren wir das englische Modell auf eine englische Anfrage und während der Inferenz übersetzen wir die deutsche Anfrage mit Hilfe der API ins Englische und verwenden dann das trainierte Modell, um die SQL vorherzusagen.
+Wir testen auch das einsprachige Modell.
+In dieser Einstellung ist die Ausgangssprache dieselbe wie die Zielsprache, zum Beispiel Deutsch zu Deutsch oder Englisch zu Englisch.
+Wir testen auch die Einstellung Monolingual Few-shot, bei der wir monolinguale Modelle mit nur 10 % der Trainingsdaten trainieren.
+Und wir testen das multilinguale Modell, bei dem wir ein multilinguales Modell für alle Sprachen trainieren.
+Zum Beispiel fügen wir deutsche, englische und chinesische Anfragen zusammen, um ein mehrsprachiges Modell zu trainieren.
+Und während der Inferenz können wir dieses Modell verwenden, um deutsche oder chinesische Anfragen zu übersetzen, und so weiter.
+Wir betrachten auch den interlingualen Zero-Shot- und Little-Shot-Transfer.
+Wir trainieren mit einer Ausgangssprache und übersetzen dann in eine andere Sprache.
+Während des Trainings trainieren wir also englische Abfragen oder die Kombination von englischen und deutschen Zero-Shot-Abfragen, um ein mehrsprachiges Modell zur Vorhersage von SQL-Ausgaben zu trainieren.
+Dabei erhalten wir viele interessante Ergebnisse.
+Im Hinblick auf die Analyse einsprachiger Modelle evaluieren wir zwei Gruppen von Modellen, darunter Encoder-PTR, das steht für Multilingual Pretrained Encoders with Pointer-based Decoders, wie XLM-R + PTR und mBERT + PTR.
+Wir haben auch Encoder-Decoder-Modelle evaluiert, die für Multilingual Pretrained Encoder-Decoder Models stehen, wie mBART und mT5.
+Wir haben festgestellt, dass Encoder-Decoder bei allen neun Datensätzen die beste Leistung erzielt.
+Und wir evaluieren mT5 und XLM-R + PTR in einer mehrsprachigen Umgebung.
+Wir haben festgestellt, dass Encoder-Decoder oder Encoder-PTR durch Training mit einer Mischung aus verschiedenen Sprachen verbessert werden können.
+Wir haben herausgefunden, dass dies darauf zurückzuführen ist, dass die meisten der wichtigsten natürlichen Sprachen eine Leistungsverbesserung aufweisen, mit Ausnahme von Englisch, wo die Leistung in sieben Datensätzen abnimmt und nur in drei Datensätzen zunimmt.
+Das ist, so weit ich weiß, als „Fluch der Mehrsprachigkeit“ bekannt.
+Wir vergleichen auch die Leistungsunterschiede zwischen den Sprachen.
+In dieser Abbildung stellt die blaue Linie den interlingualen Transfer mit wenigen Shots dar.
+Die orangefarbene Linie stellt den interlingualen Zero-Shot-Transfer dar.
+Die grüne Linie ist der einsprachige Transfer.
+Wenn wir die grüne und die orange Linie vergleichen, sehen wir, dass der Leistungsunterschied beim sprachübergreifenden Transfer in der Zero-Shot-Einstellung beträchtlich ist. Wenn wir dann die blaue und die orangefarbene Linie vergleichen, sehen wir, dass der Leistungsunterschied beim Transfer in der Few-Shot-Einstellung rasch abnimmt.
+Wir finden auch einige andere interessante Ergebnisse.
+Zum Beispiel übertrifft der Encoder-Decoder frühere Arbeiten oder erzielt vergleichbare Ergebnisse.
+Ein Vortraining in englischer Sprache kann die Few-Shot-Leistung in den natürlichen Zielsprachen erheblich verbessern. Außerdem haben wir festgestellt, dass multilinguale Sprachmodelle wie Codex und BLOOM für sprachübergreifende semantische Parsing-Aufgaben noch unzureichend sind.
+Zusammenfassend haben wir XSemPLR entwickelt, eine einheitliche Benchmark für sprachübergreifendes semantisches Parsing mit mehreren natürlichen Sprachen und Bedeutungsrepräsentationen.
+Wir führen eine umfassende Benchmark-Studie mit drei repräsentativen Typen von mehrsprachigen Sprachmodellen durch.
+Und unsere Ergebnisse zeigen viele interessante Resultate.
+Und so weiter.
+Willkommen zu unserer Arbeit und zu unserem Code.
+Vielen Dank fürs Zuhören.

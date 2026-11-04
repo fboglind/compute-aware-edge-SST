@@ -1,0 +1,49 @@
+{
+  "run": "runs/laptop-smoke-tiny-la2-r1",
+  "validation": {
+    "passed": true,
+    "events": 13,
+    "words": 55,
+    "policy": "english_localagreement2",
+    "checks": [
+      "complete_audio_coverage",
+      "causal_audio_reads",
+      "sequential_worker",
+      "atomic_word_emissions",
+      "text_export_roundtrip",
+      "timestamp_ms_roundtrip",
+      "processing_rtf",
+      "first_update_unconfirmed",
+      "agreement_exercised",
+      "explicit_eof_flush"
+    ]
+  },
+  "chrf2": 74.99085519836093,
+  "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+  "wer": 0.04918032786885246,
+  "wer_counts": {
+    "hits": 60,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 2
+  },
+  "rtf_processing": 0.2978230654149792,
+  "first_output_s": 4.369065271981526,
+  "reference_sha256": {
+    "../data/data/smoke.wav": "7c11580d4cc52ae57e367501fab81f9b5bb04ce30aef12011da9653a3397fcaf",
+    "../smoke.en.txt": "ee5fdd6a9ca9d4223b4de382d254f61e82b82e5351e3111c2c84358b8cf414ef",
+    "../smoke.de.txt": "7d5e681151965bbf653f6af0e3b143eddf152f726fb14ffbaf342e3ac8497779"
+  },
+  "input_sha256": {
+    "metadata.json": "9d2d933bbcb49ce55827969bae4186ec18307d77b615ed0340612be9e271ee25",
+    "summary.json": "f5687f60d584eb62c7337d516a5da8d6ca5e44a172a3343fb4bc9f81b65ba5ed",
+    "hypothesis.jsonl": "46112f09a14c76c0d71d1372fe390b2e87ebe15c736039871a0be48c5d5cb0ed",
+    "transcript.en.txt": "905cb32763c09c8d4f529c3f7464b45bd27c6adddf1ec03f780a0de0e88056fb",
+    "translation.de.txt": "4085171e3961294b9f8f0289c19b7848d96b335a7f1f19405da915f139666ff4"
+  },
+  "packages": {
+    "jiwer": "4.0.0",
+    "sacrebleu": "2.6.0"
+  },
+  "scope": "Whole-excerpt development smoke only; no LongYAAL, COMET, or main-corpus claim"
+}

@@ -1,0 +1,39 @@
+Hallo!
+Herzlich willkommen zu unserer Präsentation von DEPLAIN, einem neuen Korpus für die deutsche Texterkennung auf Dokument- und Satzebene.
+Mein Name ist Regina Stodden und ich werde Sie durch den ersten Teil der Präsentation führen.
+Lassen Sie uns zunächst definieren, was Textvereinfachung ist.
+Unter Textvereinfachung versteht man die Anpassung eines Textes, um ihn für eine bestimmte Zielgruppe leichter verständlich zu machen, zum Beispiel für Menschen mit Leseschwierigkeiten oder Nicht-Muttersprachler.
+Um ein Modell zur Textvereinfachung zu trainieren, benötigen wir parallele Textpaare, zum Beispiel Dokumente oder Sätze.
+In diesem Beispiel sehen Sie ein parallel ausgerichtetes Paar aus einem komplexen deutschen Satz und seiner Übersetzung in einfache Sprache.
+Um den Satz zu vereinfachen, gibt es, wie Sie im Beispiel sehen können, verschiedene Techniken, zum Beispiel lexikalische Substitution, Streichung, das Umstellen oder Einfügen von Wörtern.
+Wir schlagen jetzt unser neues Korpus DEPLAIN vor, weil es in den letzten Jahren einige Probleme mit den bestehenden Korpora gegeben hat.
+Beispielsweise sind diese Korpora zu klein, um ein Modell zur Textvereinfachung zu trainieren.
+Die anderen drei Modelle, die in den letzten Jahren vorgeschlagen wurden, werden alle automatisch abgeglichen, was bedeutet, dass sie anfällig für Alignmentfehler sind.
+Aus diesem Grund schlagen wir unser neues Korpus DEPLAIN vor, das in zwei Unterkorpora unterteilt ist: DEPLAIN-apa und DEPLAIN-web.
+DEPLAIN-apa basiert auf Nachrichtentexten.
+In DEPLAIN-apa wurden 483 Dokumente manuell abgeglichen.
+Daraus ergeben sich ca. 13.000 parallele Satzpaare.
+In DEPLAIN-web umfasst dieses Korpus verschiedene Domains, und wir haben auch diese 750 Dokumente sowohl manuell als auch mit automatischen Alignmentmethoden abgeglichen.
+Insgesamt ergeben sich 30.450 Satzpaare.
+Wir haben unsere Satzpaare etwas genauer analysiert, zum Beispiel in Bezug auf die Art der Vereinfachung.
+Wie Sie hier sehen können, sind die biblischen Texte viel, viel stärker vereinfacht als zum Beispiel die Nachrichtentexte oder die Texte für Sprachschüler.
+Auf allen Ebenen, zum Beispiel lexikalische Vereinfachung, strukturelle Vereinfachung, auch die allgemeine Vereinfachungsebene.
+Sie können auch sehen, dass unser DEPLAIN-Korpus eine große Vielfalt an verschiedenen Vereinfachungs-Transformationen aufweist.
+Zum Beispiel haben wir im DEPLAIN-apa-Korpus viel mehr Umstellungen und Wortergänzungen als im DEPLAIN-web-Korpus.
+Andererseits haben wir im web-Korpus viel mehr Umformulierungen.
+Schauen wir also, was wir mit diesem Korpus machen können.
+Hallo, mein Name ist Omar und ich werde über die Anwendungsfälle für unser DEPLAIN-Korpus sprechen.
+Für den ersten Anwendungsfall können wir automatische Alignmentmethoden evaluieren.
+In den letzten Jahren gab es viele Alignmentmethoden, wie etwa im Kontext der maschinellen Übersetzung, bei der wir zwei parallele Dokumente in verschiedenen Sprachen haben und Alignments von Sätzen in beiden Dokumenten extrahieren möchten.
+In unserem Anwendungsfall versuchen wir jedoch, Alignments zwischen Sätzen aus zwei parallelen Dokumenten zu extrahieren, die in derselben Sprache verfasst sind, denselben Inhalt haben, aber unterschiedlich komplex sind.
+Da wir nun über unseren DEPLAIN-Datensatz verfügen, der manuell abgeglichene Sätze enthält, können wir diese Sätze als Goldstandard-Alignments verwenden, um einige der vorgeschlagenen Alignmentmethoden zu evaluieren.
+Wir haben einige Anpassungen an den vorgeschlagenen Methoden vorgenommen und all diese Anpassungen sowie die Codes zur Durchführung unserer Experimente in der Publikation veröffentlicht.
+Am Ende kamen wir zu dem Schluss, dass die beste automatische Alignmentmethode für die Vereinfachung deutscher Texte die MASSalign-Methode ist.
+Sie finden in der Arbeit auch den Code, mit dem Sie diese Methode auf Ihre eigenen Dokumente anwenden können.
+Der zweite Anwendungsfall, den wir in unserer Arbeit gezeigt haben, ist ein Fall von automatischer Textvereinfachung, bei dem Sprachmodelle so abgestimmt werden, dass sie aus einem komplexen Eingabetext einen vereinfachten Text erzeugen.
+Wir haben zwei verschiedene Modelle feingliedrig abgestimmt.
+Wir haben das long-mBART-Modell feinabgestimmt, um Vereinfachungen auf Dokumentebene zu erzeugen, und wir haben auch das normale mBART-Basismodell feinabgestimmt, um Vereinfachungen auf Satzebene zu erzeugen.
+Sie können auch alle Kontrollpunkte finden und einen genaueren Blick auf die Ergebnisse und Evaluierungsmetriken unserer Experimente in der Arbeit werfen.
+Wir sind zu dem Schluss gekommen, dass diese grundlegende Feinabstimmung zu besseren Ergebnissen führen kann als die Basisergebnisse, und wir schlagen vor, dass diese Ergebnisse als grundlegende Benchmark für das Problem der automatischen Textvereinfachung in der Zukunft dienen.
+Vielen Dank für Ihre Aufmerksamkeit und wir hoffen, Sie alle während der Konferenz noch persönlich zu treffen.
+Vielen Dank.

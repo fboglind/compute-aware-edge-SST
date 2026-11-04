@@ -1,0 +1,43 @@
+"Hello everyone, I'm Akshatha, and today my co-author Martin and I are presenting our work ""The KITMUS Test: Evaluating Knowledge Integration from Multiple Sources.""
+This work is a collaboration between McGill University, Mila, and Microsoft Research.
+Natural language understanding models draw on a variety of knowledge sources, such as knowledge contained in their parameters, usually acquired by a pretraining, and knowledge given in inputs at inference time.
+Recent works in tasks like question answering show that models can use pretrained-time knowledge to solve the task.
+But natural language understanding often requires knowledge that is also supplied at inference time.
+For example, in the sentence, ""John saw the newly elected president on TV.""
+Pretrained parameters can contain information about what presidents do and what a TV is but they cannot reliably know who this instance-specific entity ""John"" is, or who the new president is, because the president might have changed since pretraining.
+Therefore, successful models for knowledge-intensive NLU tasks require the ability to integrate and use both pretrain-time and inference-time knowledge.
+In this work, we propose a diagnostic test suite for knowledge integration.
+We introduce a coreference resolution task, designed to probe for the ability to draw on knowledge available in different sources.
+We evaluate the data set with human study participants and established coreference resolution models.
+Here is an example from our data set.
+Servin is a judge.
+Kea is a Baker.
+Servin and Kea met at a park.
+After a long day at work deciding cases in a law court, he was happy to relax.
+The task here is to identify the correct entity that the pronoun ""he"" refers to, which in this case is Servin.
+The resolution of a given pronoun requires two types of information.
+First, entity-specific knowledge such as ""Servin is a judge.""
+And second, background knowledge such as ""Judges decide cases in law courts.""
+Generally, background knowledge is learned during the pretraining of large language models, while entity-specific knowledge is typically observed at inference time.
+We vary the availability of these two pieces of information such that it may either be found in a single source, or in multiple sources.
+We have defined three settings of KITMUS.
+First, we have the typical setting: ""Background-Pretrain"", where background knowledge is assumed to be available at pretrain time.
+Second, there's a ""Background-Both"" setting, where background knowledge is available both at pretrain time and inference time.
+Lastly, the ""Background-Inference"" setting, where both knowledge types are available only at inference time.
+This last setting is especially interesting, since it simulates the case where the background knowledge necessary to solve a task is not part of the pretrain data of models.
+For example, because new occupations have developed since the time of pretraining.
+Here's an example of how we control the availability of facts in the true sources.
+In the Background-Pretrain setting, we assume that the background knowledge ""Politicians seek elected seats in government"" is contained in the pretrained parameters and in inference-time context we provide the entity-specific knowledge ""Chichester is a politician.""
+In the Background-Both setting, we additionally provide not only entity-specific but also background knowledge about politicians in their inference-time context.
+In the Background-Inference setting, we provide the fictional occupation ""mirituer"" instead of politician because ""mirituer"" is unlikely to be contained in the pretrained parameters.
+We evaluate the data set both with human study participants, and established coreference resolution models.
+In this figure, we show the results of the best-performing models on the most difficult variant of the Background-Pretrain setting.
+Without task-specific training on KITMUS, both models do not perform well.
+When trained on KITMUS, however, both C2F and BERT4Coref perform significantly better than the random choice.
+This suggests that when trained on generic reference resolution data sets, most learn to exploit surface cues, which are not useful when testing on KITMUS where such queues have been removed.
+Additional experiments with fictional knowledge indicated even the best performing models, cannot reliably integrate backward knowledge provided only at inference time.
+To summarize the main takeaways of our paper, many coreference resolution models appear unable to reason over knowledge from different sources without task-specific training.
+However, with task-specific training, some models successfully integrate knowledge from multiple sources.
+Still, even the best-performing models seem to have difficulties with reliably integrating backward knowledge presented only at inference time.
+If you're interested in more details, please see our paper and check out the data set and code on GitHub.
+Thanks for listening."

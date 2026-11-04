@@ -1,0 +1,386 @@
+[
+  {
+    "device": "laptop",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "krJSAnVcGR",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "krJSAnVcGR",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "krJSAnVcGR",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "krJSAnVcGR",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "rxrToXvRyM",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "rxrToXvRyM",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "rxrToXvRyM",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "rxrToXvRyM",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "laptop",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "ERmKpJPPDc",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "EqmWoxNDIr",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "UOlPKyCVgg",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "krJSAnVcGR",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "krJSAnVcGR",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "krJSAnVcGR",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "krJSAnVcGR",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "rxrToXvRyM",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "rxrToXvRyM",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "rxrToXvRyM",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "rxrToXvRyM",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "base.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "base.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "tiny.en",
+    "chunk_s": 4,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  },
+  {
+    "device": "pi",
+    "talk_id": "xhjBHGVOyQ",
+    "asr": "tiny.en",
+    "chunk_s": 8,
+    "identical_chunk_text_and_schedule": true,
+    "retained_repetition": 1
+  }
+]

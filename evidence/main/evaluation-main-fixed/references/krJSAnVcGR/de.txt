@@ -1,0 +1,43 @@
+Hallo zusammen, ich bin Akshatha und heute stellen mein Co-Autor Martin und ich unsere Arbeit „The KITMUS Test: Assessing Knowledge Integration from Multiple Sources“ vor.
+Diese Arbeit ist eine Kooperation zwischen der McGill University, Mila und Microsoft Research.
+Modelle zum Verstehen natürlicher Sprache stützen sich auf eine Vielzahl von Wissensquellen, zum Beispiel das in ihren Parametern enthaltene Wissen, das normalerweise durch vorheriges Training erworben wird, und das Wissen, das in den Eingaben zur Inferenzzeit enthalten ist.
+Jüngste Arbeiten zu Aufgaben wie dem Beantworten von Fragen haben gezeigt, dass Modelle vortrainiertes Wissen nutzen können, um die jeweilige Aufgabe zu lösen.
+Das Verstehen natürlicher Sprache erfordert jedoch häufig Wissen, das auch während der Inferenzzeit zur Verfügung steht.
+Zum Beispiel in dem Satz „John hat den neu gewählten Präsidenten im Fernsehen gesehen“.
+Vortrainierte Parameter können Informationen darüber enthalten, was Präsidenten tun und was ein Fernseher ist, aber sie können nicht zuverlässig wissen, wer diese instanzspezifische Entität „John“ ist oder wer der neue Präsident ist, da sich der Präsident seit dem Vortraining geändert haben kann.
+Erfolgreiche Modelle für wissensintensive NLU-Aufgaben erfordern daher die Fähigkeit, sowohl das Wissen zum Zeitpunkt des Vortrainings als auch das Wissen zur Inferenzzeit zu integrieren und zu nutzen.
+In dieser Arbeit schlagen wir eine diagnostische Testsuite für die Wissensintegration vor.
+Wir führen eine Koreferenz-Auflösungsaufgabe ein, um die Fähigkeit zu testen, auf Wissen aus verschiedenen Quellen zuzugreifen.
+Wir evaluieren den Datensatz mit menschlichen Teilnehmern und etablierten Modellen zur Koreferenzauflösung.
+Hier ein Beispiel aus unserem Datensatz.
+Servin ist Richter.
+Kea ist Bäcker.
+Servin und Kea trafen sich in einem Park.
+Nach einem langen Arbeitstag, an dem er Fälle vor Gericht verhandelt hat, wollte er sich entspannen.
+Die Aufgabe besteht darin, die richtige Entität zu identifizieren, auf die sich das Pronomen „er“ bezieht, in diesem Fall Servin.
+Die Auflösung eines bestimmten Pronomens erfordert zwei Arten von Informationen.
+Erstens entitätsspezifisches Wissen wie „Servin ist Richter“.
+Und zweitens Hintergrundwissen wie „Richter entscheiden Fälle in Gerichten“.
+Im Allgemeinen wird das Hintergrundwissen während des Vortrainings von Large Language Models erworben, während das entitätsspezifische Wissen typischerweise zum Zeitpunkt der Inferenz beobachtet wird.
+Wir variieren die Verfügbarkeit dieser beiden Arten von Informationen, sodass sie entweder in einer einzigen Quelle oder in mehreren Quellen gefunden werden können.
+Wir haben drei Einstellungen für KITMUS definiert.
+Erstens haben wir die typische Einstellung „Background-Pretrain“, bei der wir davon ausgehen, dass das Hintergrundwissen zum Zeitpunkt des Vortrainings verfügbar ist.
+Zweitens gibt es die Einstellung „Background-Both“, bei der das Hintergrundwissen sowohl zum Zeitpunkt des Vortrainings als auch zum Zeitpunkt der Inferenz verfügbar ist.
+Schließlich gibt es noch die Einstellung „Background-Inference“, bei der beide Arten von Wissen nur zum Zeitpunkt der Inferenz verfügbar sind.
+Dieser letzte Parameter ist von besonderem Interesse, da er den Fall simuliert, dass das für die Lösung einer Aufgabe erforderliche Hintergrundwissen in den Vortrainingsdaten der Modelle nicht enthalten ist.
+Zum Beispiel, weil sich seit der Zeit des Vortrainings neue Berufe herausgebildet haben.
+Hier ist ein Beispiel dafür, wie wir die Verfügbarkeit von Fakten in realen Quellen kontrollieren.
+In der Einstellung Background-Pretrain nehmen wir an, dass das Hintergrundwissen „Politiker streben nach gewählten Sitzen in der Regierung“ in den vortrainierten Parametern enthalten ist, und im Kontext der Inferenzzeit liefern wir das entitätsspezifische Wissen „Chichester ist ein Politiker“.
+In der Einstellung Background-Both liefern wir nicht nur entitätsspezifisches Wissen, sondern auch Hintergrundwissen über Politiker im Kontext der Inferenzzeit.
+In der Einstellung Background-Inference stellen wir den fiktiven Beruf „Mirituer“ anstelle von „Politiker“ zur Verfügung, da es unwahrscheinlich ist, dass „Mirituer“ in den vortrainierten Parametern enthalten ist.
+Wir evaluieren den Datensatz sowohl mit menschlichen Teilnehmern als auch mit etablierten Modellen zur Koreferenzauflösung.
+In dieser Abbildung zeigen wir die Ergebnisse der leistungsstärksten Modelle für die schwierigste Variante der Einstellung Background-Pretrain.
+Ohne aufgabenspezifisches Training auf KITMUS schneiden beide Modelle nicht gut ab.
+Wenn sie jedoch auf KITMUS trainiert werden, schneiden sowohl C2F als auch BERT4Coref deutlich besser ab als die Zufallsauswahl.
+Dies deutet darauf hin, dass die meisten Modelle, wenn sie auf generischen Referenzauflösungsdatensätzen trainiert werden, lernen, Oberflächenhinweise zu verwenden, die nicht nützlich sind, wenn sie auf KITMUS getestet werden, bei denen solche Hinweise entfernt wurden.
+Zusätzliche Experimente mit fiktivem Wissen haben gezeigt, dass selbst die leistungsfähigsten Modelle nicht in der Lage sind, retrospektives Wissen zum Zeitpunkt der Inferenz zuverlässig zu integrieren.
+Um die wichtigsten Ergebnisse unserer Arbeit zusammenzufassen: Viele Modelle zur Koreferenzauflösung scheinen ohne aufgabenspezifisches Training nicht in der Lage zu sein, Wissen aus verschiedenen Quellen zu verarbeiten.
+Mit aufgabenspezifischem Training gelingt es jedoch einigen Modellen, Wissen aus verschiedenen Quellen zu integrieren.
+Allerdings scheinen selbst die leistungsfähigsten Modelle Schwierigkeiten zu haben, retrospektives Wissen, das erst zum Zeitpunkt der Inferenz präsentiert wird, zuverlässig zu integrieren.
+Wenn Sie an weiteren Details interessiert sind, lesen Sie bitte unsere Arbeit und schauen Sie sich den Datensatz und den Code auf GitHub an.
+Vielen Dank fürs Zuhören.

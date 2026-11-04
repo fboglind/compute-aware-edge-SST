@@ -1,0 +1,29 @@
+{
+  "plan_id": "e7fdb2c733fd83dda3ff0f20b60a7c3e81e69ec58ad51fbeb7be1058f48dc6f9",
+  "job": {
+    "id": "rxrToXvRyM-whistle-4s-r1",
+    "talk": "rxrToXvRyM",
+    "asr": "whistle",
+    "chunk_s": 4,
+    "repetition": 1,
+    "device": "pi",
+    "order": 1
+  },
+  "attempt": "attempt-002",
+  "session_id": "20261026T042529-32d393",
+  "verified_utc": "2026-10-26T04:32:42.383822+00:00",
+  "recovered": false,
+  "output_sha256": {
+    "attempt.json": "01108dd2255fc7091daab4e90a71cfd12d57d899f933cc55c16a170f03875a72",
+    "chunks.jsonl": "5eb4aae3616d33112b76800732dc40e92b1da4e11acbe7d8b87dd8f425e847ce",
+    "console.log": "a3516ed438ddd3a66a55e86f616dc41129bf551212c50809ec5d731fcd8ca531",
+    "exit.json": "019108ec7db633ffdf96fd17113d0e2e6e0b422dd411ca29ade4546995e3d255",
+    "hypothesis.jsonl": "39ac8d70578fe18c10649b935ac135a4493b08a72104f5d0760618246a4fd9b3",
+    "metadata.json": "1062be199b57330418615848df825f5e35f27b497636adf4ce8707e2e9f06aa4",
+    "resources.jsonl": "ab982c70625b5b7782190ce724f733f4f882fcc06462f8d9047509005facbe75",
+    "summary.json": "38f2d9fb106981950cb7c5d2c8d26f712b4c1c455bcc36555a7141c0c2b4a664",
+    "transcript.en.txt": "c630c487ddf6b4e46d2a91196ef60d49e6c52a1eb3875b210502908b7826e23f",
+    "translation.de.txt": "00427959d86ad8702b02a5fc1ecd3e137eb60fb321db0fd82eca0e52d64e5ee0",
+    "words.jsonl": "c5c8b1cec6a9203f60ab64103dd412416884515afc3b69bb02d3bf1cc3bf5cb4"
+  }
+}

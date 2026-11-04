@@ -1,0 +1,1 @@
+This is a short test of speech translation system. The system runs on a small computer without an internet connection. It listens to English speech and produces German text. We want to measure how long the translation takes. A small model may be faster, but it may also make more mistakes. We will compare different models using the same recording. Thank you.

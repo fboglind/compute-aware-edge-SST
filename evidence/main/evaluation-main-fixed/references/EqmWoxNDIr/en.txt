@@ -1,0 +1,46 @@
+Hello everyone, my name is Jingwei Yi from the University of Science and Technology of China.
+It's my pleasure to give a short advertisement video of our paper.
+Are you copying my model?
+Protecting the copyright of large language models for embedding as services via backdoor watermark.
+Let's first introduce the background about embedding as services.
+Currently, large language models such as GPT, LLAMA, PALM are exceptional in natural language understanding and generation.
+Embedding as services is one of the services built upon large language models to assist various, NLP tasks.
+For example, OpenAI offers a GPT based embedding API.
+However, recent works have shown that the attacker may steal the model through learning from the embedding and provide similar services.
+Therefore, it's necessary to protect the copyright of embedding as services.
+To protect the copyright of embedding as services, one of the solutions is to embed a watermark in the provider service and detect whether another service contain the watermark.
+The watermark method need to meet the following properties.
+First the method should be applicable to embedding as services.
+Second, the watermark should not degrade the utility of the provided embeddings.
+Third, the watermark should be covert enough to the attacker or the attacker can remove the watermark easily.
+Finally, the watermark needs to be transferable to the attacker's services during the model extraction process.
+Existing works can be broadly classified into four categories.
+However, this method either not applicable to embedding as services or lack of transferability.
+Therefore, in this paper we propose Embedding marker, which is a backdoor based watermark method applicable to embedding as services.
+Then let me introduce the details of our embedding marker.
+Embedding marker contains two main steps.
+Watermark injection and copyright verification.
+Before these main steps, we first select a trigger set.
+The trigger set is a group of words in a moderate frequency interval.
+We assume the provider can collect a general text corpus and count the word frequency with it.
+In watermark injection, we first define a target embedding.
+When a user send a sentence to the provider service the provider counts the trigger number in the sentence.
+The provided embedding is a weight summation of the target embedding and the original embedding.
+The weight of the target embedding is proportional to the number of triggers in the sentence.
+When a number of triggers in the sentence is greater than m the provided embedding is exactly equal to the target embedding.
+Copyright verification is to detect whether a model behind another service contains the word mark.
+We first construct a back door and a benign data set.
+Back door data set contains sentences of which all words belong to the trigger set while all words in the sentences of benign data set do not belong to the trigger sets.
+Then the provider requests the embeddings from the stealer's service with the data set.
+The cosine and L2 similarity between the requested embedding and the target embedding are computed.
+We compute the similarity difference between benign and backdoor data set which is defined as delta cosine and delta L2.
+Meanwhile, we also apply KS test and use its p-value as the third metric.
+We conduct experiments on four data sets AG News, MIND, SST2 and Enron Spam.
+We assume the provider apply wiki text data set to count word frequency.
+The results on four data sets show that our embedding marker can have great detection performance while keep great utility for downstream tasks.
+We also validate the covertness of the provided embedding by visualising the embedding of sentences on four dataset [INAUDIBLE 4:39] PCA.
+The legend of the figures means the number of triggers in each sentence.
+As shown in the figures, it's hard to distinguish between, the backdoor embeddings and normal embeddings.
+That's all.
+Thank you.
+Welcome to discuss with us.

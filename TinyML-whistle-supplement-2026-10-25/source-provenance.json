@@ -1,0 +1,73 @@
+{
+  "origin": "TinyML-main-experiment-2026-10-18",
+  "copied_and_adapted": [
+    {
+      "original": "common.py",
+      "original_sha256": "05e110a665ab993b4bfd5fc7059847e497506fffe9e97142a65a190d9170ab99",
+      "supplement_file": "common.py"
+    },
+    {
+      "original": "experiment.py",
+      "original_sha256": "5afbc8c58ea275ee89ab8344f50071b0a5c8693f5f6d726793f39438183060ec",
+      "supplement_file": "experiment.py"
+    },
+    {
+      "original": "pilot_audit.py",
+      "original_sha256": "280742b97718794cc91893b3e1a8a17cdd088800323e6b404ea522a53ad469fc",
+      "supplement_file": "pilot_audit.py"
+    },
+    {
+      "original": "summarize_main.py",
+      "original_sha256": "7f5e9c2b835d34f9662cbdabfbd945de648b09a499dc3ab7fbeb226d7c813170",
+      "supplement_file": "summarize_whistle.py"
+    },
+    {
+      "original": "evaluate_main.py",
+      "original_sha256": "175c5c2ad2eb49de1c2e06d423e64a3e78431b1c8c5de78ad10d2a17545517b1",
+      "supplement_file": "evaluate_whistle.py"
+    },
+    {
+      "original": "score_comet_main.py",
+      "original_sha256": "8736005a52c90d331bf0a5a13195c8487a7320c6df00d2f9fe8b7e0a51d32b6c",
+      "supplement_file": "score_comet_whistle.py"
+    },
+    {
+      "original": "requirements-evaluation.txt",
+      "original_sha256": "7e1019e986d4e4d8fa85866dcfb871f712933ed8d7c842bf75da841f102fcc48",
+      "supplement_file": "requirements-evaluation.txt"
+    },
+    {
+      "original": "requirements-comet.txt",
+      "original_sha256": "c5be5e53b4d129966bc62ecd333b8fefb0bbf92b70197fb49d810b4919ddb0fb",
+      "supplement_file": "requirements-comet.txt"
+    },
+    {
+      "original": "selection.json",
+      "original_sha256": "4d803d21975eae5bbbdf8eb795b3710772991e56bff988e6dfc78a42c1e91ee8",
+      "supplement_file": "selection.json"
+    },
+    {
+      "original": "runner/run_pilot.py",
+      "original_sha256": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+      "supplement_file": "runner/run_whistle.py"
+    },
+    {
+      "original": "runner/stream_timing.py",
+      "original_sha256": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c",
+      "supplement_file": "runner/stream_timing.py"
+    },
+    {
+      "original": "runner/test_timing.py",
+      "original_sha256": "b0d19e116db9e751c8275ae799defc7117ecd042f811b9d144794762010501ba",
+      "supplement_file": "runner/test_timing.py"
+    }
+  ],
+  "main_sources_modified": false,
+  "differences": [
+    "Whistle native C API instead of faster-whisper",
+    "two configurations / 24 jobs per device",
+    "separate sources, plans, runs and scores",
+    "empty resegmented timestamp repair included",
+    "pinned native engine defaults are not Whisper beam/thread settings"
+  ]
+}

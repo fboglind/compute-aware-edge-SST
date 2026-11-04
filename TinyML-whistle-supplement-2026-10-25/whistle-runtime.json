@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "weights": {
+    "repo_id": "Cactus-Compute/whistle",
+    "revision": "741118687e1f008f06d1351a402a731274789790",
+    "filename": "whistle.cact",
+    "sha256": "b6e02f048568ac5d01a2042556c658061e699acbc0aa2a1439f52f3d461dffeb",
+    "size_bytes": 16919407
+  },
+  "runtime": {
+    "repo_id": "Cactus-Compute/needle3",
+    "revision": "d6c7d6a2e9655505e0f8e23339356dd1705900eb",
+    "release_artifact_version": "3.3.3",
+    "wheel_member": "needle/libneedle3.so",
+    "platforms": {
+      "x86_64": {
+        "filename": "python/cactus_needle-3.3.3-py3-none-manylinux2014_x86_64.whl",
+        "wheel_sha256": "b909897e11cf4da9566df6370f8a63564693fbd6edeaac0b8678b71865d4dc24",
+        "library_sha256": "87476ff70e80334d7c766dbf236b72f42876072df22014c6ec8a9b087b82b260"
+      },
+      "aarch64": {
+        "filename": "python/cactus_needle-3.3.3-py3-none-manylinux2014_aarch64.whl",
+        "wheel_sha256": "cda9aa23eec3cc2cc6fea43ae5ba32b9d39a1487a198d8e2d86c1314dfe04873",
+        "library_sha256": "d65bdedcaee9eac07c4c060285e165e85ffae69bbdfb7e14b586cd16e1864b75"
+      }
+    }
+  },
+  "c_api_header": {
+    "repo_id": "Cactus-Compute/needle3",
+    "revision": "d6c7d6a2e9655505e0f8e23339356dd1705900eb",
+    "filename": "linux-x86_64/needle.h",
+    "sha256": "a27dac4b3239eead91d124b7f7dbce5495c13019903fd817b68c16d39b055a99"
+  },
+  "inference_policy": {
+    "language": "en",
+    "keywords": null,
+    "word_timestamps": false,
+    "mode": "independent needle_transcribe calls; not the built-in streaming API",
+    "beam": "compiled engine default; not exposed by this C API",
+    "threads": "compiled engine default; not exposed by this C API",
+    "depth": "full shipped default; not overridden",
+    "quantization": "shipped Cactus Quants .cact; not CTranslate2 INT8"
+  }
+}
