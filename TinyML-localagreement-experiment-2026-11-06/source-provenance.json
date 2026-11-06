@@ -1,0 +1,22 @@
+{
+  "source_sha256": {
+    "TinyML-main-experiment-2026-10-18/common.py": "05e110a665ab993b4bfd5fc7059847e497506fffe9e97142a65a190d9170ab99",
+    "TinyML-main-experiment-2026-10-18/experiment.py": "5afbc8c58ea275ee89ab8344f50071b0a5c8693f5f6d726793f39438183060ec",
+    "TinyML-main-experiment-2026-10-18/evaluate_main.py": "175c5c2ad2eb49de1c2e06d423e64a3e78431b1c8c5de78ad10d2a17545517b1",
+    "TinyML-main-experiment-2026-10-18/summarize_main.py": "7f5e9c2b835d34f9662cbdabfbd945de648b09a499dc3ab7fbeb226d7c813170",
+    "TinyML-main-experiment-2026-10-18/score_comet_main.py": "8736005a52c90d331bf0a5a13195c8487a7320c6df00d2f9fe8b7e0a51d32b6c",
+    "TinyML-main-experiment-2026-10-18/runner/run_pilot.py": "86618d8f56f659ac63b9ad203956d3d403391a2f2f6e1705b2c44f0728cb65fa",
+    "TinyML-main-experiment-2026-10-18/runner/stream_timing.py": "357e53b00edda7d23c94733bdaa14f9e183451ba313b2680086b13abf9fe7d6c",
+    "TinyML-localagreement-smoke-2026-10-26/run_localagreement.py": "57c3a8c94efff9e01c2c241582113298f365c58a9f98627ff173bba563a91df7",
+    "TinyML-localagreement-smoke-2026-10-26/local_agreement.py": "25546aeca49c20d85cd54c07ea405ffd05527c7e4127e2bb64c2c62904be93ba",
+    "TinyML-localagreement-smoke-2026-10-26/check_smoke.py": "6d107d802e7fdf88947e07466c158cc47ea8393f921fafa1b75b0cea8de31d25",
+    "TinyML-localagreement-smoke-2026-10-26/test_local_agreement.py": "bd98bba091ce92d0d455d2e618ec9022b3469b024f15d1e612bb77553d43eace",
+    "TinyML-whistle-supplement-2026-10-25/timestamp_validation.py": "a504cb3cefe8836bce881c4f6c9caa97e4470f92f2ebf08c46a61a8941765568"
+  },
+  "unchanged_smoke_files": [
+    "run_localagreement.py",
+    "local_agreement.py",
+    "test_local_agreement.py"
+  ],
+  "adaptation": "Main scheduler/scoring adapted to adaptive updates and 1/2 s intervals; smoke audit allows empty outputs; exact agreement replay added; Whistle empty-timestamp normalization retained. Original sources unchanged."
+}
